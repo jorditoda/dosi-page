@@ -49,15 +49,15 @@ function AppBanner() {
           >
             {appBanner.subtitle}
           </motion.p>
-          <motion.ul
+          <motion.div
             initial={{ opacity: 0, y: "100%" }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.45 }}
-            className="list-none flex gap-4 my-6 p-0"
+            className="flex gap-4 my-6"
           >
             <StoreBadges />
-          </motion.ul>
+          </motion.div>
         </div>
 
         <motion.div

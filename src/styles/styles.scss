@@ -4,6 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Res no ha de poder desbordar horitzontalment: el SVGBlob decoratiu del
+   header i les animacions d'entrada (x: ±40px) creaven scroll horizontal.
+   `clip` (no `hidden`) no crea contenidor de scroll, així que no trenca els
+   elements `sticky` (screenshots del hero) ni els `fixed`. */
+body {
+  overflow-x: clip;
+}
+
 /* ── Ritme vertical ────────────────────────────────────────────────────────
    Una sola escala d'espaiat entre seccions, perquè no s'alternin py-12 /
    py-16 / mb-12 segons qui hagi escrit cada bloc. També fixa el ritme dins

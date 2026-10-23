@@ -67,17 +67,17 @@ function Header() {
               >
                 {header.subtitle}
               </motion.p>
-              <motion.ul
+              <motion.div
                 initial={{ opacity: 0, y: "100%" }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                className="list-none flex gap-4 m-0 p-0"
+                className="flex gap-4"
               >
                 <StoreBadges />
-              </motion.ul>
+              </motion.div>
             </div>
           </div>
-          <div className="min-h-[80vh] z-[-1]" ref={ref}>
+          <div className="min-h-[80vh]" ref={ref}>
             <div className="flex justify-center sticky top-28 md:top-40">
               <SVGBlob
                 scrollYProgress={scrollYProgress}
@@ -93,7 +93,7 @@ function Header() {
                   duration: 0.5,
                   delay: 0.3,
                 }}
-                className="relative h-[532px] 2xs:h-[720px] sm:h-[648px] rounded-[3rem] border-[10px] border-base-300 bg-base-100 shadow-2xl"
+                className="relative w-[246px] 2xs:w-[333px] sm:w-[300px] h-[532px] 2xs:h-[720px] sm:h-[648px] rounded-[3rem] border-[10px] border-base-300 bg-base-100 shadow-2xl"
               >
                 <div className="absolute inset-0 rounded-[2.2rem] md:rounded-[2.4rem] overflow-hidden">
                   {header.screenshots.map((src, index) => (

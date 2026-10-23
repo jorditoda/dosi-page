@@ -26,6 +26,8 @@ function StoreBadges({ className = "h-14" }: Props) {
       <a href={storeHref(googlePlayLink)} data-goatcounter-click="badge-google-play" {...storeLinkProps(googlePlayLink)}>
         <img
           className={className}
+          width={180}
+          height={53}
           alt="Baixa Dosi a Google Play"
           src="/stores/google-play.svg"
           loading="lazy"
@@ -35,6 +37,8 @@ function StoreBadges({ className = "h-14" }: Props) {
       <a href={storeHref(appStoreLink)} data-goatcounter-click="badge-app-store" {...storeLinkProps(appStoreLink)}>
         <img
           className={className}
+          width={118}
+          height={38}
           alt="Baixa Dosi a l'App Store"
           src="/stores/app-store.svg"
           loading="lazy"
