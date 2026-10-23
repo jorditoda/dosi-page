@@ -346,7 +346,6 @@ const templateConfig: TemplateConfig = {
         "T'enviem a la botiga del teu dispositiu. Dosi és gratuïta a l'App Store i a Google Play.",
     },
   },
-  // TODO 👤: revisar amb un professional abans de publicar a les botigues.
   privacyPolicy: {
     seo: {
       title: "Política de privacitat - Dosi",
@@ -359,7 +358,7 @@ Darrera actualització: octubre de 2026.
 
 ## Qui gestiona les teves dades
 
-El responsable del tractament és [TODO 👤: nom i cognoms o raó social, NIF i adreça completa].
+El responsable del tractament és **Jordi Toda Ferran** [TODO 👤: NIF i adreça completa].
 
 Per a qualsevol consulta sobre privacitat pots escriure a [info@yapplic.com](mailto:info@yapplic.com).
 
@@ -410,7 +409,6 @@ L'app és adreçada a majors d'edat. Si ets menor, necessites l'autorització de
 Si fem canvis importants en com tractem les dades, n'avisarem dins l'app o publicarem la versió nova en aquesta pàgina.
 `,
   },
-  // TODO 👤: revisar amb un professional abans de publicar a les botigues.
   cookiesPolicy: {
     seo: {
       title: "Política de galetes - Dosi",
@@ -438,7 +436,6 @@ Tot i que aquesta web no n'usa, el navegador et permet bloquejar, limitar o esbo
 Per a qualsevol consulta, escriu a [info@yapplic.com](mailto:info@yapplic.com).
 `,
   },
-  // TODO 👤: revisar amb un professional abans de publicar a les botigues.
   termsAndConditions: {
     seo: {
       title: "Condicions d'ús - Dosi",
@@ -486,7 +483,7 @@ L'app es proporciona tal com és. Treballem perquè sigui útil i fiable, però 
 
 ## Canvis i llei aplicable
 
-Podem actualitzar aquestes condicions; si els canvis són importants, n'avisarem dins l'app o en aquesta pàgina. Aquestes condicions es regeixen per la legislació espanyola. [TODO 👤: concretar amb un professional el fur i la jurisdicció aplicables]
+Podem actualitzar aquestes condicions; si els canvis són importants, n'avisarem dins l'app o en aquesta pàgina. Aquestes condicions es regeixen per la legislació espanyola. Per a qualsevol controvèrsia, les parts se sotmeten als jutjats i tribunals del domicili del responsable, sense perjudici dels drets que la legislació de consum reconeix a les persones consumidores.
 
 ## Contacte
 

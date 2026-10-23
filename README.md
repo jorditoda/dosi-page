@@ -84,9 +84,7 @@ millora futura). Quan s'afegeixi, el camí previst és:
 
 ## Tasques pendents 👤
 
-- [ ] **GitHub Pages**: configurar el repo per publicar des de la branca `master` (Actions).
-- [ ] **DNS**: crear el registre `CNAME` `dosi` → `jorditoda.github.io` i activar *Enforce HTTPS*.
-- [ ] **Textos legals**: substituir `TODO 👤` (responsable: nom/NIF/adreça, fur i jurisdicció) i revisar-los amb un professional abans de publicar a les botigues.
+- [ ] **Textos legals**: completar el `TODO 👤` del responsable amb el **NIF i l'adreça** (el nom ja hi és). La revisió professional i el fur i jurisdicció ja estan resolts.
 - [ ] **Llicència**: `package.json` diu `"license": "MIT"` però el repo duu la llicència **GPL-3.0** de la plantilla original; cal decidir quina es vol i fer-la coherent.
 
 ## Crèdits
