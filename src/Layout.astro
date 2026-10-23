@@ -1,0 +1,122 @@
+---
+import "swiper/css";
+import "@styles/styles.scss";
+import type { TemplateConfig } from "utils/configType";
+import defaultConfig from "utils/config";
+import { buildJsonLd } from "utils/seo";
+
+type Seo = TemplateConfig["seo"];
+
+interface Props extends Pick<
+  TemplateConfig,
+  "backgroundGrid" | "logo" | "ogImage" | "theme" | "forceTheme" | "name"
+> {
+  seo: Seo;
+  /** Marks the page as no indexable (redirect pages, etc.). */
+  noindex?: boolean;
+  /** The page includes the FAQ: adds the FAQPage block to the JSON-LD. */
+  withFaq?: boolean;
+  /** Legal policy, for the BreadcrumbList. */
+  breadcrumb?: { name: string };
+}
+
+const {
+  backgroundGrid,
+  seo,
+  ogImage,
+  theme,
+  forceTheme,
+  name,
+  noindex = false,
+  withFaq = false,
+  breadcrumb,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const socialImage = new URL(ogImage, Astro.site ?? Astro.url);
+
+// ROADMAP.md E2.0
+const jsonLd = buildJsonLd({
+  config: defaultConfig,
+  url: canonical.href,
+  faq: withFaq ? defaultConfig.home.faq : undefined,
+  breadcrumb: breadcrumb ? [breadcrumb] : undefined,
+});
+---
+
+<!doctype html>
+<html lang="en" data-theme={theme}>
+  <head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0a0c10"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={name} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rally Hud — speed and G-force HUD for Android and iOS" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={socialImage} />
+
+    <!-- Structured data (ROADMAP.md E2.0). aggregateRating is NOT included:
+         both stores return 0 ratings and marking them would be invention. -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+    <script is:inline define:vars={{ forceTheme }}>
+      // The HTML ships with the default theme (rally-dark). This script only
+// applies the user's explicit choice, saved in localStorage.
+// Before only knew how to write "dark", which was a daisyUI theme name
+// and it no longer exists in the custom design system.
+      try {
+        const stored = localStorage.getItem("rally-theme");
+        if (stored && !forceTheme) {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      } catch (e) {
+        // localStorage can be blocked (private mode, iframes).
+// In that case the default theme is maintained.
+      }
+    </script>
+  </head>
+  <!-- Explicit base background: without it the `body` stays transparent and the
+     color depends on what daisyUI applies to `html`. ROADMAP.md E2.2 -->
+  <body class="relative bg-base-100 text-base-content">
+    <!-- ROADMAP.md E2.12: the technical grid and the hero halo are decoration,
+         so they use aria-hidden to avoid announcing anything to the reader. -->
+    {backgroundGrid && <div class="backgroundGrid" aria-hidden="true" />}
+    <div class="hero-glow" aria-hidden="true" />
+    <slot />
+  </body>
+</html>

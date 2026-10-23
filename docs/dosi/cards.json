@@ -1,0 +1,4640 @@
+[
+  {
+    "id": "neg-001",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Efecte àncora",
+    "hook": "Qui diu el primer número en una negociació sovint acaba guanyant.",
+    "hookAccent": "Per què?",
+    "keyIdea": "Es diu **efecte àncora**. La primera xifra que sentim es converteix en el punt de referència, i tota la negociació gira al seu voltant.",
+    "example": {
+      "text": "Vens el teu cotxe de segona mà. Mira què passa segons qui diu el primer preu:",
+      "visual": {
+        "type": "anchorScale",
+        "min": 5500,
+        "max": 9500,
+        "ticks": [
+          6000,
+          7000,
+          8000,
+          9000
+        ],
+        "lanes": [
+          {
+            "label": "Tu dius 9.000 € primer",
+            "result": "acord prop de 8.000 €",
+            "anchor": 9000,
+            "rangeFrom": 8000,
+            "rangeTo": 9000,
+            "highlight": true
+          },
+          {
+            "label": "Ell diu 6.000 € primer",
+            "result": "acord entre 6.000 i 7.000 €",
+            "anchor": 6000,
+            "rangeFrom": 6000,
+            "rangeTo": 7000,
+            "highlight": false
+          }
+        ],
+        "conclusion": "Mateix cotxe, uns 1.500 € de diferència."
+      }
+    },
+    "apply": [
+      "Si saps bé quant val, fes tu la primera oferta: ambiciosa però justificable.",
+      "Si l'altre ancora amb una xifra absurda, digues que està fora de lloc i torna a criteris objectius."
+    ],
+    "source": "Tversky i Kahneman (1974); Galinsky i Mussweiler (2001)",
+    "notification": "Per què qui diu el primer número sol guanyar la negociació?",
+    "icon": "anchor"
+  },
+  {
+    "id": "neg-001-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-001",
+    "question": "Negocies el sou d'una feina nova i et pregunten quant demanes. Tens dades del sector. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dius que prefereixes que facin ells la primera oferta"
+      },
+      {
+        "id": "b",
+        "text": "Dius una xifra a la part alta del rang del sector, i expliques per què"
+      },
+      {
+        "id": "c",
+        "text": "Dius el mínim que acceptaries, per no espantar-los"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Amb bona informació, ancorar primer et dona avantatge: la teva xifra marca el terreny de joc.",
+    "feedbackWrong": "Si ancores baix o deixes que ancorin ells, tota la negociació parteix d'una xifra pitjor per a tu."
+  },
+  {
+    "id": "neg-002",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "La teva alternativa (MAAN)",
+    "hook": "La teva força en una negociació depèn del que faries si no hi ha acord.",
+    "hookAccent": "Ho saps?",
+    "keyIdea": "És la teva **MAAN**: la millor alternativa a un acord negociat. Si és bona, pots dir que no amb calma. Si no en tens, l'altre ho notarà.",
+    "example": {
+      "text": "Si tens una altra oferta de feina sobre la taula, negocies el sou amb molta més tranquil·litat que si estàs a l'atur i sense opcions."
+    },
+    "apply": [
+      "Abans de negociar, escriu què faràs si no hi ha acord. Aquesta és la teva MAAN.",
+      "Millora-la abans de seure: busca una altra oferta, un altre proveïdor, un altre pis.",
+      "Pensa també en la MAAN de l'altre: com més feble sigui, més marge tens."
+    ],
+    "source": "Fisher i Ury, Getting to Yes (1981)",
+    "notification": "Què et dona força de veritat en una negociació?"
+  },
+  {
+    "id": "neg-002-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-002",
+    "question": "Vols vendre el pis i un comprador t'ofereix menys del que esperaves. Què et dona més força per negociar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Insistir molt en el preu que vols"
+      },
+      {
+        "id": "b",
+        "text": "Explicar-li que necessites vendre ràpid"
+      },
+      {
+        "id": "c",
+        "text": "Tenir una altra persona interessada a visitar-lo"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Una bona alternativa et permet dir que no sense por, i l'altre ho nota.",
+    "feedbackWrong": "La força no ve d'insistir: ve de tenir una bona alternativa si no hi ha acord. I revelar que tens pressa la debilita."
+  },
+  {
+    "id": "neg-003",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Interessos, no posicions",
+    "hook": "Dues germanes es barallen per una taronja. Totes dues la volen sencera.",
+    "hookAccent": "Qui té raó?",
+    "keyIdea": "Totes dues defensen una **posició** (la taronja), però no expliquen el seu **interès**: una vol el suc i l'altra, la pell per a un pastís. Si ho diguessin, totes dues ho tindrien tot.",
+    "example": {
+      "text": "El teu cap diu que no pots fer teletreball. Si preguntes per què, potser descobreixes que el preocupa no poder-te localitzar, i això sí que té solució."
+    },
+    "apply": [
+      "Quan algú defensi una postura, pregunta: «Per què és important per a tu?».",
+      "Explica també el teu interès, no només el que demanes.",
+      "Busca solucions que cobreixin els interessos de tots dos."
+    ],
+    "source": "Fisher i Ury, Getting to Yes (1981)",
+    "notification": "Com es poden barallar dues persones per una taronja i guanyar totes dues?"
+  },
+  {
+    "id": "neg-003-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-003",
+    "question": "El teu company de pis vol posar la calefacció a 24 °C i tu a 19 °C. Quina és la millor primera pregunta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Per què et va millor tenir-la tan alta?»"
+      },
+      {
+        "id": "b",
+        "text": "«Ho decidim a cara o creu?»"
+      },
+      {
+        "id": "c",
+        "text": "«Per què no la posem a 21,5 °C i ja està?»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Preguntar per l'interès (té fred a l'habitació? treballa des de casa?) obre solucions millors que partir la diferència.",
+    "feedbackWrong": "Sortejar-ho o partir la diferència no resol el que de debò preocupa a cadascú. Primer, descobreix l'interès."
+  },
+  {
+    "id": "neg-004",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Persona i problema, separats",
+    "hook": "Pots ser molt exigent amb el que demanes i, alhora, molt amable amb qui tens davant.",
+    "keyIdea": "Si l'altre se sent atacat, defensarà el seu orgull, no els seus arguments. Tracta el problema com un repte compartit: **dur amb el problema, suau amb la persona**.",
+    "example": {
+      "text": "En lloc de «Sempre arribes tard amb les entregues», prova «Les entregues ens arriben tard i perdem clients. Com ho podem resoldre?»."
+    },
+    "apply": [
+      "Parla del problema, no del caràcter de l'altre.",
+      "Posa't al mateix costat de la taula: «nosaltres contra el problema».",
+      "Reconeix les emocions de l'altre abans de tornar al tema."
+    ],
+    "source": "Fisher i Ury, Getting to Yes (1981)",
+    "notification": "Es pot ser exigent i amable alhora en una negociació?"
+  },
+  {
+    "id": "neg-004-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-004",
+    "question": "Un proveïdor torna a fallar una entrega. Quina frase t'ajuda més a aconseguir que no torni a passar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Sou un desastre, sempre igual.»"
+      },
+      {
+        "id": "b",
+        "text": "«Aquest retard ens ha fet perdre una venda. Què podem canviar perquè no es repeteixi?»"
+      },
+      {
+        "id": "c",
+        "text": "«No passa res, ja ens apanyarem.»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Ets ferm amb el problema (el retard té conseqüències) i respectuós amb la persona.",
+    "feedbackWrong": "Atacar la persona la posa a la defensiva, i treure-li importància no resol res. Sigues dur amb el problema i suau amb la persona."
+  },
+  {
+    "id": "neg-005",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Criteris objectius",
+    "hook": "Quan la negociació es converteix en un pols de voluntats, perd qui es cansa abans.",
+    "hookAccent": "Hi ha sortida?",
+    "keyIdea": "En lloc de discutir qui cedeix, poseu-vos d'acord en un **criteri objectiu**: preus de mercat, una taxació, el conveni o el que es va fer en un cas semblant.",
+    "example": {
+      "text": "Negocies el lloguer. En lloc de «Em sembla car», mostres tres pisos semblants del barri que es lloguen per menys. Ara parleu de dades, no de voluntats."
+    },
+    "apply": [
+      "Abans de negociar, busca referències: preus de mercat, sous del sector, precedents.",
+      "Proposa primer el criteri: «Què et sembla si fem servir el preu de mercat?».",
+      "Cedeix davant d'un bon argument, mai davant de la pressió."
+    ],
+    "source": "Fisher i Ury, Getting to Yes (1981)",
+    "notification": "Com evitar que una negociació es converteixi en un pols?"
+  },
+  {
+    "id": "neg-005-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-005",
+    "question": "Negocies el preu d'un cotxe de segona mà i el venedor diu: «Per menys de 12.000 € no el deixo». Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dius 10.000 € i esperes que cedeixi"
+      },
+      {
+        "id": "b",
+        "text": "Acceptes, perquè sembla molt segur"
+      },
+      {
+        "id": "c",
+        "text": "Proposes mirar què es paga pel mateix model als portals de venda"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Portar la conversa a un criteri objectiu treu pressió i dona una base justa a tots dos.",
+    "feedbackWrong": "Respondre amb una altra xifra o cedir davant la seguretat de l'altre és un pols de voluntats. Busca un criteri objectiu."
+  },
+  {
+    "id": "neg-006",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Ampliar el pastís",
+    "hook": "Si només negocies el preu, un guanya i l'altre perd. Hi ha una alternativa.",
+    "keyIdea": "Afegeix variables que et costin poc a tu i valguin molt per a l'altre (o al revés): terminis, forma de pagament, garanties, durada. Així **fas més gran el pastís** abans de repartir-lo.",
+    "example": {
+      "text": "Un client no pot pagar més. Li ofereixes el mateix preu a canvi de pagar per avançat i d'un contracte de dos anys. Tu guanyes estabilitat; ell, el preu que volia."
+    },
+    "apply": [
+      "Fes una llista de tot el que es pot negociar, no només del preu.",
+      "Pregunta què és fàcil de donar per a l'altre i què és valuós per a tu.",
+      "Intercanvia el que et costa poc per allò que valores molt."
+    ],
+    "source": "Fisher i Ury, Getting to Yes (1981); Thompson, The Mind and Heart of the Negotiator",
+    "notification": "Com fer que tots dos guanyeu quan sembla que no es pot?"
+  },
+  {
+    "id": "neg-006-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-006",
+    "question": "L'empresa et diu que no pot pujar el sou que demanes. Quina és la millor resposta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acceptar-ho i deixar-ho córrer"
+      },
+      {
+        "id": "b",
+        "text": "Preguntar si poden millorar altres coses: dies de teletreball, formació o vacances"
+      },
+      {
+        "id": "c",
+        "text": "Amenaçar de marxar si no et pugen el sou"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Afegir altres variables amplia el pastís: el que a l'empresa li costa poc pot valer molt per a tu.",
+    "feedbackWrong": "Si només negocies el sou, un dels dos ha de perdre. Busca altres coses que es puguin intercanviar."
+  },
+  {
+    "id": "neg-007",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "El teu punt de retirada",
+    "hook": "Molta gent arriba a una negociació sense saber en quin punt s'aixecaria de la taula.",
+    "keyIdea": "El **preu de reserva** és la xifra a partir de la qual prefereixes no tancar l'acord. Decidir-la abans et protegeix d'acceptar, amb la pressió del moment, alguna cosa que després lamentaràs.",
+    "example": {
+      "text": "Vas a una subhasta decidit a pagar com a molt 300 € per una bicicleta. Sense aquest límit, l'emoció de la puja et pot fer pagar-ne 450."
+    },
+    "apply": [
+      "Calcula el preu de reserva a partir de la teva alternativa: l'acord ha de ser almenys igual de bo.",
+      "Escriu-lo i no el canviïs durant la negociació si no apareix informació nova.",
+      "No el revelis mai: és el teu límit, no la teva oferta."
+    ],
+    "source": "Raiffa, The Art and Science of Negotiation (1982)",
+    "notification": "Saps en quin punt t'aixecaries de la taula?"
+  },
+  {
+    "id": "neg-007-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-007",
+    "question": "Estàs a punt de tancar la compra d'un pis i el venedor et demana 5.000 € més del límit que havies decidit amb calma. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mantens el límit, tret que hagis après alguna cosa nova sobre el pis"
+      },
+      {
+        "id": "b",
+        "text": "Pagues: ja hi has invertit molt temps"
+      },
+      {
+        "id": "c",
+        "text": "Li dius quin és el teu límit exacte perquè vegi que vas de debò"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "El límit que vas decidir amb calma et protegeix de la pressió del moment.",
+    "feedbackWrong": "El temps invertit no fa que el pis valgui més, i revelar el teu límit et deixa sense marge."
+  },
+  {
+    "id": "neg-008",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "La zona d'acord",
+    "hook": "Hi ha negociacions que no poden acabar bé, per molt que t'hi esforcis.",
+    "hookAccent": "Per què?",
+    "keyIdea": "Només hi ha acord possible si els límits se solapen: el màxim que pot pagar el comprador ha de superar el mínim que accepta el venedor. Aquest espai és la **zona de possible acord**.",
+    "example": {
+      "text": "No vols llogar el pis per menys de 900 €, i el llogater no pot pagar més de 850 €. No hi ha zona d'acord: cal canviar alguna altra cosa o buscar algú altre."
+    },
+    "apply": [
+      "Abans de negociar, estima el límit de l'altre amb dades del mercat.",
+      "Si no hi ha zona d'acord, no perdis el temps regatejant: afegeix variables o retira't.",
+      "Recorda que tothom té límits: el teu objectiu és acostar-te al de l'altre."
+    ],
+    "source": "Raiffa, The Art and Science of Negotiation (1982)",
+    "notification": "Per què algunes negociacions no poden acabar bé?"
+  },
+  {
+    "id": "neg-008-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-008",
+    "question": "Un client vol el teu servei, però el seu pressupost màxim és la meitat del teu mínim. Què és el més sensat?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Baixar el preu fins on calgui per no perdre'l"
+      },
+      {
+        "id": "b",
+        "text": "Seguir regatejant fins que un dels dos cedeixi"
+      },
+      {
+        "id": "c",
+        "text": "Proposar un servei més petit que encaixi amb el seu pressupost"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Si no hi ha zona d'acord, canvia el que negocieu: un servei més petit pot crear-ne una.",
+    "feedbackWrong": "Sense zona d'acord, regatejar no serveix, i baixar per sota del teu mínim vol dir perdre diners."
+  },
+  {
+    "id": "neg-009",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Xifres precises",
+    "hook": "Demanar 3.450 € funciona millor que demanar 3.500 €.",
+    "hookAccent": "Per què?",
+    "keyIdea": "Una xifra **precisa** sembla calculada amb cura, i l'altre suposa que hi ha raons al darrere. Per això sol fer contraofertes més ajustades que davant d'una xifra rodona.",
+    "example": {
+      "text": "Si demanes 4.000 € per una moto, et poden contestar 3.000 € sense pensar-hi gaire. Si demanes 3.950 €, l'altre tendeix a ajustar menys, perquè sembla que hi ha un càlcul."
+    },
+    "apply": [
+      "Quan facis la primera oferta, evita els números rodons.",
+      "Assegura't que pots justificar la xifra si te la pregunten.",
+      "Si l'altre et dona una xifra rodona, és senyal que encara té marge."
+    ],
+    "source": "Mason, Lee, Wiley i Ames (2013)",
+    "notification": "Per què demanar 3.450 € funciona millor que demanar 3.500 €?"
+  },
+  {
+    "id": "neg-009-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-009",
+    "question": "Vas a demanar un augment. Quina xifra et donarà més bon resultat, si la pots justificar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Uns 2.000 € més a l'any»"
+      },
+      {
+        "id": "b",
+        "text": "«2.150 € més a l'any»"
+      },
+      {
+        "id": "c",
+        "text": "«El que vosaltres considereu just»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Una xifra precisa i justificada sembla meditada i rep contraofertes més petites.",
+    "feedbackWrong": "Una xifra rodona convida a regatejar més, i deixar-ho en mans de l'altre li regala l'àncora."
+  },
+  {
+    "id": "neg-010",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Diverses ofertes alhora",
+    "hook": "En lloc d'una sola proposta, presenta'n tres de diferents a la vegada.",
+    "hookAccent": "Per què?",
+    "keyIdea": "Si fas **diverses ofertes equivalents** alhora (que per a tu valen igual), l'altre se sent amb més control, et revela què prioritza quan tria i és més fàcil arribar a un acord.",
+    "example": {
+      "text": "Al client li ofereixes: A) 10.000 € amb pagament a 30 dies, B) 9.500 € pagant per avançat, o C) 10.500 € amb dos mesos més de suport."
+    },
+    "apply": [
+      "Prepara dues o tres opcions que per a tu tinguin el mateix valor.",
+      "Canvia diverses variables a cada opció (preu, terminis, extres).",
+      "Fixa't en quina tria l'altre: t'indica què li importa més."
+    ],
+    "source": "Leonardelli et al. (2019); Medvec i Galinsky (2005)",
+    "notification": "Per què presentar tres ofertes alhora pot ser millor que una?"
+  },
+  {
+    "id": "neg-010-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-010",
+    "question": "Negocies un contracte i vols saber què li importa més al client sense preguntar-ho directament. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Li presentes tres opcions equivalents i observes quina tria"
+      },
+      {
+        "id": "b",
+        "text": "Li fas una sola oferta molt ajustada"
+      },
+      {
+        "id": "c",
+        "text": "Esperes que ell faci la primera proposta"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "La tria entre opcions equivalents et revela les seves prioritats sense que hagi de dir-les.",
+    "feedbackWrong": "Una sola oferta no et dona informació, i esperar li cedeix l'àncora. Prova amb diverses opcions equivalents."
+  },
+  {
+    "id": "neg-011",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Concessions decreixents",
+    "hook": "La mida de les teves concessions parla més que les teves paraules.",
+    "keyIdea": "Si cedeixes 500 €, després 500 € més i després 500 € més, l'altre entén que encara en queden. Si cedeixes 500, després 200 i després 50, entén que t'acostes al **límit**.",
+    "example": {
+      "text": "Vens el teu portàtil per 800 €. Baixes a 700, després a 660 i finalment a 650. El comprador entén que ja no hi ha gaire marge i tanca."
+    },
+    "apply": [
+      "Fes cada concessió més petita que l'anterior.",
+      "No cedeixis gaire de cop al principi: marca el ritme.",
+      "Acompanya cada concessió d'una raó, perquè no sembli que regales marge."
+    ],
+    "source": "Thompson, The Mind and Heart of the Negotiator; Lewicki, Saunders i Barry, Negotiation",
+    "notification": "Què li diu a l'altre la mida de les teves concessions?"
+  },
+  {
+    "id": "neg-011-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-011",
+    "question": "Estàs venent i vols que el comprador entengui que t'acostes al límit. Quina seqüència de rebaixes ho transmet millor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100 €, 100 € i 100 €"
+      },
+      {
+        "id": "b",
+        "text": "50 €, 100 € i 150 €"
+      },
+      {
+        "id": "c",
+        "text": "150 €, 60 € i 20 €"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Concessions cada cop més petites diuen «aquí ja no queda gaire».",
+    "feedbackWrong": "Si les concessions són iguals o creixents, l'altre entén que encara hi ha molt marge."
+  },
+  {
+    "id": "neg-012",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Mai una concessió gratis",
+    "hook": "Cada vegada que cedeixes sense demanar res a canvi, ensenyes a l'altre a demanar-te més.",
+    "keyIdea": "Converteix cada concessió en un intercanvi amb la fórmula **«Si tu…, jo…»**. Així cada cosa que dones té valor, i l'altre deixa de demanar per demanar.",
+    "example": {
+      "text": "El client et demana un 10 % de descompte. En lloc de dir que sí, respons: «Si signem el contracte per dos anys, et puc fer aquest descompte»."
+    },
+    "apply": [
+      "Quan et demanin alguna cosa, pensa què pots demanar a canvi.",
+      "Comença per la condició: primer «Si tu…» i després «jo…».",
+      "Si de debò no necessites res, almenys fes visible el valor del que dones."
+    ],
+    "source": "Lewicki, Saunders i Barry, Negotiation; Thompson, The Mind and Heart of the Negotiator",
+    "notification": "Què passa cada vegada que cedeixes sense demanar res a canvi?"
+  },
+  {
+    "id": "neg-012-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-012",
+    "question": "El teu cap et demana que facis unes hores extra aquest cap de setmana. Quina és la resposta més equilibrada?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Si em puc agafar el divendres següent, compta amb mi.»"
+      },
+      {
+        "id": "b",
+        "text": "«D'acord, cap problema.»"
+      },
+      {
+        "id": "c",
+        "text": "«No, el cap de setmana és sagrat.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Dius que sí, però a canvi d'alguna cosa: la concessió té un valor.",
+    "feedbackWrong": "Cedir sense res a canvi convida a demanar-te més, i un no sec pot tancar una bona oportunitat d'intercanvi."
+  },
+  {
+    "id": "neg-013",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "El poder del silenci",
+    "hook": "Després de fer una oferta, el millor que pots dir és res.",
+    "keyIdea": "Sentim l'impuls d'omplir els silencis, i qui parla primer sovint cedeix. A més, les **pauses llargues** ajuden a pensar i a trobar acords millors per a tots dos.",
+    "example": {
+      "text": "Dius «El meu preu és 2.400 €» i calles. L'altre, incòmode, afegeix: «Bé… si incloguessis la instal·lació, ens podria encaixar»."
+    },
+    "apply": [
+      "Després de fer una oferta, calla i espera la resposta.",
+      "Si et fan una oferta baixa, compta fins a cinc abans de respondre.",
+      "Fes servir les pauses per pensar, no per omplir-les amb concessions."
+    ],
+    "source": "Curhan et al. (2022)",
+    "notification": "Què és el millor que pots dir just després de fer una oferta?"
+  },
+  {
+    "id": "neg-013-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-013",
+    "question": "Acabes de dir el teu preu i l'altra persona no diu res. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Afegeixes de seguida que encara hi ha marge"
+      },
+      {
+        "id": "b",
+        "text": "Tornes a explicar totes les raons del preu"
+      },
+      {
+        "id": "c",
+        "text": "Esperes en silenci que respongui"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "El silenci deixa que l'altre pensi i que sigui ell qui es mogui.",
+    "feedbackWrong": "Omplir el silenci sol acabar en una concessió que ningú t'havia demanat."
+  },
+  {
+    "id": "neg-014",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Posar nom a l'emoció",
+    "hook": "Dir «Sembla que això et preocupa» pot desbloquejar una negociació encallada.",
+    "keyIdea": "Quan **poses nom a l'emoció** de l'altre, la intensitat baixa i se sent entès. És una tècnica que fan servir els negociadors de segrestos de l'FBI.",
+    "example": {
+      "text": "El client s'enfada pel retard. En lloc de justificar-te, dius: «Sembla que aquest retard t'ha posat en una situació complicada amb el teu equip». I el to canvia."
+    },
+    "apply": [
+      "Comença amb «Sembla que…» o «Fa la impressió que…», no amb «Jo crec…».",
+      "Després de dir-ho, calla i deixa que l'altre respongui.",
+      "Etiqueta també les pors abans que surtin: «Potser et sembla que…»."
+    ],
+    "source": "Voss, Never Split the Difference (2016); Lieberman et al. (2007)",
+    "notification": "Quina frase fan servir els negociadors de l'FBI per calmar algú?"
+  },
+  {
+    "id": "neg-014-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-014",
+    "question": "Un company està molt molest perquè has canviat un pla a última hora. Quina frase l'ajudarà més a calmar-se?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Sembla que t'ha molestat que no t'ho digués abans.»"
+      },
+      {
+        "id": "b",
+        "text": "«No n'hi ha per a tant, home.»"
+      },
+      {
+        "id": "c",
+        "text": "«Ho he fet perquè no tenia més remei.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Posar nom a l'emoció fa que se senti entès i baixa la tensió.",
+    "feedbackWrong": "Treure-li importància o justificar-te de seguida fa que se senti ignorat."
+  },
+  {
+    "id": "neg-015",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "La tècnica del mirall",
+    "hook": "Repetir les últimes paraules de l'altre fa que t'expliqui molt més.",
+    "keyIdea": "Fer de **mirall** (repetir en to de pregunta les darreres paraules de l'altre) li demostra que l'escoltes i el convida a continuar, sense que hagis de prendre posició.",
+    "example": {
+      "text": "—Necessitem que el projecte estigui llest abans. —Abans? —Sí, el client ha avançat la presentació al dia 15 i no hi podem arribar amb les mans buides."
+    },
+    "apply": [
+      "Repeteix d'una a tres paraules clau del que t'acaben de dir, en to de pregunta.",
+      "Després, calla i deixa que l'altre ompli el silenci.",
+      "Fes-ho amb naturalitat: si ho fas a cada frase, es nota."
+    ],
+    "source": "Voss, Never Split the Difference (2016)",
+    "notification": "Quin truc senzill fa que l'altre t'expliqui molt més?"
+  },
+  {
+    "id": "neg-015-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-015",
+    "question": "El teu proveïdor diu: «Aquest mes els preus han de pujar». Quina resposta l'animarà més a donar-te informació?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Doncs a nosaltres no ens va bé.»"
+      },
+      {
+        "id": "b",
+        "text": "«Han de pujar?»"
+      },
+      {
+        "id": "c",
+        "text": "«D'acord, entesos.»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "El mirall el convida a explicar el perquè, sense que tu prenguis posició.",
+    "feedbackWrong": "Oposar-te de seguida el fa defensar-se, i acceptar-ho tanca la conversa sense saber res més."
+  },
+  {
+    "id": "neg-016",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Preguntes de «com» i «què»",
+    "hook": "La pregunta «Com se suposa que ho he de fer?» pot valer més que un «no».",
+    "keyIdea": "Les **preguntes obertes de «com» i «què»** fan que l'altre pensi en el teu problema i proposi solucions, sense que hagis de dir que no ni enfrontar-te.",
+    "example": {
+      "text": "Et demanen una feina per demà. En lloc de «No puc», preguntes: «Com ho podem fer per tenir-ho demà sense deixar a mitges l'altre encàrrec?»."
+    },
+    "apply": [
+      "Canvia els «per què» (que sonen a retret) per «què» o «com».",
+      "Fes servir preguntes com «Què és el que més et preocupa?» o «Com ho podem fer?».",
+      "Deixa que l'altre trobi la solució: la defensarà més."
+    ],
+    "source": "Voss, Never Split the Difference (2016)",
+    "notification": "Quina pregunta pot funcionar millor que un «no»?"
+  },
+  {
+    "id": "neg-016-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-016",
+    "question": "Un client et demana una rebaixa que no pots fer. Quina resposta és més efectiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«No, impossible.»"
+      },
+      {
+        "id": "b",
+        "text": "«Per què sempre demaneu rebaixes?»"
+      },
+      {
+        "id": "c",
+        "text": "«Com podria fer aquesta rebaixa sense perdre diners en el projecte?»"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "La pregunta de «com» posa el client a pensar en el teu problema i obre alternatives.",
+    "feedbackWrong": "Un no sec tanca la conversa, i el «per què» sona a retret i posa l'altre a la defensiva."
+  },
+  {
+    "id": "neg-017",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "«Ho he de consultar»",
+    "hook": "Qui negocia amb tu potser no té l'última paraula. I tu tampoc l'hauries de tenir.",
+    "keyIdea": "L'**autoritat limitada** («Ho he de consultar amb el meu soci») et dona temps per pensar i et protegeix de tancar sota pressió. Però l'altre també la pot fer servir per demanar-te més.",
+    "example": {
+      "text": "Al concessionari et diuen: «Ho he de parlar amb el gerent». Tornen i diuen que no pot ser. Tu ja has fet una concessió i ells encara cap."
+    },
+    "apply": [
+      "Abans de començar, pregunta: «Pots tancar l'acord avui?».",
+      "Si et cal temps, digues que ho has de consultar (si és veritat).",
+      "No facis concessions a algú que no pot comprometre's a res."
+    ],
+    "source": "Lewicki, Saunders i Barry, Negotiation; Cohen, You Can Negotiate Anything (1980)",
+    "notification": "Per què dir «ho he de consultar» pot ser una arma en una negociació?"
+  },
+  {
+    "id": "neg-017-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-017",
+    "question": "Després de mitja hora negociant un contracte, l'altra persona diu: «Ho he de consultar amb la direcció». Què hauries d'haver fet?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preguntar al principi si podia tancar l'acord"
+      },
+      {
+        "id": "b",
+        "text": "Fer-li una rebaixa perquè ho presenti amb més ganes"
+      },
+      {
+        "id": "c",
+        "text": "Res: és normal i no afecta la negociació"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Saber qui decideix t'evita fer concessions a algú que no es pot comprometre.",
+    "feedbackWrong": "L'autoritat limitada et pot fer cedir dues vegades. Pregunta-ho sempre al principi."
+  },
+  {
+    "id": "neg-018",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "La petició d'última hora",
+    "hook": "Just quan ho tens tot tancat, l'altre diu: «Ah, i una última cosa…».",
+    "keyIdea": "És una tàctica clàssica: un cop has decidit que sí, tens ganes de tancar i et costa dir que no a una petició petita. Aquestes **peticions d'última hora** sumen.",
+    "example": {
+      "text": "Ja heu acordat el preu de la reforma i, en donar-vos la mà, el client afegeix: «Les portes també les pintareu, oi?»."
+    },
+    "apply": [
+      "Abans de tancar, pregunta: «Hi ha res més que vulguis incloure?».",
+      "Si et demanen una cosa nova al final, demana també alguna cosa a canvi.",
+      "Posa-ho tot per escrit: el que no hi és, no està inclòs."
+    ],
+    "source": "Lewicki, Saunders i Barry, Negotiation; Cohen, You Can Negotiate Anything (1980)",
+    "notification": "Ja ho tenies tancat i et diuen «una última cosa…». Què fas?"
+  },
+  {
+    "id": "neg-018-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-018",
+    "question": "Acabes de tancar un preu i el comprador afegeix: «L'enviament és gratuït, oi?». Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dius que sí, per no espatllar l'acord"
+      },
+      {
+        "id": "b",
+        "text": "Cancel·les l'acord"
+      },
+      {
+        "id": "c",
+        "text": "Respons que no hi era inclòs i, si el vol, demanes alguna cosa a canvi"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Tractes la nova petició com el que és: una concessió que té un preu.",
+    "feedbackWrong": "Cedir per no espatllar l'acord premia la tàctica, i cancel·lar-ho tot és desproporcionat."
+  },
+  {
+    "id": "neg-019",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Els terminis",
+    "hook": "Creus que tenir pressa et posa en desavantatge. Sovint no tant com et penses.",
+    "keyIdea": "Els **terminis** pressionen totes dues parts: si no hi ha acord, l'altre també perd. Però tendim a pensar que només ens afecten a nosaltres, i això ens fa cedir massa.",
+    "example": {
+      "text": "Has de llogar un local abans d'acabar el mes. Però el propietari també perd diners cada mes que està buit. Tots dos teniu pressa."
+    },
+    "apply": [
+      "Pregunta't quin termini té l'altre i què perd si no hi ha acord.",
+      "No acceptis un termini artificial sense preguntar d'on surt.",
+      "Recorda que el teu termini també és un motiu perquè l'altre es mogui."
+    ],
+    "source": "Moore (2004)",
+    "notification": "Tenir pressa en una negociació et perjudica tant com creus?"
+  },
+  {
+    "id": "neg-019-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-019",
+    "question": "Has de vendre el cotxe abans de marxar a viure fora d'aquí tres setmanes. Què és el més útil recordar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que has d'acceptar la primera oferta"
+      },
+      {
+        "id": "b",
+        "text": "Que no ho has de dir mai a ningú"
+      },
+      {
+        "id": "c",
+        "text": "Que el comprador també vol tancar aviat: el termini no et treu tota la força"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "El termini pressiona tothom: no et cal cedir de seguida.",
+    "feedbackWrong": "El teu termini no t'obliga a acceptar qualsevol cosa: l'altre també té pressa i necessitats."
+  },
+  {
+    "id": "neg-020",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Negocia el paquet sencer",
+    "hook": "Negociar els temes un per un sembla ordenat. Però sovint és un error.",
+    "keyIdea": "Si negocies tema per tema, cada punt es converteix en un pols. Si els poses tots junts, pots **intercanviar**: cedir en el que t'importa menys a canvi del que t'importa més.",
+    "example": {
+      "text": "En un lloguer, el propietari vol una durada llarga i tu vols un preu baix. Junts: contracte de tres anys a canvi de 50 € menys al mes. Per separat, us hauríeu encallat."
+    },
+    "apply": [
+      "Abans de començar, posa tots els temes sobre la taula.",
+      "Ordena'ls segons la importància que tenen per a tu.",
+      "No tanquis cap punt fins que no estigui tot acordat."
+    ],
+    "source": "Thompson, The Mind and Heart of the Negotiator; Pruitt, Negotiation Behavior (1981)",
+    "notification": "Per què negociar els temes un per un sol ser un error?"
+  },
+  {
+    "id": "neg-020-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-020",
+    "question": "Negocies una feina nova: sou, teletreball i data d'incorporació. Quina estratègia funciona millor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tancar primer el sou i després la resta"
+      },
+      {
+        "id": "b",
+        "text": "Parlar de tots els temes alhora i intercanviar-los"
+      },
+      {
+        "id": "c",
+        "text": "Deixar el sou per al final, quan ja confiïn en tu"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Tot junt pots intercanviar: cedir en el que t'importa menys per guanyar en el que t'importa més.",
+    "feedbackWrong": "Tema per tema, cada punt és una batalla i perds la possibilitat d'intercanviar."
+  },
+  {
+    "id": "neg-021",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "concept": "Devaluació reactiva",
+    "hook": "La mateixa proposta sembla pitjor si ve de l'altra banda de la taula.",
+    "keyIdea": "Desconfiem de les propostes de la part contrària pel simple fet que les fa ella. És la **devaluació reactiva**, i ens fa rebutjar acords que, presentats per algú altre, acceptaríem.",
+    "example": {
+      "text": "El teu germà proposa anar a sopar a un lloc i dius que no. L'endemà t'ho proposa una amiga i et sembla una gran idea."
+    },
+    "apply": [
+      "Davant d'una proposta de l'altre, pregunta't: «Què en pensaria si l'hagués proposat jo?».",
+      "Quan proposis tu, convida l'altre a millorar la idea perquè també la senti seva.",
+      "Si cal, que una tercera persona neutral presenti la proposta."
+    ],
+    "source": "Ross i Stillinger (1991)",
+    "notification": "Per què les propostes de l'altre sempre semblen pitjors?"
+  },
+  {
+    "id": "neg-021-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "reviewOf": "neg-021",
+    "question": "Després d'una discussió, la teva parella proposa una solució que de seguida et sembla dolenta. Què t'ajuda a jutjar-la millor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pensar si t'agradaria si l'haguessis proposat tu"
+      },
+      {
+        "id": "b",
+        "text": "Rebutjar-la i proposar-ne una de teva"
+      },
+      {
+        "id": "c",
+        "text": "Acceptar-la per no discutir més"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Canviar l'autor imaginari de la proposta neutralitza la devaluació reactiva.",
+    "feedbackWrong": "Rebutjar-la de seguida o acceptar-la per cansament no és jutjar-la. Pregunta't què en pensaries si fos teva."
+  },
+  {
+    "id": "neg-022",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "El mite del pastís fix",
+    "hook": "Creus que el que és bo per a l'altre és dolent per a tu. Moltes vegades no és així.",
+    "keyIdea": "Tendim a pensar que l'altre vol exactament el contrari que nosaltres. És el **biaix del pastís fix**, i fa que no busquem acords on tots dos guanyen, encara que existeixin.",
+    "example": {
+      "text": "Vols vendre el sofà ràpid i suposes que el comprador regatejarà la data de recollida. En realitat, a ell també li va bé endur-se'l demà."
+    },
+    "apply": [
+      "Abans de suposar què vol l'altre, pregunta-ho.",
+      "Busca temes on tots dos vulgueu el mateix.",
+      "Comparteix alguna prioritat teva: sovint l'altre farà el mateix."
+    ],
+    "source": "Thompson i Hastie (1990); Bazerman i Neale, Negotiating Rationally (1992)",
+    "notification": "El que és bo per a l'altre ha de ser dolent per a tu?"
+  },
+  {
+    "id": "neg-022-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-022",
+    "question": "Negocies amb un client la data d'entrega. Suposes que la vol tan aviat com sigui possible. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Li proposes una data llunyana per tenir marge per cedir"
+      },
+      {
+        "id": "b",
+        "text": "Li preguntes quina data li va millor i per què"
+      },
+      {
+        "id": "c",
+        "text": "Li dones la data més pròxima possible encara que t'esgoti"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Preguntar trenca el mite del pastís fix: potser la data no li importa tant com creus.",
+    "feedbackWrong": "Les dues altres opcions parteixen d'una suposició. Pregunta abans de suposar."
+  },
+  {
+    "id": "neg-023",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Quan diuen que sí de seguida",
+    "hook": "Si l'altre accepta la teva primera oferta a l'instant, és mala senyal.",
+    "hookAccent": "Per què?",
+    "keyIdea": "Probablement has demanat poc. Quan la primera oferta s'accepta de seguida, ens quedem menys satisfets, encara que hàgim aconseguit el que volíem. La solució: **informar-se bé** abans d'ancorar.",
+    "example": {
+      "text": "Demanes 20 € l'hora per fer classes particulars i la família diu «Perfecte!» abans que acabis la frase. Probablement el preu habitual del barri és més alt."
+    },
+    "apply": [
+      "Abans de fer la primera oferta, investiga bé què es paga al mercat.",
+      "Fes una oferta ambiciosa però que puguis justificar.",
+      "Si l'altre accepta de seguida, no et castiguis: ajusta el preu la propera vegada."
+    ],
+    "source": "Galinsky, Seiden, Kim i Medvec (2002)",
+    "notification": "Si accepten la teva oferta a l'instant, és bona notícia?"
+  },
+  {
+    "id": "neg-023-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-023",
+    "question": "Proposes un preu pel teu treball de disseny i el client l'accepta immediatament. Què t'indica probablement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que has negociat molt bé"
+      },
+      {
+        "id": "b",
+        "text": "Que el client no té diners"
+      },
+      {
+        "id": "c",
+        "text": "Que probablement podries haver demanat més"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Un sí immediat sol voler dir que la teva àncora era baixa per a l'altre.",
+    "feedbackWrong": "Un sí instantani no és senyal d'una gran negociació: sovint vol dir que has demanat poc."
+  },
+  {
+    "id": "neg-024",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Qui no negocia, ho paga",
+    "hook": "No negociar el primer sou et pot costar molts diners al llarg de la carrera.",
+    "keyIdea": "Les pujades se solen calcular sobre el sou que ja tens. Per això, una diferència petita al principi **s'acumula any rere any**. Tot i així, molta gent no negocia per por de semblar desagraïda.",
+    "example": {
+      "text": "Si comences amb 2.000 € menys a l'any i cada any et pugen un percentatge, aquesta diferència no desapareix: creix amb tu feina rere feina."
+    },
+    "apply": [
+      "Pensa que negociar una oferta és normal i esperat a la majoria d'empreses.",
+      "Agraeix l'oferta i, després, demana el que justifiquen les dades del mercat.",
+      "Si no poden moure el sou, negocia una revisió en sis mesos."
+    ],
+    "source": "Babcock i Laschever, Women Don't Ask (2003)",
+    "notification": "Quant et pot costar no negociar el primer sou?"
+  },
+  {
+    "id": "neg-024-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-024",
+    "question": "T'ofereixen una feina que t'agrada amb un sou una mica per sota del mercat. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "L'acceptes de seguida per no semblar desagraït"
+      },
+      {
+        "id": "b",
+        "text": "La rebutges directament"
+      },
+      {
+        "id": "c",
+        "text": "Agraeixes l'oferta i proposes una xifra basada en el que es paga al sector"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Agrair i negociar amb dades és normal i professional, i pot tenir efecte durant anys.",
+    "feedbackWrong": "No negociar té un cost que s'acumula, i rebutjar-la sense negociar és perdre una bona opció."
+  },
+  {
+    "id": "neg-025",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "concept": "Més enllà del sou",
+    "hook": "Quan una empresa diu que no pot pujar el sou, la negociació no s'ha acabat.",
+    "keyIdea": "Una oferta de feina té moltes peces: dies de teletreball, vacances, formació, horari, data d'inici, categoria. Sovint és més fàcil aconseguir-ne alguna que **una xifra més alta**.",
+    "example": {
+      "text": "L'empresa no pot passar de 32.000 €. Acceptes, però negocies dos dies de teletreball i un curs pagat. A ells els costa poc; per a tu val molt."
+    },
+    "apply": [
+      "Fes una llista de tot el que t'importa d'una feina, no només del sou.",
+      "Pregunta a qui et contracta en què té marge.",
+      "Negocia-ho tot alhora, no peça per peça."
+    ],
+    "source": "Malhotra, «15 Rules for Negotiating a Job Offer», HBR (2014)",
+    "notification": "L'empresa diu que no pot pujar el sou. S'ha acabat la negociació?"
+  },
+  {
+    "id": "neg-025-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "neg-025",
+    "question": "Et diuen que el sou de l'oferta és tancat. Quina és la millor pregunta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Llavors em quedo amb el que hi ha, oi?»"
+      },
+      {
+        "id": "b",
+        "text": "«I hi ha marge en altres aspectes, com el teletreball o la formació?»"
+      },
+      {
+        "id": "c",
+        "text": "«Per què és tancat?»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Si el sou no es mou, altres peces de l'oferta potser sí.",
+    "feedbackWrong": "Rendir-te o qüestionar la decisió no t'acosta a res. Busca altres variables."
+  },
+  {
+    "id": "neg-026",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "concept": "El pont d'or",
+    "hook": "De vegades l'altre no diu que sí perquè no sap com fer-ho sense quedar malament.",
+    "keyIdea": "Si acceptar la teva proposta vol dir que l'altre perd la cara, s'hi resistirà encara que li convingui. Construeix-li un **pont d'or**: una manera digna de canviar d'opinió.",
+    "example": {
+      "text": "El teu cap havia defensat un pla que no funciona. En lloc de «T'equivocaves», dius: «Amb les dades noves que tenim ara, potser podem ajustar el pla»."
+    },
+    "apply": [
+      "Pregunta't què pensarà l'altre si cedeix: com ho explicarà als seus?",
+      "Ofereix-li una raó nova per canviar d'opinió: dades, circumstàncies, un criteri.",
+      "Dona-li part del mèrit de la solució."
+    ],
+    "source": "Ury, Getting Past No (1991)",
+    "notification": "Per què algú pot dir que no a una proposta que li convé?"
+  },
+  {
+    "id": "neg-026-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "reviewOf": "neg-026",
+    "question": "Un client va insistir a fer un disseny que ara no funciona. Com li proposes canviar-lo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Amb el que hem après aquests dies, què et sembla si l'ajustem?»"
+      },
+      {
+        "id": "b",
+        "text": "«Ja et vaig dir que no funcionaria.»"
+      },
+      {
+        "id": "c",
+        "text": "«Si vols, el deixem com està.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Li dones una raó nova per canviar sense que hagi d'admetre que s'equivocava.",
+    "feedbackWrong": "Dir-li «ja t'ho vaig dir» el fa defensar el disseny, i deixar-ho córrer no resol el problema."
+  },
+  {
+    "id": "neg-027",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Pujar al balcó",
+    "hook": "Quan una negociació s'escalfa, la primera reacció acostuma a ser la pitjor.",
+    "keyIdea": "**Pujar al balcó** vol dir distanciar-te mentalment: observar la situació com si la veiessis des de fora. Et dona temps per pensar en lloc de reaccionar a un atac o a una provocació.",
+    "example": {
+      "text": "Et diuen que la teva proposta és ridícula. En lloc de contestar en calent, dius: «Deixa'm pensar-ho. Ens podem trucar demà?»."
+    },
+    "apply": [
+      "Quan notis que t'enfades, fes una pausa: respira, pren notes, demana un descans.",
+      "Posa nom en silenci a la tàctica de l'altre: «Està intentant posar-me nerviós».",
+      "Recorda el teu objectiu: guanyar la discussió no és el mateix que aconseguir un bon acord."
+    ],
+    "source": "Ury, Getting Past No (1991)",
+    "notification": "Què has de fer quan una negociació s'escalfa?"
+  },
+  {
+    "id": "neg-027-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-027",
+    "question": "En una reunió, l'altra part et diu que estàs fent perdre el temps a tothom. Què fas primer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Respondre amb la mateixa contundència"
+      },
+      {
+        "id": "b",
+        "text": "Fer una concessió per rebaixar la tensió"
+      },
+      {
+        "id": "c",
+        "text": "Fer una pausa i reprendre la conversa amb calma"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "La pausa et treu de la reacció automàtica i et permet decidir què et convé.",
+    "feedbackWrong": "Contraatacar escala el conflicte, i cedir per la tensió premia la provocació."
+  },
+  {
+    "id": "neg-028",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Qui escriu, decideix",
+    "hook": "Ofereix-te a redactar el primer esborrany de l'acord. Té més força del que sembla.",
+    "keyIdea": "Qui escriu l'**esborrany** decideix l'estructura, l'ordre i les paraules. Els altres tendeixen a fer petits retocs en lloc de reescriure-ho, així que el teu text es converteix en el punt de partida.",
+    "example": {
+      "text": "Després d'una reunió amb un client, envies tu el resum amb els acords. El client només canvia una data, i la resta queda com tu ho havies plantejat."
+    },
+    "apply": [
+      "Al final de les reunions, ofereix-te a enviar el resum.",
+      "Redacta'l de manera justa: si sembla parcial, perdràs confiança.",
+      "Fes servir l'esborrany per ordenar els temes i detectar els que falten."
+    ],
+    "source": "Fisher i Ury, Getting to Yes (1981); Raiffa, The Art and Science of Negotiation (1982)",
+    "notification": "Per què et convé redactar tu el primer esborrany d'un acord?"
+  },
+  {
+    "id": "neg-028-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-028",
+    "question": "Acabeu una reunió amb tres acords importants. Què et convé fer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Oferir-te a enviar tu el resum dels acords"
+      },
+      {
+        "id": "b",
+        "text": "Esperar que l'altra part enviï el resum"
+      },
+      {
+        "id": "c",
+        "text": "No posar res per escrit, per mantenir la confiança"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Qui redacta l'esborrany marca el punt de partida, i això té força.",
+    "feedbackWrong": "Si escriu l'altre, ell decideix les paraules. I sense res escrit, els acords es difuminen."
+  },
+  {
+    "id": "neg-029",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "concept": "Acords condicionals",
+    "hook": "Quan no us poseu d'acord sobre el futur, aposteu-hi.",
+    "hookAccent": "Com?",
+    "keyIdea": "Si discutiu perquè cadascú preveu un futur diferent, feu un **acord condicional**: si passa X, es paga A; si passa Y, es paga B. Cadascú aposta pel que creu i l'acord es desbloqueja.",
+    "example": {
+      "text": "Vens la teva petita empresa. El comprador creu que les vendes baixaran; tu, que pujaran. Acordeu un preu base més un extra si les vendes superen una xifra."
+    },
+    "apply": [
+      "Si l'encallament és sobre el que passarà, proposa lligar el pagament al resultat.",
+      "Fes servir indicadors clars i fàcils de comprovar.",
+      "No ho facis si l'altre pot manipular el resultat."
+    ],
+    "source": "Bazerman i Gillespie (1999)",
+    "notification": "Com desencallar una negociació quan no esteu d'acord sobre el futur?"
+  },
+  {
+    "id": "neg-029-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "reviewOf": "neg-029",
+    "question": "Un client dubta que el teu servei li faci augmentar les vendes i no vol pagar el que demanes. Què li proposes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un preu més baix i un extra si les vendes pugen"
+      },
+      {
+        "id": "b",
+        "text": "Rebaixar el preu i oblidar-te'n"
+      },
+      {
+        "id": "c",
+        "text": "Mantenir el preu i explicar-li per què funcionarà"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "L'acord condicional deixa que cadascú aposti pel que creu, i desbloqueja la negociació.",
+    "feedbackWrong": "Rebaixar sense més o insistir no resol el desacord de fons: la previsió sobre el futur."
+  },
+  {
+    "id": "neg-030",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "concept": "Coopera, però no et deixis",
+    "hook": "En relacions llargues, l'estratègia guanyadora és sorprenentment simple.",
+    "keyIdea": "En un famós torneig d'estratègies, va guanyar la més simple: **cooperar primer i després fer el que faci l'altre**. Si coopera, coopera. Si et traeix, respon. Si torna a cooperar, perdona.",
+    "example": {
+      "text": "Amb un proveïdor habitual, comences confiant. Si un dia et falla, li ho fas notar i ajustes les condicions. Si torna a complir, recuperes la confiança."
+    },
+    "apply": [
+      "Comença les relacions de bona fe.",
+      "Respon als abusos de manera proporcionada: si no, es repetiran.",
+      "Perdona quan l'altre rectifica: el rancor trenca relacions que funcionen."
+    ],
+    "source": "Axelrod, The Evolution of Cooperation (1984)",
+    "notification": "Quina és l'estratègia guanyadora en una relació llarga?"
+  },
+  {
+    "id": "neg-030-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 3,
+    "isPro": false,
+    "reviewOf": "neg-030",
+    "question": "Un company d'equip, normalment fiable, et deixa penjat en una entrega. Què és el més efectiu a llarg termini?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No tornar a confiar en ell mai més"
+      },
+      {
+        "id": "b",
+        "text": "Fer veure que no ha passat res"
+      },
+      {
+        "id": "c",
+        "text": "Dir-li clarament què ha passat i, si rectifica, tornar a confiar"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Respondre i després perdonar manté la cooperació sense deixar-te trepitjar.",
+    "feedbackWrong": "El rancor trenca una relació que funcionava, i callar convida a repetir-ho."
+  },
+  {
+    "id": "neg-031",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Pregunta abans d'oferir",
+    "hook": "Els millors negociadors no són els que més parlen, sinó els que més pregunten.",
+    "keyIdea": "Un estudi amb negociadors experts va trobar que feien **més del doble de preguntes** que els negociadors mitjans. La informació et permet descobrir interessos, límits i oportunitats que no veuries.",
+    "example": {
+      "text": "Abans de donar el preu de la reforma, preguntes al client per què la vol fer ara. Descobreixes que vol vendre el pis aviat i que el que li importa és el termini, no el preu."
+    },
+    "apply": [
+      "Comença amb preguntes obertes: «Què és el més important per a tu en aquest acord?».",
+      "Escolta més que no parles durant la primera part de la conversa.",
+      "Fes servir el que descobreixis per fer una proposta que hi encaixi."
+    ],
+    "source": "Rackham i Carlisle, «The Effective Negotiator» (1978)",
+    "notification": "Què fan els millors negociadors que la resta no fa?"
+  },
+  {
+    "id": "neg-031-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-031",
+    "question": "Un client nou et demana pressupost. Què et convé fer primer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Donar-li el preu de seguida per semblar àgil"
+      },
+      {
+        "id": "b",
+        "text": "Fer-li preguntes per entendre què necessita i què li importa"
+      },
+      {
+        "id": "c",
+        "text": "Enviar-li la tarifa general"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Les preguntes et donen la informació per fer una proposta que encaixi.",
+    "feedbackWrong": "Si poses preu sense preguntar, negocies a cegues."
+  },
+  {
+    "id": "neg-032",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Partir la diferència",
+    "hook": "«Ni per tu ni per mi: ho deixem a la meitat.» Sembla just, però sovint no ho és.",
+    "keyIdea": "**Partir la diferència** premia qui ha començat amb la posició més extrema. Si l'altre ha ancorat lluny, el punt mig també queda lluny del que és raonable.",
+    "example": {
+      "text": "Demanes 1.000 € per una feina que val això. El client n'ofereix 400 i proposa «deixar-ho en 700». El punt mig no és just: és el resultat de la seva àncora baixa."
+    },
+    "apply": [
+      "Abans d'acceptar el punt mig, pregunta't si les dues ofertes eren raonables.",
+      "Torna a un criteri objectiu: «Què es paga normalment per aquesta feina?».",
+      "Si l'altra oferta era extrema, no la premiïs partint-la."
+    ],
+    "source": "Raiffa, The Art and Science of Negotiation (1982); Voss, Never Split the Difference (2016)",
+    "notification": "Partir la diferència és sempre just?"
+  },
+  {
+    "id": "neg-032-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-032",
+    "question": "Vens una bicicleta que val uns 500 €. Demanes 500 € i te n'ofereixen 200. Et proposen deixar-ho en 350 €. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expliques per què val 500 €, amb preus de bicicletes semblants"
+      },
+      {
+        "id": "b",
+        "text": "Acceptes: és el punt mig"
+      },
+      {
+        "id": "c",
+        "text": "Demanes 800 € perquè el punt mig quedi més amunt"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Un criteri objectiu evita que l'àncora baixa de l'altre arrossegui el preu.",
+    "feedbackWrong": "Acceptar el punt mig premia l'oferta extrema, i respondre amb una altra d'exagerada et resta credibilitat."
+  },
+  {
+    "id": "neg-033",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "La febre de guanyar",
+    "hook": "A partir de cert moment, ja no vols el producte: vols guanyar.",
+    "keyIdea": "La rivalitat, la pressa i el fet de sentir-te observat poden provocar **febre de l'acord**: segueixes pujant per no perdre davant l'altre, encara que el preu ja no tingui sentit.",
+    "example": {
+      "text": "En una subhasta en línia, una persona puja i puja l'oferta per una càmera fins que acaba pagant-la més cara que nova. Al final, el que volia era no perdre."
+    },
+    "apply": [
+      "Decideix el teu límit abans de començar i escriu-lo.",
+      "Quan notis que vols «guanyar», fes una pausa i torna a mirar el límit.",
+      "Pregunta't: «Si l'altre no existís, pagaria aquest preu?»."
+    ],
+    "source": "Malhotra, Ku i Murnighan, «When Winning Is Everything», HBR (2008)",
+    "notification": "Quan deixes de voler el producte i comences a voler guanyar?"
+  },
+  {
+    "id": "neg-033-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-033",
+    "question": "Estàs pujant en una subhasta i ja has superat el teu límit, però l'altre comprador segueix pujant. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pujar una mica més: estàs a prop de guanyar"
+      },
+      {
+        "id": "b",
+        "text": "Aturar-te: el límit era el preu que tenia sentit per a tu"
+      },
+      {
+        "id": "c",
+        "text": "Pujar molt de cop per desanimar l'altre"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "El límit que vas posar amb calma val més que les ganes de guanyar.",
+    "feedbackWrong": "Això és la febre de guanyar: el rival t'importa més que el producte."
+  },
+  {
+    "id": "neg-034",
+    "type": "idea",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "concept": "Una trucada abans del correu",
+    "hook": "Negociar per correu electrònic té un risc que pocs tenen en compte.",
+    "keyIdea": "Per escrit falten el to i la cara, i és més fàcil desconfiar i encallar-se. En un estudi, **una breu conversa informal** abans de negociar per correu va reduir molt els casos sense acord.",
+    "example": {
+      "text": "Abans d'enviar la proposta per correu, truques cinc minuts al client per saludar-lo i preguntar-li com va. Després, el correu es llegeix amb un altre to."
+    },
+    "apply": [
+      "Abans d'una negociació per escrit, intenta fer una breu trucada o videotrucada.",
+      "Comparteix alguna cosa personal o en comú per crear confiança.",
+      "Si el correu s'encalla, canvia de canal: truca."
+    ],
+    "source": "Morris, Nadler, Kurtzberg i Thompson (2002)",
+    "notification": "Quin risc té negociar per correu electrònic?"
+  },
+  {
+    "id": "neg-034-q1",
+    "type": "quiz",
+    "topic": "negotiation",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "neg-034",
+    "question": "Una negociació per correu amb un proveïdor s'encalla i els missatges són cada cop més freds. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Envies un correu més llarg i detallat"
+      },
+      {
+        "id": "b",
+        "text": "Deixes de respondre uns dies"
+      },
+      {
+        "id": "c",
+        "text": "Li truques per parlar-ne directament"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "La veu recupera el to i la confiança que el correu havia perdut.",
+    "feedbackWrong": "Més text o més silenci solen empitjorar la desconfiança. Canvia de canal."
+  },
+  {
+    "id": "psy-001",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Reciprocitat",
+    "hook": "Per què costa tant dir que no a algú que t'acaba de fer un favor?",
+    "keyIdea": "Es diu **principi de reciprocitat**: sentim l'obligació de tornar el que ens donen, encara que no ho haguem demanat.",
+    "example": {
+      "text": "Al supermercat et donen un tast gratuït. Després et sents una mica obligat a comprar el producte, tot i que no el necessitaves."
+    },
+    "apply": [
+      "Quan algú et fa un favor just abans de demanar-te alguna cosa, separa-ho: pots agrair el favor i dir que no a la petició.",
+      "Si ets tu qui demana, començar oferint alguna cosa de valor real fa que l'altre estigui més disposat a ajudar."
+    ],
+    "source": "Regan (1971); Cialdini, Influence (1984)",
+    "notification": "Per què et costa dir que no a qui t'acaba de fer un favor?"
+  },
+  {
+    "id": "psy-001-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-001",
+    "question": "Un company t'ajuda amb una tasca i, just després, et demana que el cobreixis divendres. No et va bé. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acceptes, perquè t'ha ajudat i seria lleig dir que no"
+      },
+      {
+        "id": "b",
+        "text": "Li agraeixes l'ajuda i li dius que divendres no pots"
+      },
+      {
+        "id": "c",
+        "text": "Li dius que no i deixes de demanar-li ajuda"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Agrair el favor i respondre la petició són dues coses separades.",
+    "feedbackWrong": "La reciprocitat t'empeny a dir que sí. Pots agrair l'ajuda i, alhora, dir que no al que no et va bé."
+  },
+  {
+    "id": "psy-002",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Prova social",
+    "hook": "Quan no saps què fer, mires què fan els altres. I ho copies.",
+    "keyIdea": "La **prova social** ens porta a fer el que fa la majoria, sobretot quan dubtem o quan els altres s'assemblen a nosaltres. Els missatges del tipus «la majoria ja ho fa» són molt eficaços.",
+    "example": {
+      "text": "En un hotel, el cartell «La majoria dels hostes d'aquesta habitació reutilitzen la tovallola» va aconseguir més reutilització que un missatge sobre el medi ambient."
+    },
+    "apply": [
+      "Quan vulguis convèncer, mostra que persones semblants ja ho fan.",
+      "No diguis «Molta gent no fa X»: sense voler, normalitzes el que vols evitar.",
+      "Quan dubtis, pregunta't si ho fas perquè t'ho creus o perquè ho fa tothom."
+    ],
+    "source": "Cialdini, Influence (1984); Goldstein, Cialdini i Griskevicius (2008)",
+    "notification": "Per què copiem el que fan els altres sense adonar-nos-en?"
+  },
+  {
+    "id": "psy-002-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-002",
+    "question": "Vols que els veïns del teu edifici reciclin més. Quin missatge al portal funcionarà millor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Molts veïns encara no reciclen. Siguem responsables!»"
+      },
+      {
+        "id": "b",
+        "text": "«La majoria de veïns d'aquest edifici ja reciclen. Gràcies per sumar-t'hi!»"
+      },
+      {
+        "id": "c",
+        "text": "«Reciclar és obligatori.»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Mostrar que la majoria de gent propera ja ho fa activa la prova social.",
+    "feedbackWrong": "Dir que molts no ho fan normalitza el comportament que vols evitar, i l'obligació sola convenç poc."
+  },
+  {
+    "id": "psy-003",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Escassetat",
+    "hook": "«Només en queden 2 a aquest preu.» I de sobte, ho vols més.",
+    "keyIdea": "El que és **escàs** o pot desaparèixer ens sembla més valuós. Per això les botigues parlen d'unitats limitades i d'ofertes que s'acaben, encara que el producte sigui el mateix.",
+    "example": {
+      "text": "En un experiment clàssic, les mateixes galetes es valoraven millor si sortien d'un pot amb només dues galetes que d'un pot amb deu."
+    },
+    "apply": [
+      "Quan vegis «últimes unitats» o un compte enrere, pregunta't si ho voldries igual sense la pressa.",
+      "Si ofereixes alguna cosa limitada, digues-ho, però sense inventar-t'ho.",
+      "Decidir amb pressa surt car: dona't una nit quan la compra és important."
+    ],
+    "source": "Worchel, Lee i Adewole (1975); Cialdini, Influence (1984)",
+    "notification": "Per què «només en queden 2» fa que ho vulguis més?"
+  },
+  {
+    "id": "psy-003-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-003",
+    "question": "Una web d'hotels et diu: «Últimes 2 habitacions! 14 persones ho estan mirant». Què és el més prudent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comparar-ho amb calma, com si aquest missatge no hi fos"
+      },
+      {
+        "id": "b",
+        "text": "Reservar ara abans que s'acabi"
+      },
+      {
+        "id": "c",
+        "text": "Esperar una setmana a veure si baixa"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Decidir com si no hi hagués pressa neutralitza l'efecte d'escassetat.",
+    "feedbackWrong": "La urgència és justament el que fa servir l'escassetat. Compara amb calma."
+  },
+  {
+    "id": "psy-004",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "El peu a la porta",
+    "hook": "Dir sí a un favor petit fa més fàcil dir sí, després, a un de gran.",
+    "keyIdea": "És la tècnica del **peu a la porta**. Quan acceptem una petició petita, comencem a veure'ns com a persones que donen suport a aquella causa, i volem ser coherents amb aquesta imatge.",
+    "example": {
+      "text": "En un estudi, els veïns que havien acceptat posar un adhesiu petit sobre seguretat viària van acceptar molt més, setmanes després, un cartell gran al jardí."
+    },
+    "apply": [
+      "Si vols demanar una cosa gran, comença per una de petita relacionada.",
+      "Quan et demanin un primer «sí» petit, pensa on et pot portar.",
+      "Recorda que pots dir que no a la segona petició encara que diguessis sí a la primera."
+    ],
+    "source": "Freedman i Fraser (1966)",
+    "notification": "Per què dir sí a un favor petit et fa dir sí a un de gran?"
+  },
+  {
+    "id": "psy-004-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-004",
+    "question": "Una ONG primer et demana que signis una petició i, setmanes després, que facis un donatiu mensual. Quina tècnica fa servir?",
+    "options": [
+      {
+        "id": "a",
+        "text": "La porta als nassos"
+      },
+      {
+        "id": "b",
+        "text": "La prova social"
+      },
+      {
+        "id": "c",
+        "text": "El peu a la porta"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "El primer sí petit et fa veure com a persona que dona suport a la causa.",
+    "feedbackWrong": "La porta als nassos comença amb una petició exagerada. Aquí comencen amb una de petita: és el peu a la porta."
+  },
+  {
+    "id": "psy-005",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "La porta als nassos",
+    "hook": "Demana primer una cosa massa gran. Quan et diguin que no, la petita semblarà raonable.",
+    "keyIdea": "És la tècnica de la **porta als nassos**. Quan algú rebaixa la seva petició, sentim que ens ha fet una concessió i, per reciprocitat, tendim a fer-ne una també: dir que sí.",
+    "example": {
+      "text": "Un estudi va demanar a uns estudiants que fessin de voluntaris dues hores a la setmana durant dos anys. Tots van dir que no. Però molts més van acceptar, després, una sola tarda."
+    },
+    "apply": [
+      "Si negocies, pots començar amb una proposta ambiciosa i rebaixar-la de manera raonable.",
+      "Si et rebaixen una petició, pregunta't si hi diries que sí si fos la primera.",
+      "No exageris la primera petició: si sembla absurda, perds credibilitat."
+    ],
+    "source": "Cialdini et al. (1975)",
+    "notification": "Per què et demanen primer una cosa exagerada?"
+  },
+  {
+    "id": "psy-005-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-005",
+    "question": "Un amic et demana 500 € i dius que no. Llavors et diu: «Bé, i 50?». Per què et costa més dir que no ara?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perquè sents que ell ha cedit i que tu també hauries de fer-ho"
+      },
+      {
+        "id": "b",
+        "text": "Perquè 50 € és poc"
+      },
+      {
+        "id": "c",
+        "text": "Perquè ja estàs cansat de discutir"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "La rebaixa sembla una concessió, i la reciprocitat t'empeny a respondre amb un sí.",
+    "feedbackWrong": "La clau no és la quantitat: és que la rebaixa es viu com una concessió que demana resposta."
+  },
+  {
+    "id": "psy-006",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Autoritat",
+    "hook": "Una bata blanca o un uniforme fan que obeïm més del que creiem.",
+    "keyIdea": "Tendim a fer cas de qui sembla **expert o amb autoritat**, i no sempre comprovem si ho és. Títols, uniformes o un to segur poden ser suficients per convèncer-nos.",
+    "example": {
+      "text": "En un experiment, molta més gent obeïa una ordre estranya al carrer (com recollir un paper o donar una moneda a un desconegut) si qui la donava portava uniforme."
+    },
+    "apply": [
+      "Quan algú et sembli una autoritat, pregunta't: és expert en aquest tema concret?",
+      "Desconfia dels missatges que només es basen en «ho diu un expert», sense dades.",
+      "Si l'expert ets tu, fes visible la teva experiència abans de donar la recomanació."
+    ],
+    "source": "Bickman (1974); Milgram (1963); Cialdini, Influence (1984)",
+    "notification": "Per què un uniforme fa que obeïm més del que creiem?"
+  },
+  {
+    "id": "psy-006-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-006",
+    "question": "Un anunci de suplements mostra una persona amb bata blanca que diu que funcionen. Què és el més prudent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar qui és i si hi ha estudis que ho demostrin"
+      },
+      {
+        "id": "b",
+        "text": "Confiar-hi: sembla metge"
+      },
+      {
+        "id": "c",
+        "text": "Descartar-ho perquè tots els anuncis menteixen"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Comprovar l'autoritat i les proves evita que una bata blanca decideixi per tu.",
+    "feedbackWrong": "Una bata no és una prova, però descartar-ho tot sense mirar tampoc és pensar."
+  },
+  {
+    "id": "psy-007",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Simpatia i semblança",
+    "hook": "Dius més vegades que sí a la gent que t'agrada. I et cau bé qui s'assembla a tu.",
+    "keyIdea": "Les coincidències, encara que siguin petites (el mateix nom, el mateix poble, el mateix aniversari), ens fan sentir propers a algú i ens fan **més fàcils de convèncer**.",
+    "example": {
+      "text": "En un estudi, la gent accedia molt més a fer un favor quan li deien que compartia aniversari amb qui el demanava."
+    },
+    "apply": [
+      "Abans de demanar res, busca coses reals que tingueu en comú.",
+      "Quan algú et caigui molt bé de seguida, separa la persona de la proposta.",
+      "No t'inventis coincidències: si es descobreix, perds tota la confiança."
+    ],
+    "source": "Burger et al. (2004); Cialdini, Influence (1984)",
+    "notification": "Per què et costa dir que no a qui s'assembla a tu?"
+  },
+  {
+    "id": "psy-007-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-007",
+    "question": "Un venedor descobreix que sou del mateix poble i, de sobte, el producte et sembla millor. Què passa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El producte és millor del que pensaves"
+      },
+      {
+        "id": "b",
+        "text": "La simpatia per la semblança t'està influint"
+      },
+      {
+        "id": "c",
+        "text": "El venedor t'està mentint"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "La coincidència crea simpatia, i la simpatia es contagia al producte.",
+    "feedbackWrong": "El producte no ha canviat: el que ha canviat és la simpatia pel venedor."
+  },
+  {
+    "id": "psy-008",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Aversió a la pèrdua",
+    "hook": "Perdre 50 € fa més mal que l'alegria de guanyar-ne 50.",
+    "keyIdea": "Les **pèrdues pesen més que els guanys** equivalents, aproximadament el doble. Per això ens costa vendre una acció que baixa o renunciar a una cosa que ja tenim.",
+    "example": {
+      "text": "«Estàs perdent 300 € l'any per no aïllar la casa» convenç més que «Pots estalviar 300 € l'any si aïlles la casa», encara que diguin el mateix."
+    },
+    "apply": [
+      "Quan vulguis motivar algú, explica també què perd si no actua.",
+      "Quan decideixis, pregunta't si evites una pèrdua o si de debò no et convé.",
+      "Imagina que no tens allò que et fa por perdre: ho compraries avui?"
+    ],
+    "source": "Kahneman i Tversky (1979)",
+    "notification": "Per què perdre 50 € fa més mal que guanyar-ne 50?"
+  },
+  {
+    "id": "psy-008-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-008",
+    "question": "Vols convèncer un amic que canviï de companyia elèctrica. Quina frase té més força?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Pots estalviar 20 € al mes.»"
+      },
+      {
+        "id": "b",
+        "text": "«Totes les companyies són iguals.»"
+      },
+      {
+        "id": "c",
+        "text": "«Estàs perdent 20 € cada mes.»"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Presentar-ho com una pèrdua mou més que presentar-ho com un guany.",
+    "feedbackWrong": "És la mateixa xifra, però les pèrdues pesen més que els guanys."
+  },
+  {
+    "id": "psy-009",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Efecte marc",
+    "hook": "«90 % de supervivència» o «10 % de mortalitat»: dades iguals, decisions diferents.",
+    "keyIdea": "La manera de **presentar** una informació (el marc) canvia la nostra decisió, encara que les dades siguin les mateixes. Els marcs de guany ens fan prudents; els de pèrdua, més arriscats.",
+    "example": {
+      "text": "Tant metges com pacients trien més una operació quan se'ls diu que el 90 % sobreviu que quan se'ls diu que el 10 % mor."
+    },
+    "apply": [
+      "Quan rebis una dada, reformula-la a l'inrevés i mira si encara decideixes el mateix.",
+      "Quan presentis una proposta, tria el marc de manera conscient.",
+      "Desconfia de les dades que només et presenten d'una manera."
+    ],
+    "source": "Tversky i Kahneman (1981); McNeil et al. (1982)",
+    "notification": "Per què «90 % de supervivència» convenç més que «10 % de mortalitat»?"
+  },
+  {
+    "id": "psy-009-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-009",
+    "question": "Un iogurt diu «95 % sense greix» i un altre «només 5 % de greix». Què n'has de pensar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que el primer és més sa"
+      },
+      {
+        "id": "b",
+        "text": "Que el segon és més sa"
+      },
+      {
+        "id": "c",
+        "text": "Que són iguals i és el marc el que canvia la impressió"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Les dades són idèntiques: només canvia el marc.",
+    "feedbackWrong": "Fixa't en les xifres: 95 % sense greix i 5 % de greix és exactament el mateix."
+  },
+  {
+    "id": "psy-010",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Biaix de confirmació",
+    "hook": "No busquem la veritat. Busquem proves que ens donin la raó.",
+    "keyIdea": "El **biaix de confirmació** ens fa fixar-nos en la informació que confirma el que ja pensem i ignorar o oblidar la que ho contradiu. Com més ens importa un tema, més fort és.",
+    "example": {
+      "text": "Creus que un company és desorganitzat. Recordes les tres vegades que va arribar tard, però no les vint que va arribar puntual."
+    },
+    "apply": [
+      "Quan tinguis una opinió ferma, busca activament arguments en contra.",
+      "Pregunta't: «Què m'hauria de passar per canviar d'opinió?».",
+      "Llegeix fonts que pensin diferent de tu, no només les que t'agraden."
+    ],
+    "source": "Wason (1960); Nickerson (1998)",
+    "notification": "Busquem la veritat o proves que ens donin la raó?"
+  },
+  {
+    "id": "psy-010-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-010",
+    "question": "Estàs convençut que una dieta funciona i busques informació. Què t'ajudarà més a saber si és veritat?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar també estudis que la critiquin"
+      },
+      {
+        "id": "b",
+        "text": "Buscar «per què funciona la dieta X»"
+      },
+      {
+        "id": "c",
+        "text": "Llegir testimonis de gent a qui li ha anat bé"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Buscar activament el que et contradiu és l'antídot del biaix de confirmació.",
+    "feedbackWrong": "Si només busques el que et dona la raó, sempre trobaràs que la tens."
+  },
+  {
+    "id": "psy-011",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Error fonamental d'atribució",
+    "hook": "Quan un altre arriba tard, és un irresponsable. Quan arribes tard tu, hi havia trànsit.",
+    "keyIdea": "Expliquem el que fan els altres pel seu **caràcter** i el que fem nosaltres per les **circumstàncies**. Infravalorem molt com la situació influeix en el comportament dels altres.",
+    "example": {
+      "text": "Un cotxe t'avança de manera brusca i penses que el conductor és un maleducat. No saps que potser porta algú a urgències."
+    },
+    "apply": [
+      "Quan jutgis algú, pregunta't: «Quines circumstàncies podrien explicar-ho?».",
+      "Abans de queixar-te d'una persona, pregunta-li què ha passat.",
+      "Aplica als altres la mateixa generositat que tens amb tu mateix."
+    ],
+    "source": "Ross (1977); Jones i Harris (1967)",
+    "notification": "Per què quan tu arribes tard és pel trànsit, i quan arriben tard els altres no?"
+  },
+  {
+    "id": "psy-011-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-011",
+    "question": "Un company no respon el teu correu en tot el dia. Quina és la reacció més justa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pensar que passa de tu"
+      },
+      {
+        "id": "b",
+        "text": "Enviar-li un correu queixant-te"
+      },
+      {
+        "id": "c",
+        "text": "Pensar quines circumstàncies ho podrien explicar i, si cal, preguntar-li-ho"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Considerar la situació abans de jutjar el caràcter evita l'error fonamental d'atribució.",
+    "feedbackWrong": "Atribuir-ho al seu caràcter és l'error típic: probablement hi ha circumstàncies que no coneixes."
+  },
+  {
+    "id": "psy-012",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Efecte de fals consens",
+    "hook": "Creus que la majoria de gent pensa com tu. Probablement t'equivoques.",
+    "keyIdea": "L'**efecte de fals consens** ens fa sobreestimar quanta gent comparteix les nostres opinions, gustos i decisions. Per això ens sorprèn tant quan algú pensa diferent.",
+    "example": {
+      "text": "En un estudi, els estudiants que acceptaven passejar-se pel campus amb un cartell publicitari creien que la majoria també ho faria. Els que s'hi negaven creien el contrari."
+    },
+    "apply": [
+      "Abans de suposar què pensa la gent, pregunta o busca dades.",
+      "En un equip, demana les opinions per escrit abans de debatre.",
+      "Quan algú no pensi com tu, no el vegis com una excepció estranya."
+    ],
+    "source": "Ross, Greene i House (1977)",
+    "notification": "Quanta gent creus que pensa com tu? Segurament menys."
+  },
+  {
+    "id": "psy-012-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-012",
+    "question": "Organitzes un sopar d'amics i estàs segur que a tothom li agradarà el restaurant japonès que t'encanta. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reservar-lo directament: a tothom li agrada"
+      },
+      {
+        "id": "b",
+        "text": "Triar el més barat per no fallar"
+      },
+      {
+        "id": "c",
+        "text": "Preguntar abans al grup o proposar-ne dos"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Preguntar evita suposar que tothom té els teus gustos.",
+    "feedbackWrong": "Que t'encanti a tu no vol dir que agradi a tothom: és el fals consens."
+  },
+  {
+    "id": "psy-013",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Efecte focus",
+    "hook": "La gent es fixa en tu molt menys del que et penses.",
+    "keyIdea": "L'**efecte focus** ens fa creure que els altres noten els nostres errors i el nostre aspecte molt més del que ho fan en realitat. Cadascú està massa pendent de si mateix.",
+    "example": {
+      "text": "Uns estudiants van entrar en una aula amb una samarreta vergonyosa. Creien que la meitat dels companys se n'havien adonat. En realitat, menys d'una quarta part."
+    },
+    "apply": [
+      "Quan et faci vergonya un error, recorda que els altres el noten menys que tu.",
+      "Atreveix-te a parlar o a preguntar: el risc de fer el ridícul és més petit del que sembla.",
+      "Fixa't en com d'oblidats tens tu els errors dels altres."
+    ],
+    "source": "Gilovich, Medvec i Savitsky (2000)",
+    "notification": "La gent et mira tant com et penses?"
+  },
+  {
+    "id": "psy-013-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-013",
+    "question": "Fas una presentació i t'embarbusses amb una paraula. Quant creus que ho recordarà el públic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Molt menys del que et sembla a tu"
+      },
+      {
+        "id": "b",
+        "text": "Tothom ho comentarà després"
+      },
+      {
+        "id": "c",
+        "text": "Serà el que més recordaran de la presentació"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Cadascú està pendent de si mateix: el teu error passa molt més desapercebut del que creus.",
+    "feedbackWrong": "És l'efecte focus: sobreestimem molt quant es fixen en nosaltres."
+  },
+  {
+    "id": "psy-014",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Il·lusió de transparència",
+    "hook": "Creus que es nota molt que estàs nerviós. Gairebé ningú se n'adona.",
+    "keyIdea": "La **il·lusió de transparència** ens fa pensar que els altres poden llegir les nostres emocions (nervis, enuig, avorriment) molt més del que poden. Per dins és evident; per fora, gens.",
+    "example": {
+      "text": "Persones que parlaven en públic creien que els nervis se'ls notaven molt. Els oients els veien bastant tranquils. Saber-ho els va ajudar a parlar millor."
+    },
+    "apply": [
+      "Quan estiguis nerviós parlant, recorda que des de fora no es veu tant.",
+      "Si estàs molest amb algú, no esperis que ho endevini: digues-ho.",
+      "Pregunta als altres com t'han vist, en lloc de suposar-ho."
+    ],
+    "source": "Gilovich, Savitsky i Medvec (1998); Savitsky i Gilovich (2003)",
+    "notification": "Es nota tant com et penses que estàs nerviós?"
+  },
+  {
+    "id": "psy-014-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-014",
+    "question": "Estàs molest perquè la teva parella no t'ha ajudat amb el sopar, però no has dit res. Què és el més probable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que ja ho hagi notat i ho faci expressament"
+      },
+      {
+        "id": "b",
+        "text": "Que no se n'hagi adonat: no és tan evident com et sembla"
+      },
+      {
+        "id": "c",
+        "text": "Que t'ho pregunti si et veu seriós"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Les emocions es veuen molt menys des de fora. Si et molesta, cal dir-ho.",
+    "feedbackWrong": "És la il·lusió de transparència: el que per a tu és evident, l'altre sovint no ho veu."
+  },
+  {
+    "id": "psy-015",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Efecte Dunning-Kruger",
+    "hook": "Com menys en saps d'un tema, més fàcil és creure que en saps molt.",
+    "keyIdea": "Per saber que ho fas malament, et calen els mateixos coneixements que per fer-ho bé. Per això els **principiants tendeixen a sobreestimar-se** i els experts, sovint, a quedar-se curts.",
+    "example": {
+      "text": "Després de veure tres vídeos sobre inversions, et sents capaç de triar accions. Quan n'aprens més, descobreixes tot el que no sabies i et tornes més prudent."
+    },
+    "apply": [
+      "Quan comencis en un tema, desconfia de la sensació de domini ràpid.",
+      "Demana opinió a algú que en sàpiga més que tu.",
+      "Un bon senyal d'aprenentatge és descobrir tot el que encara no saps."
+    ],
+    "source": "Kruger i Dunning (1999)",
+    "notification": "Per què els principiants solen creure que en saben més del que en saben?"
+  },
+  {
+    "id": "psy-015-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-015",
+    "question": "Fa un mes que aprens a programar i et sents capaç de fer una app sencera sense ajuda. Què és el més prudent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Començar-la sol: si et sents capaç, ho ets"
+      },
+      {
+        "id": "b",
+        "text": "Deixar-ho estar fins que en sàpigues molt més"
+      },
+      {
+        "id": "c",
+        "text": "Contrastar el pla amb algú amb més experiència"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Una mirada experta detecta el que tu encara no saps que no saps.",
+    "feedbackWrong": "La sensació de domini ràpid sol ser enganyosa, però tampoc cal rendir-se: contrasta-ho."
+  },
+  {
+    "id": "psy-016",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Fal·làcia de la planificació",
+    "hook": "Tot projecte triga més del que havies calculat. Fins i tot quan ja ho saps.",
+    "keyIdea": "La **fal·làcia de la planificació** ens fa subestimar el temps i els diners que costarà una tasca, perquè imaginem el cas ideal i oblidem els imprevistos que sempre apareixen.",
+    "example": {
+      "text": "Uns estudiants van calcular quant trigarien a acabar el treball final. La majoria va trigar més que la seva estimació, i fins i tot més que la del «pitjor dels casos»."
+    },
+    "apply": [
+      "Pensa quant van trigar projectes semblants en el passat, no només en aquest.",
+      "Afegeix un marge generós a les teves estimacions.",
+      "Divideix la tasca en passos petits i estima cadascun."
+    ],
+    "source": "Buehler, Griffin i Ross (1994); Kahneman i Tversky (1979)",
+    "notification": "Per què tot triga més del que havies calculat?"
+  },
+  {
+    "id": "psy-016-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-016",
+    "question": "Has de calcular quant trigaràs a reformar la cuina. Quina és la millor manera?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preguntar quant van trigar altres reformes semblants"
+      },
+      {
+        "id": "b",
+        "text": "Imaginar com anirà tot si surt bé"
+      },
+      {
+        "id": "c",
+        "text": "Posar la data que et va millor"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Els casos semblants del passat inclouen els imprevistos que la teva imaginació oblida.",
+    "feedbackWrong": "Imaginar el cas ideal és precisament el que provoca la fal·làcia de la planificació."
+  },
+  {
+    "id": "psy-017",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Cost enfonsat",
+    "hook": "«Ja que he pagat l'entrada, m'hi quedo.» Encara que la pel·lícula sigui horrible.",
+    "keyIdea": "El **cost enfonsat** és el que ja has gastat i no pots recuperar. No hauria de comptar en la decisió, però ens fa continuar amb projectes, compres o relacions que ja no ens convenen.",
+    "example": {
+      "text": "Persones que havien pagat més per un abonament de teatre hi anaven més sovint que les que l'havien pagat menys, encara que les obres fossin les mateixes."
+    },
+    "apply": [
+      "Abans de continuar, pregunta't: «Si comencés avui de zero, ho faria?».",
+      "Separa el que ja has gastat (que no tornarà) del que gastaràs a partir d'ara.",
+      "Abandonar a temps no és fracassar: és deixar de perdre."
+    ],
+    "source": "Arkes i Blumer (1985)",
+    "notification": "Ja que has pagat, t'hi has de quedar?"
+  },
+  {
+    "id": "psy-017-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-017",
+    "question": "Fa dos anys que tens un projecte que no avança i hi has posat molts diners. Quina és la millor pregunta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Com puc recuperar el que hi he posat?»"
+      },
+      {
+        "id": "b",
+        "text": "«Si comencés avui, hi invertiria?»"
+      },
+      {
+        "id": "c",
+        "text": "«Quant em falta per acabar-lo?»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Mirar endavant, i no el que ja has gastat, evita la trampa del cost enfonsat.",
+    "feedbackWrong": "Els diners que ja hi has posat no tornaran. La pregunta és si val la pena continuar."
+  },
+  {
+    "id": "psy-018",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Efecte dotació",
+    "hook": "Una tassa normal val més per a tu que per a mi, només perquè és teva.",
+    "keyIdea": "L'**efecte dotació** ens fa valorar més les coses pel simple fet de tenir-les. En experiments, qui rebia una tassa en demanava aproximadament el doble per vendre-la del que els altres pagarien per comprar-la.",
+    "example": {
+      "text": "Vens el teu cotxe i et sembla que val 8.000 € perquè hi tens records. Els compradors només hi veuen un cotxe amb molts quilòmetres."
+    },
+    "apply": [
+      "Quan vulguis vendre alguna cosa, mira què es paga per productes semblants, no el que val per a tu.",
+      "Quan dubtis si quedar-te una cosa, pregunta't si la compraries avui al preu que te'n donarien.",
+      "Vigila les proves gratuïtes: un cop ho tens, costa més deixar-ho."
+    ],
+    "source": "Kahneman, Knetsch i Thaler (1990)",
+    "notification": "Per què les teves coses et semblen més valuoses que als altres?"
+  },
+  {
+    "id": "psy-018-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-018",
+    "question": "Una plataforma t'ofereix un mes de prova gratuït. Per què aquest tipus d'oferta funciona tan bé?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perquè un cop ho tens, deixar-ho se sent com perdre alguna cosa"
+      },
+      {
+        "id": "b",
+        "text": "Perquè el servei sempre és molt bo"
+      },
+      {
+        "id": "c",
+        "text": "Perquè és més barat que els altres"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Un cop és «teu», l'efecte dotació fa que deixar-ho sembli una pèrdua.",
+    "feedbackWrong": "El truc no és la qualitat ni el preu: és que, un cop el tens, el valores més."
+  },
+  {
+    "id": "psy-019",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Efecte de mera exposició",
+    "hook": "Com més vegades veus una cosa, més t'agrada. Encara que no te n'adonis.",
+    "keyIdea": "L'**efecte de mera exposició** fa que ens agradi més el que ens és familiar: cançons, cares, marques. La repetició crea una sensació de comoditat que confonem amb preferència.",
+    "example": {
+      "text": "Una cançó que no et deia res la primera vegada t'acaba enganxant després de sentir-la cada dia a la ràdio."
+    },
+    "apply": [
+      "Si vols que una idea arreli en un equip, repeteix-la en diferents moments.",
+      "Abans d'escollir una marca, pregunta't si és millor o només més coneguda.",
+      "Dona temps a les persones i a les idees noves: la primera impressió no ho és tot."
+    ],
+    "source": "Zajonc (1968)",
+    "notification": "Per què acaba agradant-te aquella cançó que odiaves?"
+  },
+  {
+    "id": "psy-019-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-019",
+    "question": "Al supermercat tries una marca de cafè que has vist molt a la tele, sense haver-la tastat. Per què?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perquè és objectivament millor"
+      },
+      {
+        "id": "b",
+        "text": "Perquè la familiaritat te la fa sentir més propera"
+      },
+      {
+        "id": "c",
+        "text": "Perquè és la més barata"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "La familiaritat genera preferència, encara que no sàpigues si és millor.",
+    "feedbackWrong": "No l'has tastat: el que et fa triar-la és haver-la vist moltes vegades."
+  },
+  {
+    "id": "psy-020",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Heurística de disponibilitat",
+    "hook": "Tens més por de l'avió que del cotxe. Però el cotxe és molt més perillós.",
+    "keyIdea": "Jutgem com de probable és una cosa segons la **facilitat amb què ens ve al cap**. Les notícies impactants i els records vius ens fan sobreestimar riscos rars i ignorar els freqüents.",
+    "example": {
+      "text": "Després de veure notícies d'un accident d'avió, molta gent agafa el cotxe per a un viatge llarg, tot i que per carretera el risc de morir és molt més alt."
+    },
+    "apply": [
+      "Davant d'una por, busca la dada real, no el record més impactant.",
+      "Desconfia de les decisions preses just després d'una notícia.",
+      "Recorda que el que no surt a les notícies sol ser el més freqüent."
+    ],
+    "source": "Tversky i Kahneman (1973)",
+    "notification": "Per què tens més por de l'avió que del cotxe?"
+  },
+  {
+    "id": "psy-020-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-020",
+    "question": "Després de veure un reportatge sobre robatoris a la teva ciutat, creus que han augmentat molt. Què hauries de fer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar les estadístiques oficials dels últims anys"
+      },
+      {
+        "id": "b",
+        "text": "Instal·lar una alarma de seguida"
+      },
+      {
+        "id": "c",
+        "text": "Preguntar als veïns si ho creuen"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Les dades reals corregeixen la impressió que deixa una notícia impactant.",
+    "feedbackWrong": "Un reportatge recent fa que els robatoris et vinguin al cap més fàcilment, però això no vol dir que n'hi hagi més."
+  },
+  {
+    "id": "psy-021",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "«Ja ho sabia»",
+    "hook": "Després que passi alguna cosa, sempre sembla que era evident.",
+    "keyIdea": "El **biaix retrospectiu** ens fa creure, un cop sabem el resultat, que era previsible. Això ens fa jutjar malament les decisions dels altres i aprendre menys dels nostres errors.",
+    "example": {
+      "text": "Abans d'un partit dius que pot passar qualsevol cosa. Després que guanyi l'equip petit, dius: «Es veia venir, estaven en un gran moment»."
+    },
+    "apply": [
+      "Abans de decidir, escriu què creus que passarà i per què.",
+      "Jutja una decisió per la informació que hi havia llavors, no pel resultat.",
+      "Quan pensis «era evident», pregunta't si ho hauries dit abans."
+    ],
+    "source": "Fischhoff (1975)",
+    "notification": "De debò ho sabies, o només ho sembla ara?"
+  },
+  {
+    "id": "psy-021-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-021",
+    "question": "Un amic va invertir en una empresa que ha fet fallida i penses «era evident». Quina és la manera més justa de jutjar-ho?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pensar en la informació que tenia quan va decidir"
+      },
+      {
+        "id": "b",
+        "text": "Dir-li que ho hauria d'haver vist venir"
+      },
+      {
+        "id": "c",
+        "text": "Pensar que ha tingut mala sort i prou"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Una decisió es jutja amb la informació que hi havia llavors, no amb el resultat.",
+    "feedbackWrong": "Saber com ha acabat fa que sembli evident, però abans no ho era tant."
+  },
+  {
+    "id": "psy-022",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Efecte halo",
+    "hook": "Si algú és atractiu, també el veiem més intel·ligent i honest. Sense cap motiu.",
+    "keyIdea": "L'**efecte halo** fa que una qualitat positiva (bellesa, simpatia, una bona primera impressió) tenyeixi tota la nostra opinió sobre algú, fins i tot en aspectes que no hi tenen res a veure.",
+    "example": {
+      "text": "En una entrevista de feina, el candidat que entra somrient i ben vestit sembla també més competent, abans que hagi dit res sobre la feina."
+    },
+    "apply": [
+      "Quan avaluïs algú, separa els criteris i valora'ls un per un.",
+      "Decideix què és important abans de conèixer la persona.",
+      "Recorda que també funciona a l'inrevés: un defecte no ho fa tot dolent."
+    ],
+    "source": "Thorndike (1920); Nisbett i Wilson (1977)",
+    "notification": "Per què la gent atractiva ens sembla més intel·ligent?"
+  },
+  {
+    "id": "psy-022-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-022",
+    "question": "Has de triar entre dos candidats per a una feina. Què t'ajuda més a evitar l'efecte halo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fiar-te de la primera impressió"
+      },
+      {
+        "id": "b",
+        "text": "Puntuar cada criteri per separat abans de decidir"
+      },
+      {
+        "id": "c",
+        "text": "Triar el que et caigui més bé"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Avaluar per criteris separats evita que una sola qualitat ho tenyeixi tot.",
+    "feedbackWrong": "La primera impressió i la simpatia són justament el que provoca l'efecte halo."
+  },
+  {
+    "id": "psy-023",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Dissonància cognitiva",
+    "hook": "Quan fem alguna cosa que no encaixa amb el que pensem, sovint canviem el que pensem.",
+    "keyIdea": "La **dissonància cognitiva** és el malestar de tenir idees o actes contradictoris. Per eliminar-lo, sovint no canviem el comportament, sinó que ens busquem justificacions.",
+    "example": {
+      "text": "Saps que fumar és perjudicial, però fumes. En lloc de deixar-ho, penses: «El meu avi fumava i va viure fins als 90 anys»."
+    },
+    "apply": [
+      "Quan et trobis justificant molt una decisió, pregunta't si t'estàs autoenganyant.",
+      "Si vols canviar un hàbit, comença per una acció petita: les idees la seguiran.",
+      "Quan algú es justifiqui, no l'ataquis: dona-li una sortida digna."
+    ],
+    "source": "Festinger (1957); Festinger i Carlsmith (1959)",
+    "notification": "Per què et justifiques quan fas alguna cosa que no encaixa amb tu?"
+  },
+  {
+    "id": "psy-023-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-023",
+    "question": "T'has comprat un mòbil molt car i ara només llegeixes ressenyes que diuen que és el millor. Què passa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que és realment el millor mòbil"
+      },
+      {
+        "id": "b",
+        "text": "Que intentes reduir el malestar d'haver gastat tant"
+      },
+      {
+        "id": "c",
+        "text": "Que les ressenyes negatives són falses"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Buscar només el que justifica la compra és una manera de reduir la dissonància.",
+    "feedbackWrong": "No vol dir que el mòbil sigui millor: busques justificacions per sentir-te bé amb la decisió."
+  },
+  {
+    "id": "psy-024",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Efecte Ben Franklin",
+    "hook": "Vols caure bé a algú? Demana-li un favor.",
+    "keyIdea": "Quan fem un favor a algú, tendim a justificar-ho pensant que ens cau bé. Per això, **demanar un petit favor** pot millorar una relació, en lloc de fer-te semblar pesat.",
+    "example": {
+      "text": "Benjamin Franklin, per guanyar-se un rival polític, li va demanar en préstec un llibre rar. Després d'això, el rival el va tractar molt millor."
+    },
+    "apply": [
+      "Amb un company distant, demana-li consell o un petit favor que pugui fer bé.",
+      "Agraeix-l'hi de manera sincera i concreta.",
+      "No n'abusis: un favor petit funciona; una càrrega, no."
+    ],
+    "source": "Jecker i Landy (1969); Franklin, Autobiografia",
+    "notification": "Vols caure bé a algú? Prova de demanar-li un favor."
+  },
+  {
+    "id": "psy-024-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-024",
+    "question": "Acabes d'arribar a un equip i un company és bastant fred amb tu. Què pot ajudar a millorar la relació?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evitar-lo per no molestar-lo"
+      },
+      {
+        "id": "b",
+        "text": "Fer-li molts favors sense que te'ls demani"
+      },
+      {
+        "id": "c",
+        "text": "Demanar-li consell sobre alguna cosa que domina"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Demanar-li un petit favor fa que es vegi com algú que t'ajuda, i que li caiguis millor.",
+    "feedbackWrong": "Evitar-lo no canvia res, i fer-li molts favors no activa l'efecte: ha de ser ell qui te'n faci un."
+  },
+  {
+    "id": "psy-025",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "El pic i el final",
+    "hook": "Recordes una experiència pel seu moment més intens i pel final. La resta s'esborra.",
+    "keyIdea": "La **regla del pic i el final** diu que valorem una experiència sobretot pel seu moment més intens i per com acaba, no per la seva durada ni per la mitjana.",
+    "example": {
+      "text": "En un experiment, la gent preferia repetir una experiència desagradable més llarga si acabava una mica millor que una de més curta que acabava malament."
+    },
+    "apply": [
+      "Cuida especialment el final d'una reunió, una cita o una visita de client.",
+      "Si una experiència té un mal moment, intenta acabar-la bé.",
+      "Quan recordis unes vacances, pensa que la memòria no fa la mitjana."
+    ],
+    "source": "Kahneman, Fredrickson, Schreiber i Redelmeier (1993)",
+    "notification": "Per què el final d'una experiència pesa tant en el record?"
+  },
+  {
+    "id": "psy-025-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-025",
+    "question": "Organitzes una formació d'un dia sencer. Segons la regla del pic i el final, on t'hauries d'esforçar més?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A posar molts continguts al llarg del dia"
+      },
+      {
+        "id": "b",
+        "text": "En el moment més intens i en un bon tancament"
+      },
+      {
+        "id": "c",
+        "text": "A fer-la tan curta com sigui possible"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "El record es construeix sobretot amb el pic i el final.",
+    "feedbackWrong": "La quantitat de contingut i la durada pesen menys en el record del que creiem."
+  },
+  {
+    "id": "psy-026",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "«Si passa X, faré Y»",
+    "hook": "Dir «Aniré al gimnàs» gairebé no funciona. Dir quan, on i com, sí.",
+    "keyIdea": "Les **intencions d'implementació** són plans del tipus «Si passa X, faré Y». Si decideixes per endavant el moment i el lloc, l'acció es dispara gairebé sola i és molt més probable que la facis.",
+    "example": {
+      "text": "En lloc de «Llegiré més», decideixes: «Quan em fiqui al llit, llegiré deu pàgines abans d'agafar el mòbil». La rutina anterior et fa de recordatori."
+    },
+    "apply": [
+      "Converteix cada objectiu en una frase «Quan…, llavors…».",
+      "Lliga el nou hàbit a una cosa que ja fas cada dia.",
+      "Prepara també el pla B: «Si plou, en lloc de córrer faré…»."
+    ],
+    "source": "Gollwitzer (1999); Gollwitzer i Sheeran (2006)",
+    "notification": "Per què «aniré al gimnàs» no funciona i «el dilluns a les 7» sí?"
+  },
+  {
+    "id": "psy-026-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-026",
+    "question": "Vols començar a estalviar cada mes. Quin pla té més probabilitats de funcionar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«El dia que cobri, transferiré 100 € al compte d'estalvi.»"
+      },
+      {
+        "id": "b",
+        "text": "«Intentaré estalviar més aquest any.»"
+      },
+      {
+        "id": "c",
+        "text": "«Estalviaré el que em sobri a final de mes.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Un pla amb moment i acció concrets es compleix molt més que una bona intenció.",
+    "feedbackWrong": "Les intencions vagues o que depenen del que sobri gairebé mai es compleixen."
+  },
+  {
+    "id": "psy-027",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "L'opció per defecte",
+    "hook": "La majoria de gent es queda amb l'opció que ja ve marcada.",
+    "keyIdea": "Canviar requereix esforç i ens fa dubtar, així que **l'opció per defecte** guanya molt sovint. Per això els països on la donació d'òrgans és l'opció per defecte tenen molts més donants.",
+    "example": {
+      "text": "Quan una empresa inscriu automàticament els treballadors al pla de pensions, amb opció de sortir-ne, s'hi queden molts més que quan s'hi han d'apuntar ells."
+    },
+    "apply": [
+      "Revisa les opcions que tens per defecte: tarifes, subscripcions, configuracions.",
+      "Si vols ajudar algú a fer una cosa bona, posa-la com a opció per defecte.",
+      "Fes servir els defectes a favor teu: estalvi automàtic, alarmes, menús planificats."
+    ],
+    "source": "Johnson i Goldstein (2003); Madrian i Shea (2001)",
+    "notification": "Per què et quedes gairebé sempre amb l'opció que ja ve marcada?"
+  },
+  {
+    "id": "psy-027-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-027",
+    "question": "Vols menjar més fruita. Quin canvi aprofita millor l'efecte de l'opció per defecte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prometre't que en menjaràs més"
+      },
+      {
+        "id": "b",
+        "text": "Deixar un bol de fruita a la vista i treure les galetes del calaix"
+      },
+      {
+        "id": "c",
+        "text": "Llegir sobre els beneficis de la fruita"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Canviar l'entorn fa que l'opció fàcil sigui la bona.",
+    "feedbackWrong": "La força de voluntat i la informació ajuden poc si l'opció fàcil continua sent la dolenta."
+  },
+  {
+    "id": "psy-028",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Efecte IKEA",
+    "hook": "El moble que has muntat tu et sembla més bonic que un de comprat ja fet.",
+    "keyIdea": "L'**efecte IKEA** ens fa valorar més allò en què hem posat esforç. Funciona amb mobles, però també amb idees i projectes: defensem més el que hem ajudat a construir.",
+    "example": {
+      "text": "En un experiment, la gent estava disposada a pagar més per una caixa d'IKEA que havia muntat ella mateixa que per una d'idèntica muntada per algú altre."
+    },
+    "apply": [
+      "Si vols que un equip s'impliqui en un pla, fes-lo participar en el disseny.",
+      "Quan valoris la teva feina, demana una opinió externa: potser la sobrevalores.",
+      "Deixa que els clients personalitzin alguna part del que els ofereixes."
+    ],
+    "source": "Norton, Mochon i Ariely (2012)",
+    "notification": "Per què t'agrada més el moble que has muntat tu?"
+  },
+  {
+    "id": "psy-028-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-028",
+    "question": "Vols que el teu equip adopti una nova manera de treballar. Què augmentarà més el seu compromís?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Presentar-la ja acabada i ben explicada"
+      },
+      {
+        "id": "b",
+        "text": "Enviar-los un document perquè la llegeixin"
+      },
+      {
+        "id": "c",
+        "text": "Dissenyar-la amb ells en un taller"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "El que ajudem a construir ho valorem i ho defensem més.",
+    "feedbackWrong": "Una proposta tancada, per bona que sigui, no genera el mateix compromís que una de construïda junts."
+  },
+  {
+    "id": "psy-029",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "concept": "Biaix de negativitat",
+    "hook": "Recordes la crítica i oblides els cinc elogis que t'han fet el mateix dia.",
+    "keyIdea": "El **biaix de negativitat** fa que el que és dolent ens impacti més que el que és bo de la mateixa mida: crítiques, males notícies, mals moments. Era útil per sobreviure, però distorsiona com veiem les coses.",
+    "example": {
+      "text": "Reps deu ressenyes bones i una de dolenta del teu restaurant. Passes el vespre pensant només en la dolenta."
+    },
+    "apply": [
+      "Quan una crítica et ressoni, recorda també el que ha anat bé.",
+      "Quan donis feedback, pensa que una crítica pesa molt més que un elogi.",
+      "Limita el consum de notícies si et fa veure el món pitjor del que és."
+    ],
+    "source": "Baumeister, Bratslavsky, Finkenauer i Vohs (2001)",
+    "notification": "Per què una crítica pesa més que cinc elogis?"
+  },
+  {
+    "id": "psy-029-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "psy-029",
+    "question": "Avui t'han felicitat tres vegades i t'han fet una crítica, i al vespre només hi penses. Què t'ajuda a veure-ho amb perspectiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repassar també el que ha anat bé avui"
+      },
+      {
+        "id": "b",
+        "text": "Buscar més opinions sobre la crítica"
+      },
+      {
+        "id": "c",
+        "text": "Intentar no pensar-hi gens"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Recordar conscientment el que ha anat bé compensa el pes del que és negatiu.",
+    "feedbackWrong": "Donar més voltes a la crítica alimenta el biaix, i intentar no pensar-hi sol tenir l'efecte contrari."
+  },
+  {
+    "id": "psy-030",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "Il·lusió de control",
+    "hook": "Llances els daus més fort quan vols un número alt. Com si servís d'alguna cosa.",
+    "keyIdea": "La **il·lusió de control** ens fa creure que influïm en resultats que depenen de l'atzar. En un estudi, la gent que havia triat el seu bitllet de loteria demanava molts més diners per vendre'l.",
+    "example": {
+      "text": "Tries els números de la loteria amb dates especials i sents que tens més opcions que amb uns números a l'atzar. La probabilitat és exactament la mateixa."
+    },
+    "apply": [
+      "Separa el que depèn de tu del que és sort, i centra't en el primer.",
+      "Desconfia de les «ratxes» en els jocs d'atzar.",
+      "Quan una cosa surti bé, pregunta't quina part va ser habilitat i quina, sort."
+    ],
+    "source": "Langer (1975)",
+    "notification": "Per què creus que controles el que depèn de la sort?"
+  },
+  {
+    "id": "psy-030-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-030",
+    "question": "Un amic diu que guanya més a la ruleta quan seu sempre al mateix lloc. Què passa?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que ha trobat un sistema que funciona"
+      },
+      {
+        "id": "b",
+        "text": "Que té més experiència que els altres"
+      },
+      {
+        "id": "c",
+        "text": "Que té la il·lusió de controlar un resultat que depèn de l'atzar"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "El lloc on seu no canvia res: la ruleta és atzar pur.",
+    "feedbackWrong": "Ni el lloc ni l'experiència influeixen en la ruleta. És il·lusió de control."
+  },
+  {
+    "id": "psy-031",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "La primera impressió",
+    "hook": "«Intel·ligent i envejós» o «envejós i intel·ligent»? L'ordre canvia el que penses.",
+    "keyIdea": "El que sabem primer d'algú tenyeix la resta. És l'**efecte de primacia**: la primera informació crea una expectativa, i interpretem tot el que ve després a partir d'ella.",
+    "example": {
+      "text": "En un experiment clàssic, una persona descrita com «intel·ligent, treballadora, impulsiva, crítica, tossuda, envejosa» agradava més que amb els mateixos adjectius en l'ordre invers."
+    },
+    "apply": [
+      "En una presentació o un currículum, posa el més fort al principi.",
+      "Quan coneguis algú, espera a tenir més informació abans de jutjar.",
+      "Si la primera impressió va ser dolenta, caldran més proves per canviar-la: dona-les."
+    ],
+    "source": "Asch (1946)",
+    "notification": "Per què l'ordre en què et presenten algú canvia el que en penses?"
+  },
+  {
+    "id": "psy-031-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-031",
+    "question": "Prepares el teu currículum. On has de posar el teu èxit més important?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Al principi, perquè marqui la lectura de la resta"
+      },
+      {
+        "id": "b",
+        "text": "Al final, perquè sigui l'últim que recordin"
+      },
+      {
+        "id": "c",
+        "text": "Al mig, perquè no sembli que presumeixes"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "El que es llegeix primer marca com s'interpreta tota la resta.",
+    "feedbackWrong": "La primera informació crea l'expectativa: el millor ha d'anar al principi."
+  },
+  {
+    "id": "psy-032",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "El present pesa més",
+    "hook": "Planifiques menjar sa la setmana vinent, però avui tries la pizza.",
+    "keyIdea": "Valorem molt més el que és **immediat** que el que és futur, encara que el futur valgui més. I quan el futur arriba, torna a ser «ara», i tornem a triar el que és fàcil.",
+    "example": {
+      "text": "Molta gent prefereix 100 € avui que 110 € demà, però prefereix 110 € d'aquí a 31 dies que 100 € d'aquí a 30. Esperar un dia costa molt més quan és ara."
+    },
+    "apply": [
+      "Pren les decisions importants per endavant i fes-les automàtiques.",
+      "Fes que el futur sigui concret: posa una foto o una xifra a l'objectiu d'estalvi.",
+      "Allunya les temptacions immediates: fora de la vista, fora de la ment."
+    ],
+    "source": "Thaler (1981); Laibson (1997)",
+    "notification": "Per què avui sempre guanya a demà?"
+  },
+  {
+    "id": "psy-032-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-032",
+    "question": "Vols estalviar per a un viatge, però cada mes acabes gastant-t'ho. Què t'ajudarà més?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prometre't que aquest mes sí"
+      },
+      {
+        "id": "b",
+        "text": "Esperar a final de mes per veure què et sobra"
+      },
+      {
+        "id": "c",
+        "text": "Programar una transferència automàtica el dia que cobres"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Decidir per endavant i automatitzar-ho evita que el present guanyi cada mes.",
+    "feedbackWrong": "Si la decisió es pren cada mes «ara», el present sempre guanya."
+  },
+  {
+    "id": "psy-033",
+    "type": "idea",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "concept": "La pressió del grup",
+    "hook": "Si tothom diu una resposta equivocada, és molt probable que la diguis tu també.",
+    "keyIdea": "En els experiments d'Asch, molta gent donava una resposta clarament falsa per no contradir el grup. Però n'hi havia prou que **una sola persona** discrepés perquè la pressió baixés molt.",
+    "example": {
+      "text": "En una reunió, tothom aplaudeix un pla que et sembla arriscat. Calles. Després descobreixes que dues persones més tenien els mateixos dubtes."
+    },
+    "apply": [
+      "Si dubtes en una reunió, digues-ho: potser obres la porta perquè altres parlin.",
+      "Abans de debatre en grup, demana que cadascú escrigui la seva opinió.",
+      "Si lideres, parla l'últim perquè no condicionis els altres."
+    ],
+    "source": "Asch (1951, 1956)",
+    "notification": "Diries una resposta equivocada només perquè ho diu tothom?"
+  },
+  {
+    "id": "psy-033-q1",
+    "type": "quiz",
+    "topic": "psychology",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "psy-033",
+    "question": "En una reunió, tothom està d'acord amb una decisió que creus que és un error. Què és el més útil?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Callar, perquè segur que s'equivoquen menys que tu"
+      },
+      {
+        "id": "b",
+        "text": "Expressar el teu dubte amb calma: pot ajudar altres a parlar"
+      },
+      {
+        "id": "c",
+        "text": "Dir que sí i queixar-te'n després"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Una sola veu que discrepa redueix molt la pressió del grup per a tothom.",
+    "feedbackWrong": "Callar reforça la falsa unanimitat. Sovint no ets l'únic que dubta."
+  },
+  {
+    "id": "com-001",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Escolta activa",
+    "hook": "La majoria de gent no escolta per entendre, sinó per respondre.",
+    "hookAccent": "Com es nota?",
+    "keyIdea": "L'**escolta activa** consisteix a demostrar que has entès abans de donar la teva opinió: resumir el que l'altre ha dit i preguntar si ho has entès bé.",
+    "example": {
+      "text": "Un amic t'explica que està cremat a la feina. En lloc de dir-li «Canvia de feina», li dius: «Sembla que et sents poc valorat, és així?». La conversa canvia de to."
+    },
+    "apply": [
+      "Abans de respondre, resumeix en una frase el que t'han dit.",
+      "Pregunta «Ho he entès bé?» i espera la resposta abans de donar consells."
+    ],
+    "source": "Rogers i Farson, Active Listening (1957)",
+    "notification": "Com saber si algú t'escolta de debò o només espera el seu torn?"
+  },
+  {
+    "id": "com-001-s1",
+    "type": "scenario",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-001",
+    "question": "Una clienta et diu enfadada que la comanda ha arribat tard per segona vegada. Quina és la millor primera resposta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Ha estat culpa del transportista, no nostra.»"
+      },
+      {
+        "id": "b",
+        "text": "«Entenc que és la segona vegada i que us ha causat un problema. Què us ha afectat més?»"
+      },
+      {
+        "id": "c",
+        "text": "«Us puc fer un descompte del 10 %.»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Primer, demostra que has entès. Les solucions funcionen millor quan l'altre se sent escoltat.",
+    "feedbackWrong": "Justificar-te o oferir una solució massa ràpid fa que l'altre no se senti escoltat."
+  },
+  {
+    "id": "com-002",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Parlar des del «jo»",
+    "hook": "«Ets un desastre» comença una baralla. «Em sento desbordat» comença una conversa.",
+    "keyIdea": "Els **missatges en primera persona** parlen de com et sents tu i de l'efecte que té una conducta, en lloc de jutjar l'altre. Així és més difícil que es posi a la defensiva.",
+    "example": {
+      "text": "En lloc de «No m'ajudes mai a casa», prova «Quan arribo i hi ha tota la feina per fer, em sento desbordat. Ens ho podem repartir?»."
+    },
+    "apply": [
+      "Fes servir l'estructura: «Quan passa…, em sento…, perquè…».",
+      "Parla d'una conducta concreta, no de com és la persona.",
+      "Evita «sempre» i «mai»: conviden a discutir les excepcions."
+    ],
+    "source": "Gordon, Parent Effectiveness Training (1970)",
+    "notification": "Quina frase converteix una baralla en una conversa?"
+  },
+  {
+    "id": "com-002-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-002",
+    "question": "El teu company de pis sempre deixa els plats bruts. Quina frase és més efectiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Ets un porc, no hi ha qui visqui aquí.»"
+      },
+      {
+        "id": "b",
+        "text": "«No passa res, ja els rento jo.»"
+      },
+      {
+        "id": "c",
+        "text": "«Quan trobo els plats bruts al vespre, em molesta. Podem posar-nos una norma?»"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Parles de la conducta i de com et fa sentir, i proposes una solució.",
+    "feedbackWrong": "L'insult provoca una baralla, i callar acumula malestar. Parla des del «jo»."
+  },
+  {
+    "id": "com-003",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Comunicació no violenta",
+    "hook": "Hi ha una fórmula de quatre passos per dir coses difícils sense ferir.",
+    "keyIdea": "La **comunicació no violenta** proposa: 1) descriure el que observes sense jutjar, 2) dir com et sents, 3) explicar què necessites i 4) fer una petició concreta.",
+    "example": {
+      "text": "«Aquesta setmana has arribat tard tres cops (observació). Em frustra (sentiment) perquè necessito començar a l'hora (necessitat). M'avisaràs si et retardes? (petició)»"
+    },
+    "apply": [
+      "Separa el que has vist del que n'interpretes: «arribes tard» no és «no t'importa».",
+      "Acaba sempre amb una petició concreta i possible.",
+      "Fes-la servir també per escoltar: quina necessitat hi ha darrere la queixa de l'altre?"
+    ],
+    "source": "Rosenberg, Nonviolent Communication (2003)",
+    "notification": "Com dir una cosa difícil en quatre passos sense ferir ningú?"
+  },
+  {
+    "id": "com-003-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-003",
+    "question": "Quina d'aquestes frases és una observació, sense judici?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«No has enviat l'informe que vam acordar per divendres.»"
+      },
+      {
+        "id": "b",
+        "text": "«Ets molt despistat.»"
+      },
+      {
+        "id": "c",
+        "text": "«No t'importa el projecte.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Descriu un fet que tots dos podeu comprovar, sense etiquetar la persona.",
+    "feedbackWrong": "«Despistat» o «no t'importa» són interpretacions, no observacions."
+  },
+  {
+    "id": "com-004",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Un «no» positiu",
+    "hook": "Dir que no no és ser egoista. És protegir el que t'importa.",
+    "keyIdea": "El **«no» positiu** té tres parts: un **sí** al que vols protegir (el teu temps, la família, la feina), un **no** clar a la petició i un **sí** a una alternativa o a la relació.",
+    "example": {
+      "text": "«Aquest cap de setmana vull estar amb la família (sí), així que no podré ajudar-te amb la mudança (no). Però dijous et puc portar caixes amb el cotxe (sí).»"
+    },
+    "apply": [
+      "Abans de respondre, pregunta't quin «sí» et porta a dir que no.",
+      "Digues el «no» de manera clara, sense excuses llargues.",
+      "Ofereix una alternativa si la tens, però només si de debò la vols fer."
+    ],
+    "source": "Ury, The Power of a Positive No (2007)",
+    "notification": "Com dir que no sense sentir-te culpable?"
+  },
+  {
+    "id": "com-004-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-004",
+    "question": "Una amiga et demana que l'ajudis a preparar una festa el dia que tens un examen. Quina resposta segueix el «no» positiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Ho sento molt, és que… bé, potser sí que puc, si no trigo gaire.»"
+      },
+      {
+        "id": "b",
+        "text": "«Aquell dia tinc un examen important, així que no podré venir. Si vols, et passo la meva llista de música.»"
+      },
+      {
+        "id": "c",
+        "text": "«No.»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Protegeixes el que t'importa, dius que no clarament i cuides la relació.",
+    "feedbackWrong": "Un «no» ple de dubtes acaba sent un sí que no vols, i un «no» sec pot ferir la relació."
+  },
+  {
+    "id": "com-005",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Els quatre genets",
+    "hook": "Hi ha quatre maneres de discutir que anticipen el final d'una relació.",
+    "keyIdea": "John Gottman va identificar **quatre genets**: la crítica (atacar la persona), el menyspreu (burla, superioritat), l'actitud defensiva i l'evasió (tancar-se). El menyspreu és el més perjudicial.",
+    "example": {
+      "text": "«Has tornat a oblidar-te'n, només penses en tu» (crítica), amb els ulls en blanc (menyspreu). L'altre respon «I tu què?» (actitud defensiva)."
+    },
+    "apply": [
+      "En lloc de criticar la persona, queixa't d'una conducta concreta.",
+      "Substitueix el menyspreu per l'agraïment: fixa't en el que l'altre fa bé.",
+      "Si et sents desbordat, demana una pausa de 20 minuts i torna-hi."
+    ],
+    "source": "Gottman, Why Marriages Succeed or Fail (1994)",
+    "notification": "Quines quatre maneres de discutir anticipen el final d'una parella?"
+  },
+  {
+    "id": "com-005-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-005",
+    "question": "Durant una discussió, la teva parella posa els ulls en blanc i diu: «És que ets patètic». Quin dels quatre genets és?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El menyspreu"
+      },
+      {
+        "id": "b",
+        "text": "L'evasió"
+      },
+      {
+        "id": "c",
+        "text": "L'actitud defensiva"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "La burla i la superioritat són menyspreu, el genet més perjudicial.",
+    "feedbackWrong": "L'evasió és tancar-se, i l'actitud defensiva és justificar-se. Això és menyspreu."
+  },
+  {
+    "id": "com-006",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Començar suau",
+    "hook": "Com comença una discussió anticipa, gairebé sempre, com acabarà.",
+    "keyIdea": "Les converses difícils que comencen amb un atac acaben malament. Una **arrencada suau** (sense culpar, parlant de tu i amb una petició) fa molt més probable que l'altre escolti.",
+    "example": {
+      "text": "En lloc de «Mai tens temps per a mi», prova «Trobo a faltar que passem temps junts. Et ve de gust que reservem el dissabte per a nosaltres?»."
+    },
+    "apply": [
+      "Espera que estigueu tranquils per treure el tema.",
+      "Comença amb alguna cosa positiva o amb el que necessites, no amb un retret.",
+      "Parla d'una situació, no de la llista de tots els errors."
+    ],
+    "source": "Gottman i Silver, The Seven Principles for Making Marriage Work (1999)",
+    "notification": "Saps que els primers minuts d'una discussió decideixen com acabarà?"
+  },
+  {
+    "id": "com-006-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-006",
+    "question": "Vols parlar amb el teu soci perquè sents que treballes més hores que ell. Quina és la millor manera de començar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Estic cansat que sempre m'ho carreguis tot a mi.»"
+      },
+      {
+        "id": "b",
+        "text": "«Ja saps per què vull parlar, oi?»"
+      },
+      {
+        "id": "c",
+        "text": "«M'agradaria que parléssim de com ens repartim la feina: últimament vaig molt carregat.»"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Comences parlant de tu i del que necessites, sense atacar.",
+    "feedbackWrong": "Un retret o un to acusador d'entrada fan que l'altre es defensi en lloc d'escoltar."
+  },
+  {
+    "id": "com-007",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Ofertes de connexió",
+    "hook": "«Mira quin ocell!» No és un comentari sobre ocells. És una invitació.",
+    "keyIdea": "Fem petites **ofertes de connexió** (un comentari, una pregunta, un gest) per buscar l'atenció de l'altre. Les parelles que duren hi responen la gran majoria de vegades; les que no, les ignoren.",
+    "example": {
+      "text": "La teva parella diu «Avui he llegit un article interessant». Pots respondre «Ah» sense aixecar els ulls del mòbil, o preguntar «Sí? De què anava?»."
+    },
+    "apply": [
+      "Fixa't en els petits comentaris dels altres: sovint són una invitació a parlar.",
+      "Respon-hi encara que sigui breument: mira, somriu, pregunta.",
+      "Si no pots ara, digues quan: «Ara no puc, però m'ho expliques en sopar?»."
+    ],
+    "source": "Gottman i DeClaire, The Relationship Cure (2001)",
+    "notification": "Per què «mira quin ocell!» no va d'ocells?"
+  },
+  {
+    "id": "com-007-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-007",
+    "question": "Estàs treballant i el teu fill et diu: «He fet un dibuix». Quina resposta enforteix més la relació?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Ensenya-me'l! M'expliques què és?»"
+      },
+      {
+        "id": "b",
+        "text": "No dir res perquè estàs concentrat"
+      },
+      {
+        "id": "c",
+        "text": "«Molt bé», sense mirar-lo"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Respondre a l'oferta de connexió, encara que sigui breument, enforteix el vincle.",
+    "feedbackWrong": "Ignorar-la, o respondre sense mirar, li diu que no és important."
+  },
+  {
+    "id": "com-008",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Celebrar les bones notícies",
+    "hook": "Com reacciones quan algú t'explica una bona notícia diu molt de la vostra relació.",
+    "keyIdea": "La resposta **activa i constructiva** (interès real, preguntes, alegria) enforteix les relacions. Respondre amb un «Ah, molt bé» o buscar-hi pegues les desgasta, encara que no ho sembli.",
+    "example": {
+      "text": "Un amic et diu que l'han ascendit. En lloc de «Uf, ara tindràs més feina», respons: «Enhorabona! Com t'ho han dit? Què faràs de nou?»."
+    },
+    "apply": [
+      "Quan algú et doni una bona notícia, fes-li preguntes perquè la pugui reviure.",
+      "Deixa els consells i les pegues per a un altre moment.",
+      "Mostra l'alegria amb la cara, no només amb paraules."
+    ],
+    "source": "Gable, Reis, Impett i Asher (2004)",
+    "notification": "Com reacciones a les bones notícies dels altres?"
+  },
+  {
+    "id": "com-008-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-008",
+    "question": "La teva germana t'explica que ha aprovat les oposicions. Quina resposta és activa i constructiva?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Ah, genial.»"
+      },
+      {
+        "id": "b",
+        "text": "«Enhorabona! Com t'has sentit quan has vist la nota?»"
+      },
+      {
+        "id": "c",
+        "text": "«I on et destinaran? Esperem que no sigui lluny…»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Interès, alegria i una pregunta perquè la pugui reviure: així s'enforteix la relació.",
+    "feedbackWrong": "Una resposta freda o centrada en els problemes apaga la celebració."
+  },
+  {
+    "id": "com-009",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Feedback concret (SBI)",
+    "hook": "«Bona feina» no ajuda gaire. «Ahir vas resumir molt bé els punts», sí.",
+    "keyIdea": "El model **SBI** fa el feedback útil: la situació (quan i on), el comportament (què va fer exactament) i l'impacte (quin efecte va tenir). Serveix tant per elogiar com per corregir.",
+    "example": {
+      "text": "«A la presentació d'ahir al client (situació) el vas interrompre dues vegades (comportament), i es va quedar seriós la resta de la reunió (impacte).»"
+    },
+    "apply": [
+      "Descriu el comportament com si fos un vídeo: què es veu i què se sent.",
+      "Explica l'impacte real, no la teva interpretació de les intencions.",
+      "Fes servir el mateix format per als elogis: són més creïbles."
+    ],
+    "source": "Model SBI, Center for Creative Leadership",
+    "notification": "Per què «bona feina» no serveix gaire com a feedback?"
+  },
+  {
+    "id": "com-009-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-009",
+    "question": "Quin d'aquests comentaris segueix el model SBI?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Ets molt bo comunicant.»"
+      },
+      {
+        "id": "b",
+        "text": "«Hauries de ser més proactiu.»"
+      },
+      {
+        "id": "c",
+        "text": "«Avui a la reunió has preparat les xifres abans que te les demanessin, i hem pogut decidir de seguida.»"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Situació, comportament concret i impacte: l'altre sap exactament què repetir.",
+    "feedbackWrong": "Les etiquetes generals, positives o negatives, no diuen què s'ha de fer."
+  },
+  {
+    "id": "com-010",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Crítiques amb confiança",
+    "hook": "Una sola frase pot fer que algú accepti les teves crítiques en lloc de rebutjar-les.",
+    "keyIdea": "Les crítiques s'accepten millor quan deixes clar el **perquè**: tens un nivell d'exigència alt i confies que l'altre hi pot arribar. Sense aquesta frase, la crítica pot semblar un atac.",
+    "example": {
+      "text": "En un estudi, els alumnes que rebien les correccions amb la nota «Et faig aquests comentaris perquè tinc expectatives altes i sé que pots arribar-hi» revisaven molt més la redacció."
+    },
+    "apply": [
+      "Abans d'una crítica, explica per què la fas: «Ho dic perquè sé que pots fer-ho millor».",
+      "Fes-ho només si és veritat: la confiança no es pot fingir.",
+      "Acompanya-la d'ajuda concreta per millorar."
+    ],
+    "source": "Yeager et al. (2014)",
+    "notification": "Quina frase fa que algú accepti les teves crítiques?"
+  },
+  {
+    "id": "com-010-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-010",
+    "question": "Has de dir a un company nou que el seu informe té molts errors. Quina introducció ajudarà més?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«T'ho dic perquè sé que pots fer un informe molt bo i vull ajudar-te a arribar-hi.»"
+      },
+      {
+        "id": "b",
+        "text": "«No és per ser dur, però això està fatal.»"
+      },
+      {
+        "id": "c",
+        "text": "«No passa res, a tothom li passa.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exigència alta i confiança en l'altre: així la crítica es rep com a ajuda.",
+    "feedbackWrong": "Una crítica dura sense context sona a atac, i treure-li importància no ajuda a millorar."
+  },
+  {
+    "id": "com-011",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Preguntes de seguiment",
+    "hook": "Hi ha un tipus de pregunta que fa que la gent et trobi molt més simpàtic.",
+    "keyIdea": "Les **preguntes de seguiment** (les que fas a partir del que l'altre t'acaba de dir) demostren que escoltes i que t'interessa. En un estudi amb cites ràpides, qui en feia més aconseguia més segones cites.",
+    "example": {
+      "text": "—Aquest cap de setmana he anat a escalar. —I on vas anar? Fa molt que en fas? En lloc de «Jo vaig anar al cinema», que porta el tema cap a tu."
+    },
+    "apply": [
+      "Quan algú t'expliqui alguna cosa, fes almenys una pregunta abans de parlar de tu.",
+      "Pregunta pel que sent, no només pels fets: «I com t'ho vas passar?».",
+      "No converteixis cada història de l'altre en una de teva."
+    ],
+    "source": "Huang, Yeomans, Brooks, Minson i Gino (2017)",
+    "notification": "Quin tipus de pregunta fa que la gent et trobi més simpàtic?"
+  },
+  {
+    "id": "com-011-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-011",
+    "question": "Un company et diu que acaba de tornar d'un viatge al Japó. Quina resposta et farà caure millor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Que bé! Què és el que més et va sorprendre?»"
+      },
+      {
+        "id": "b",
+        "text": "«Jo hi vaig anar fa dos anys, i vaig veure…»"
+      },
+      {
+        "id": "c",
+        "text": "«Ah, molt bé.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Una pregunta de seguiment demostra interès i el convida a explicar-se.",
+    "feedbackWrong": "Portar el tema cap a tu o respondre amb poc interès tanca la conversa."
+  },
+  {
+    "id": "com-012",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "El poder del «perquè»",
+    "hook": "Afegir un «perquè» a una petició fa que et diguin que sí molt més sovint.",
+    "keyIdea": "Les peticions amb un **motiu** s'accepten més. En un estudi clàssic, quan la petició era petita, fins i tot un motiu buit («perquè he de fer còpies») funcionava gairebé tan bé com un de bo.",
+    "example": {
+      "text": "A la cua d'una fotocopiadora, «Puc passar davant? És que tinc pressa» va aconseguir que gairebé tothom cedís el torn. Sense cap motiu, ho feia molta menys gent."
+    },
+    "apply": [
+      "Quan demanis alguna cosa, explica sempre per què.",
+      "Per a peticions importants, el motiu ha de ser bo: la gent hi pensa més.",
+      "Quan et demanin una cosa amb un «perquè», pregunta't si el motiu és real."
+    ],
+    "source": "Langer, Blank i Chanowitz (1978)",
+    "notification": "Quina paraula fa que et diguin que sí més sovint?"
+  },
+  {
+    "id": "com-012-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-012",
+    "question": "Necessites que el teu cap avanci una reunió. Quina petició té més probabilitats d'èxit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Podem avançar la reunió a les 10? És que a les 12 tinc metge.»"
+      },
+      {
+        "id": "b",
+        "text": "«Podem avançar la reunió?»"
+      },
+      {
+        "id": "c",
+        "text": "«Avancem la reunió.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Un motiu clar fa molt més fàcil que l'altre digui que sí.",
+    "feedbackWrong": "Sense motiu, la petició sembla un caprici o una ordre."
+  },
+  {
+    "id": "com-013",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Comença per la conclusió",
+    "hook": "En un correu de feina, si la idea important és al final, molts no hi arribaran.",
+    "keyIdea": "El **principi de la piràmide** diu: primer la conclusió o la petició, després els arguments que la sostenen i, al final, els detalls. Qui llegeix amb pressa ho entén tot amb la primera frase.",
+    "example": {
+      "text": "En lloc d'explicar tota la història del problema, comences: «Proposo endarrerir el llançament una setmana. Per tres motius: …»."
+    },
+    "apply": [
+      "Escriu la primera frase com si fos l'única que llegiran.",
+      "Agrupa els arguments en tres blocs com a màxim.",
+      "Si demanes alguna cosa, digues què i per a quan al principi."
+    ],
+    "source": "Minto, The Pyramid Principle (1987)",
+    "notification": "On has de posar la idea més important d'un correu?"
+  },
+  {
+    "id": "com-013-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-013",
+    "question": "Has d'escriure al teu cap per demanar més pressupost per a un projecte. Com comences?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Explicant la història del projecte des del principi"
+      },
+      {
+        "id": "b",
+        "text": "«Et demano 5.000 € més per al projecte X. T'explico per què:»"
+      },
+      {
+        "id": "c",
+        "text": "Amb una salutació llarga i preguntant-li com està"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "La petició al principi: el teu cap sap de seguida què li demanes.",
+    "feedbackWrong": "Si la petició queda al final, potser no hi arriba o la llegeix sense context."
+  },
+  {
+    "id": "com-014",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Parla clar",
+    "hook": "Fer servir paraules complicades no et fa semblar més intel·ligent. Al contrari.",
+    "keyIdea": "Un estudi va trobar que els textos amb **paraules innecessàriament complicades** feien que l'autor semblés menys intel·ligent. Quan un text es llegeix fàcil, confiem més en qui l'ha escrit.",
+    "example": {
+      "text": "«Procedirem a implementar la reestructuració dels processos operatius» comunica menys que «Canviarem la manera com treballem»."
+    },
+    "apply": [
+      "Tria la paraula curta i comuna quan en tinguis dues que volen dir el mateix.",
+      "Llegeix el text en veu alta: si t'encalles, simplifica'l.",
+      "Una idea per frase. Si una frase passa de 25 paraules, parteix-la."
+    ],
+    "source": "Oppenheimer (2006)",
+    "notification": "Les paraules complicades et fan semblar més intel·ligent?"
+  },
+  {
+    "id": "com-014-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-014",
+    "question": "Quina frase és més probable que faci que el lector et vegi competent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Cal procedir a una simplificació dels procediments operatius vigents.»"
+      },
+      {
+        "id": "b",
+        "text": "«Hem de fer les coses més simples.»"
+      },
+      {
+        "id": "c",
+        "text": "«S'imposa la racionalització de la complexitat processal.»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "El llenguatge simple es llegeix fàcil i genera més confiança.",
+    "feedbackWrong": "Les paraules complicades dificulten la lectura i, paradoxalment, et fan semblar menys competent."
+  },
+  {
+    "id": "com-015",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Una història, no estadístiques",
+    "hook": "Una persona amb nom ens commou més que milers de persones en una estadística.",
+    "keyIdea": "És l'**efecte de la víctima identificable**: una història concreta, amb cara i nom, mou més a l'acció que les xifres grans. Les xifres informen; les històries convencen.",
+    "example": {
+      "text": "En un estudi, la gent donava més diners per ajudar una nena concreta de Mali, amb foto i nom, que quan rebia estadístiques sobre milions de persones amb fam."
+    },
+    "apply": [
+      "Quan presentis dades, acompanya-les d'un cas concret.",
+      "Comença amb la història i fes servir la xifra per mostrar que no és un cas aïllat.",
+      "Quan una història et commogui, busca també les dades abans de decidir."
+    ],
+    "source": "Small, Loewenstein i Slovic (2007)",
+    "notification": "Per què una persona amb nom ens commou més que mil xifres?"
+  },
+  {
+    "id": "com-015-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-015",
+    "question": "Vols convèncer l'ajuntament que cal un pas de vianants a prop de l'escola. Què tindrà més impacte?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Una taula amb el nombre de cotxes que hi passen cada hora"
+      },
+      {
+        "id": "b",
+        "text": "La història d'una nena que cada dia espera cinc minuts per creuar, acompanyada de les dades"
+      },
+      {
+        "id": "c",
+        "text": "Una llista de normatives de seguretat viària"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "La història mou a l'acció i les dades demostren que no és un cas aïllat.",
+    "feedbackWrong": "Les xifres soles informen, però costa que mobilitzin. Posa-hi una cara."
+  },
+  {
+    "id": "com-016",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "El mite del 93 % no verbal",
+    "hook": "Has sentit que el 93 % de la comunicació és no verbal? És un mite.",
+    "keyIdea": "L'estudi d'**Albert Mehrabian** només analitzava paraules soltes que expressaven sentiments, quan el to i la paraula es contradeien. Ell mateix ha dit que no s'ha d'aplicar a tota la comunicació.",
+    "example": {
+      "text": "Si el to i les paraules no encaixen («Estic bé», dit amb cara d'enfadat), ens fiem del to. Però en una explicació de feina, el que compta és el contingut."
+    },
+    "apply": [
+      "Desconfia de les xifres exactes sobre comunicació que corren per cursos i xarxes.",
+      "Cuida el to i la postura, però sobretot el que dius.",
+      "Quan el to i les paraules d'algú no encaixin, pregunta-li com està de debò."
+    ],
+    "source": "Mehrabian, Silent Messages (1971)",
+    "notification": "És cert que el 93 % de la comunicació és no verbal?"
+  },
+  {
+    "id": "com-016-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-016",
+    "question": "Un formador diu que només el 7 % del que comuniques són les paraules. Què en penses?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que és cert, i per això cal centrar-se en la postura"
+      },
+      {
+        "id": "b",
+        "text": "Que depèn de l'idioma"
+      },
+      {
+        "id": "c",
+        "text": "Que és una generalització errònia d'un estudi sobre situacions molt concretes"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "L'estudi original no parlava de la comunicació en general.",
+    "feedbackWrong": "És una de les dades més mal citades: l'estudi només analitzava casos molt concrets."
+  },
+  {
+    "id": "com-017",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Detectar mentides",
+    "hook": "Creus que saps quan algú et menteix? Gairebé ningú n'endevina més que per atzar.",
+    "keyIdea": "Una revisió de més de 200 estudis va trobar que encertem si algú menteix només un **54 %** de les vegades. Els senyals populars (mirar a un altre costat, posar-se nerviós) no són fiables.",
+    "example": {
+      "text": "Un candidat molt nerviós en una entrevista pot estar dient tota la veritat, i un de molt tranquil pot estar inflant el seu currículum."
+    },
+    "apply": [
+      "No jutgis la sinceritat d'algú pels nervis o per la mirada.",
+      "Si dubtes, contrasta els fets: dades, referències, documents.",
+      "Demana detalls concrets: la veritat sol tenir més detalls que una història inventada."
+    ],
+    "source": "Bond i DePaulo (2006)",
+    "notification": "Saps detectar quan algú et menteix? Gairebé ningú en sap."
+  },
+  {
+    "id": "com-017-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-017",
+    "question": "Un venedor no et mira als ulls mentre t'explica les condicions d'un contracte. Què hauries de fer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Suposar que t'enganya"
+      },
+      {
+        "id": "b",
+        "text": "Revisar bé les condicions per escrit, independentment de la mirada"
+      },
+      {
+        "id": "c",
+        "text": "Confiar-hi perquè sembla tímid"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "La mirada no és un bon indicador: el que cal comprovar és el contracte.",
+    "feedbackWrong": "Els senyals no verbals no serveixen per detectar mentides. Comprova els fets."
+  },
+  {
+    "id": "com-018",
+    "type": "idea",
+    "topic": "communication",
+    "level": 3,
+    "isPro": false,
+    "concept": "Resumir abans de rebatre",
+    "hook": "Abans de criticar una idea, explica-la tan bé que l'altre et digui «Exacte».",
+    "keyIdea": "Les **regles de Rapoport** proposen: primer resumeix la postura de l'altre millor que ell mateix, després digues en què hi estàs d'acord i què n'has après, i només llavors critica.",
+    "example": {
+      "text": "«Si ho entenc bé, et preocupa que, si obrim els caps de setmana, l'equip es cremi. Hi estic d'acord: és un risc. El que no veig clar és…»"
+    },
+    "apply": [
+      "Abans de rebatre, resumeix l'argument de l'altre i pregunta si l'has entès bé.",
+      "Busca almenys un punt on li donis la raó.",
+      "Critica la versió més forta de la seva idea, no la més fàcil d'atacar."
+    ],
+    "source": "Dennett, Intuition Pumps (2013), a partir d'Anatol Rapoport",
+    "notification": "Com criticar una idea sense que l'altre es tanqui en banda?"
+  },
+  {
+    "id": "com-018-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 3,
+    "isPro": false,
+    "reviewOf": "com-018",
+    "question": "En una discussió política amb un familiar, quin és el primer pas per tenir una conversa útil?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resumir el seu punt de vista fins que et digui que l'has entès"
+      },
+      {
+        "id": "b",
+        "text": "Exposar les teves dades per convèncer-lo"
+      },
+      {
+        "id": "c",
+        "text": "Canviar de tema per evitar el conflicte"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Quan se sent entès, l'altre està molt més disposat a escoltar-te.",
+    "feedbackWrong": "Si rebats abans d'entendre, l'altre es defensa. I evitar el tema no resol res."
+  },
+  {
+    "id": "com-019",
+    "type": "idea",
+    "topic": "communication",
+    "level": 3,
+    "isPro": false,
+    "concept": "«Explica-m'ho pas a pas»",
+    "hook": "Creus que saps com funciona una cremallera. Intenta explicar-ho.",
+    "keyIdea": "Pensem que entenem les coses molt més del que les entenem. Quan algú ha d'**explicar pas a pas** com funcionaria una política o un objecte, descobreix les llacunes i modera les opinions extremes.",
+    "example": {
+      "text": "Persones amb opinions molt fortes sobre una política les van moderar després d'intentar explicar com funcionaria exactament, pas a pas. Donar-ne raons, en canvi, no les moderava."
+    },
+    "apply": [
+      "En una discussió encallada, pregunta: «Com funcionaria exactament, pas a pas?».",
+      "Fes-ho també amb les teves opinions més fermes.",
+      "Pregunta «com» en lloc de «per què»: el «per què» fa defensar; el «com» fa pensar."
+    ],
+    "source": "Rozenblit i Keil (2002); Fernbach, Rogers, Fox i Sloman (2013)",
+    "notification": "Saps de debò com funciona una cremallera?"
+  },
+  {
+    "id": "com-019-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 3,
+    "isPro": false,
+    "reviewOf": "com-019",
+    "question": "Un amic defensa amb molta passió una idea que et sembla poc pensada. Quina pregunta l'ajudarà més a reflexionar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Com funcionaria exactament, pas a pas?»"
+      },
+      {
+        "id": "b",
+        "text": "«Per què n'estàs tan segur?»"
+      },
+      {
+        "id": "c",
+        "text": "«No veus que no té sentit?»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Explicar el mecanisme fa aflorar les llacunes sense atacar ningú.",
+    "feedbackWrong": "Demanar raons el fa defensar-se encara més, i l'atac directe el tanca en banda."
+  },
+  {
+    "id": "com-020",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Una bona disculpa",
+    "hook": "«Ho sento si t'has sentit ofès» no és una disculpa.",
+    "keyIdea": "Les disculpes més efectives inclouen sobretot dues parts: **reconèixer la responsabilitat** («M'he equivocat») i **oferir una reparació** («Ho arreglaré així»). Les explicacions ajuden menys del que creiem.",
+    "example": {
+      "text": "En lloc de «Ho sento, però és que tenia molta feina», prova «M'he oblidat de la teva presentació, i és culpa meva. Demà t'ajudo a preparar-la»."
+    },
+    "apply": [
+      "Evita el «però» després del «ho sento»: anul·la la disculpa.",
+      "Digues clarament què has fet malament, sense «si t'has sentit…».",
+      "Proposa una manera concreta de reparar-ho."
+    ],
+    "source": "Lewicki, Polin i Lount (2016)",
+    "notification": "Per què «ho sento si t'has sentit ofès» no funciona?"
+  },
+  {
+    "id": "com-020-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-020",
+    "question": "T'has oblidat de l'aniversari d'un bon amic. Quina disculpa funcionarà millor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Ho sento, però és que he tingut unes setmanes de bojos.»"
+      },
+      {
+        "id": "b",
+        "text": "«Ho sento si t'ha molestat.»"
+      },
+      {
+        "id": "c",
+        "text": "«Me n'he oblidat i no té excusa. Et convido a sopar aquesta setmana per celebrar-ho.»"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Assumeixes la responsabilitat i proposes una reparació concreta.",
+    "feedbackWrong": "El «però» i el «si t'ha molestat» converteixen la disculpa en una excusa."
+  },
+  {
+    "id": "com-021",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Demanar consell",
+    "hook": "Tens por que demanar ajuda et faci semblar menys capaç? Passa el contrari.",
+    "keyIdea": "Quan **demanes consell** a algú, sobretot en una tasca difícil, et veu més competent, no menys. A més, se sent valorat. Funciona si la pregunta té sentit i la persona en sap.",
+    "example": {
+      "text": "Un treballador nou pregunta a una companya: «Tu com prepararies aquesta reunió amb el client?». Ella se sent reconeguda, i ell sembla algú que vol fer les coses bé."
+    },
+    "apply": [
+      "Demana consell en tasques difícils, no en coses que podries buscar en dos minuts.",
+      "Tria algú que en sàpiga de debò i digues-li per què l'hi demanes.",
+      "Després, explica-li com t'ha anat: tanca el cercle."
+    ],
+    "source": "Brooks, Gino i Schweitzer (2015)",
+    "notification": "Demanar consell et fa semblar menys capaç?"
+  },
+  {
+    "id": "com-021-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-021",
+    "question": "Estàs encallat amb un projecte complicat a la feina. Què és el més recomanable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Demanar consell a un company que en sap"
+      },
+      {
+        "id": "b",
+        "text": "Resoldre-ho sol per no semblar incapaç"
+      },
+      {
+        "id": "c",
+        "text": "Esperar que algú se n'adoni i t'ajudi"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Demanar consell en una tasca difícil et fa semblar més competent, no menys.",
+    "feedbackWrong": "La por de semblar incapaç és infundada, i esperar que algú se n'adoni pot fer tard."
+  },
+  {
+    "id": "com-022",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Parlar amb desconeguts",
+    "hook": "Parlar amb un desconegut al tren t'alegra el viatge, encara que no t'ho creguis.",
+    "keyIdea": "En un estudi, la gent que parlava amb un desconegut al transport públic acabava el trajecte **més contenta** que la que anava sola. Però abans de provar-ho, gairebé tothom creia que seria al revés.",
+    "example": {
+      "text": "Fas un comentari al veí de seient sobre el retard del tren. Acabeu parlant deu minuts de les vostres feines i baixes de més bon humor."
+    },
+    "apply": [
+      "Prova de fer un comentari breu a algú a la cua, al tren o a l'ascensor.",
+      "Si la persona no vol parlar, no passa res: la majoria sí que en té ganes.",
+      "Fixa't en com et sents després, no en la incomoditat del principi."
+    ],
+    "source": "Epley i Schroeder (2014)",
+    "notification": "Per què parlar amb un desconegut et pot alegrar el dia?"
+  },
+  {
+    "id": "com-022-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-022",
+    "question": "Segons els estudis, què sol passar quan comences una conversa amb un desconegut al tren?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que l'altra persona se sent molesta"
+      },
+      {
+        "id": "b",
+        "text": "Que tots dos acabeu més contents del que esperàveu"
+      },
+      {
+        "id": "c",
+        "text": "Que és incòmode i no val la pena"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Subestimem molt com de bé ens farà, a nosaltres i a l'altre.",
+    "feedbackWrong": "És el que creu gairebé tothom abans de provar-ho. Els estudis diuen el contrari."
+  },
+  {
+    "id": "com-023",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Agrades més del que creus",
+    "hook": "Després de parlar amb algú nou, segurament li has caigut millor del que penses.",
+    "keyIdea": "És la **bretxa de simpatia**: després de conèixer algú, subestimem sistemàticament quant li hem agradat. Estem massa pendents dels nostres errors i no veiem els senyals positius de l'altre.",
+    "example": {
+      "text": "Surts d'una primera trobada pensant «He parlat massa i he dit bajanades». L'altra persona, en canvi, explica que t'ha trobat interessant i divertit."
+    },
+    "apply": [
+      "Després d'una conversa, recorda que segurament has caigut millor del que creus.",
+      "Atreveix-te a proposar una segona trobada: és més probable que diguin que sí del que penses.",
+      "No repassis cada frase que has dit: l'altre no ho fa."
+    ],
+    "source": "Boothby, Cooney, Sandstrom i Clark (2018)",
+    "notification": "Has caigut millor del que penses a aquella persona nova?"
+  },
+  {
+    "id": "com-023-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-023",
+    "question": "Acabes de conèixer algú en una festa i dubtes si proposar-li un cafè. Què diuen els estudis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que és millor esperar que t'ho proposi ell"
+      },
+      {
+        "id": "b",
+        "text": "Que és millor no fer-ho, perquè no sembli que insisteixes"
+      },
+      {
+        "id": "c",
+        "text": "Que segurament li has caigut millor del que creus"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "La bretxa de simpatia ens fa subestimar l'impressió que causem. Proposa-ho.",
+    "feedbackWrong": "Aquest dubte és justament la bretxa de simpatia: segurament li has agradat més del que penses."
+  },
+  {
+    "id": "com-024",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Escriu per donar les gràcies",
+    "hook": "Un missatge d'agraïment fa molta més il·lusió del que t'imagines.",
+    "keyIdea": "Quan escrivim a algú per **agrair-li alguna cosa**, subestimem quant de bé li farà i sobreestimem com d'incòmode serà. Per això ho fem molt menys del que caldria.",
+    "example": {
+      "text": "Escrius a un antic professor: «Gràcies a les teves classes vaig decidir estudiar el que estudio». Per a tu són dos minuts; a ell li alegres la setmana."
+    },
+    "apply": [
+      "Pensa en algú que t'hagi ajudat i escriu-li avui un missatge concret.",
+      "Explica què va fer i quin efecte va tenir en tu.",
+      "No et preocupis per com queda escrit: el que compta és el gest."
+    ],
+    "source": "Kumar i Epley (2018)",
+    "notification": "Quant fa que no dones les gràcies per escrit a algú?"
+  },
+  {
+    "id": "com-024-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-024",
+    "question": "Vols agrair a una companya que et va ajudar molt l'any passat, però dubtes perquè ha passat temps. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No dir-li res: segurament ja no se'n recorda"
+      },
+      {
+        "id": "b",
+        "text": "Escriure-li un missatge concret explicant què va fer i com et va ajudar"
+      },
+      {
+        "id": "c",
+        "text": "Esperar a trobar-la en persona algun dia"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Un agraïment concret fa molta més il·lusió del que creus, encara que hagi passat temps.",
+    "feedbackWrong": "Subestimem molt l'efecte d'un agraïment. Esperar sol voler dir no fer-ho mai."
+  },
+  {
+    "id": "com-025",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "«I què més?»",
+    "hook": "La millor pregunta per ajudar algú té només tres paraules.",
+    "keyIdea": "Quan algú t'explica un problema, el primer que diu sovint no és el més important. Preguntar **«I què més?»** l'ajuda a anar més a fons i evita que donis consells massa d'hora.",
+    "example": {
+      "text": "—Estic estressat amb el projecte. —I què més? —Bé… el que de debò em preocupa és que el client nou no confia en mi."
+    },
+    "apply": [
+      "Abans de donar un consell, pregunta «I què més?» una o dues vegades.",
+      "Fes la pregunta amb interès real, no com un tràmit.",
+      "Quan ja no surti res de nou, pregunta: «I de tot això, què és el més important per a tu?»."
+    ],
+    "source": "Stanier, The Coaching Habit (2016)",
+    "notification": "Quina pregunta de tres paraules ajuda a anar al fons d'un problema?"
+  },
+  {
+    "id": "com-025-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-025",
+    "question": "Un company t'explica que està desmotivat perquè té massa reunions. Abans de donar-li cap consell, què li pots preguntar?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Has provat de dir que no a algunes?»"
+      },
+      {
+        "id": "b",
+        "text": "«I què més?»"
+      },
+      {
+        "id": "c",
+        "text": "«A mi també em passa.»"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "La primera queixa sovint no és la de fons. «I què més?» ajuda a arribar-hi.",
+    "feedbackWrong": "Donar consells o parlar de tu massa d'hora tanca la porta al problema de fons."
+  },
+  {
+    "id": "com-026",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "Repetir fa creïble",
+    "hook": "Com més vegades sents una frase, més veritat et sembla. Encara que sigui falsa.",
+    "keyIdea": "És l'**efecte de veritat il·lusòria**: la repetició fa que una afirmació ens soni familiar, i confonem familiaritat amb veritat. Passa fins i tot quan sabem que la informació és dubtosa.",
+    "example": {
+      "text": "Has sentit tantes vegades que només fem servir el 10 % del cervell que et sembla un fet. És fals, però la repetició l'ha fet creïble."
+    },
+    "apply": [
+      "Quan una afirmació et soni «evident», pregunta't on l'has comprovada.",
+      "Per desmentir un rumor, repeteix sobretot la versió correcta, no el mite.",
+      "Si vols que un missatge important arreli, repeteix-lo de manera clara i constant."
+    ],
+    "source": "Hasher, Goldstein i Toppino (1977)",
+    "notification": "Per què una mentida repetida acaba semblant veritat?"
+  },
+  {
+    "id": "com-026-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-026",
+    "question": "Vols desmentir un rumor fals que corre per l'empresa. Quina és la millor estratègia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repetir el rumor diverses vegades per explicar per què és fals"
+      },
+      {
+        "id": "b",
+        "text": "No dir res perquè s'oblidi sol"
+      },
+      {
+        "id": "c",
+        "text": "Explicar clarament què és cert i repetir-ho, esmentant el rumor el mínim"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Repetir la versió correcta la fa familiar, i per tant creïble.",
+    "feedbackWrong": "Repetir el rumor el fa més familiar, i callar deixa que corri sol."
+  },
+  {
+    "id": "com-027",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "«Estic emocionat»",
+    "hook": "Abans de parlar en públic, no et diguis «calma't». Digues «estic emocionat».",
+    "keyIdea": "Calmar-se de cop és molt difícil, perquè els nervis són activació. És més fàcil **reinterpretar-los com a emoció**: el cos ja està activat, només en canvies l'etiqueta. En estudis, això millorava l'actuació.",
+    "example": {
+      "text": "Uns participants que deien en veu alta «Estic emocionat» abans de fer un discurs van parlar de manera més convincent que els que es deien «Estic tranquil»."
+    },
+    "apply": [
+      "Abans d'una situació que et posa nerviós, digues-te «Estic emocionat».",
+      "Interpreta el cor accelerat com a energia per fer-ho bé.",
+      "Prepara't bé: la reinterpretació ajuda, però no substitueix l'assaig."
+    ],
+    "source": "Brooks (2014)",
+    "notification": "Què t'has de dir abans de parlar en públic? No és «calma't»."
+  },
+  {
+    "id": "com-027-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-027",
+    "question": "Tens una entrevista important d'aquí a cinc minuts i et tremolen les mans. Què t'ajudarà més?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dir-te «Calma't, calma't»"
+      },
+      {
+        "id": "b",
+        "text": "Dir-te «Estic emocionat: això vol dir que m'importa»"
+      },
+      {
+        "id": "c",
+        "text": "Pensar en tot el que pot sortir malament per estar preparat"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Reinterpretar els nervis com a emoció aprofita l'activació en lloc de lluitar-hi.",
+    "feedbackWrong": "Intentar calmar-te de cop sol fallar, i pensar en el pitjor augmenta l'ansietat."
+  },
+  {
+    "id": "com-028",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "La maledicció del coneixement",
+    "hook": "Quan saps molt d'un tema, oblides com era no saber-ne res.",
+    "keyIdea": "La **maledicció del coneixement** fa que els experts expliquin malament: un cop saps una cosa, no pots imaginar què és no saber-la, i et saltes passos que per a tu són obvis.",
+    "example": {
+      "text": "En un experiment, uns participants picaven el ritme de cançons conegudes amb els dits. Creien que els oients n'endevinarien la meitat. Només en van endevinar 3 de 120."
+    },
+    "apply": [
+      "Quan expliquis alguna cosa, imagina que parles amb algú que no en sap res.",
+      "Fes servir exemples concrets i evita les sigles.",
+      "Després d'explicar-ho, demana a l'altre que t'ho expliqui a tu."
+    ],
+    "source": "Newton (1990); Camerer, Loewenstein i Weber (1989)",
+    "notification": "Per què de vegades els experts són els que pitjor expliquen les coses?"
+  },
+  {
+    "id": "com-028-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-028",
+    "question": "Has d'explicar a la teva àvia com fer una videotrucada. Què t'ajudarà més?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fer-ho pas a pas i demanar-li que ho provi mentre l'acompanyes"
+      },
+      {
+        "id": "b",
+        "text": "Explicar-ho ràpid, perquè és molt fàcil"
+      },
+      {
+        "id": "c",
+        "text": "Enviar-li un enllaç a un tutorial"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Anar pas a pas i comprovar-ho amb ella evita els salts que per a tu són obvis.",
+    "feedbackWrong": "El que per a tu és «molt fàcil» és justament la maledicció del coneixement."
+  },
+  {
+    "id": "com-029",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "Fes-ho concret",
+    "hook": "Les idees abstractes s'obliden. Les concretes s'enganxen.",
+    "keyIdea": "Recordem i entenem millor el que podem **imaginar**: exemples, imatges, persones, xifres palpables. «Millorar l'atenció al client» no diu res; «Respondre tots els correus en menys de 24 hores», sí.",
+    "example": {
+      "text": "Apple no va presentar el primer iPod com «5 GB de memòria», sinó com «1.000 cançons a la butxaca». Tothom ho va entendre a l'instant."
+    },
+    "apply": [
+      "Després de cada idea abstracta, afegeix «Per exemple…».",
+      "Fes servir xifres que la gent pugui visualitzar.",
+      "Explica un cas real abans de la teoria."
+    ],
+    "source": "Heath i Heath, Made to Stick (2007)",
+    "notification": "Per què algunes idees s'obliden i d'altres s'enganxen?"
+  },
+  {
+    "id": "com-029-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-029",
+    "question": "Quina d'aquestes frases és més fàcil de recordar per a un equip?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«Cap client ha d'esperar més de 2 minuts al telèfon.»"
+      },
+      {
+        "id": "b",
+        "text": "«Hem d'oferir una experiència d'excel·lència al client.»"
+      },
+      {
+        "id": "c",
+        "text": "«Cal optimitzar els processos d'atenció.»"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Una frase concreta es pot imaginar, recordar i complir.",
+    "feedbackWrong": "Les frases abstractes sonen bé, però no es recorden ni diuen què cal fer."
+  },
+  {
+    "id": "com-030",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "El to es perd per escrit",
+    "hook": "Creus que el teu correu irònic s'entén. Gairebé la meitat de les vegades, no.",
+    "keyIdea": "Quan escrivim, «sentim» el nostre to al cap i creiem que l'altre també el sentirà. Però **per escrit el to es perd**: la ironia, l'humor o la serietat s'interpreten malament molt més del que pensem.",
+    "example": {
+      "text": "En un experiment, qui enviava missatges sarcàstics o seriosos creia que el lector n'encertaria el to gairebé sempre. En realitat, l'encertava poc més de la meitat de les vegades."
+    },
+    "apply": [
+      "Evita la ironia en els missatges de feina importants.",
+      "Abans d'enviar, rellegeix el text amb el pitjor to possible.",
+      "Si el tema és delicat, millor una trucada o una conversa."
+    ],
+    "source": "Kruger, Epley, Parker i Ng (2005)",
+    "notification": "El to del teu correu s'entén com creus?"
+  },
+  {
+    "id": "com-030-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-030",
+    "question": "Vols fer una broma al teu cap per correu sobre el retard d'un projecte. Què és el més prudent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Afegir molts signes d'exclamació perquè s'entengui"
+      },
+      {
+        "id": "b",
+        "text": "Fer-la en persona o deixar-la per a una altra ocasió"
+      },
+      {
+        "id": "c",
+        "text": "Enviar-la: segur que l'entén"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Per escrit el to es perd fàcilment. Les bromes delicades, millor en persona.",
+    "feedbackWrong": "Tu sents el to al cap, però l'altre no. És més arriscat del que sembla."
+  },
+  {
+    "id": "com-031",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "«Què deixo de fer?»",
+    "hook": "Quan el teu cap et demana una tasca més, no cal dir que no. Pregunta què deixes de fer.",
+    "keyIdea": "Si ja vas carregat, en lloc d'un «no» sec, posa **les prioritats** sobre la taula: «Ara tinc A, B i C. Si faig això, quina deixo per a més endavant?». Així decidiu junts.",
+    "example": {
+      "text": "«Puc preparar l'informe nou per divendres, però llavors el pressupost s'endarrereix fins dimarts. Què prefereixes?»"
+    },
+    "apply": [
+      "Tingues a mà la llista de les teves tasques i terminis.",
+      "Respon amb opcions, no amb queixes.",
+      "Deixa que qui et demana la feina decideixi què va primer."
+    ],
+    "source": "McKeown, Essentialism (2014)",
+    "notification": "Com dir que no al teu cap sense dir «no»?"
+  },
+  {
+    "id": "com-031-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-031",
+    "question": "El teu cap et demana una presentació urgent i aquesta setmana ja tens tres entregues. Què respons?",
+    "options": [
+      {
+        "id": "a",
+        "text": "«D'acord», i treballes fins tard tota la setmana"
+      },
+      {
+        "id": "b",
+        "text": "«No puc, vaig a tope.»"
+      },
+      {
+        "id": "c",
+        "text": "«La puc fer, però haurem d'endarrerir una de les altres entregues. Quina prefereixes?»"
+      }
+    ],
+    "correctOptionId": "c",
+    "feedbackCorrect": "Posar les prioritats sobre la taula converteix el «no» en una decisió compartida.",
+    "feedbackWrong": "Dir que sí a tot et crema, i un «no» sec sense alternatives tensa la relació."
+  },
+  {
+    "id": "com-032",
+    "type": "idea",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "concept": "El disc ratllat",
+    "hook": "Quan algú insisteix i insisteix, no et calen més arguments. Només repetir.",
+    "keyIdea": "La tècnica del **disc ratllat** consisteix a repetir la teva resposta amb calma, amb les mateixes paraules, sense entrar a discutir cada nou argument. Com més justificacions dones, més punts té l'altre per atacar.",
+    "example": {
+      "text": "—Va, només una copa més. —No, gràcies, avui no beuré més. —Però si és dissabte! —Ja ho sé, però avui no beuré més."
+    },
+    "apply": [
+      "Tria una frase curta i clara i repeteix-la sense canviar-la.",
+      "Mantén un to tranquil: no cal enfadar-se.",
+      "Pots reconèixer l'argument de l'altre («Ja ho entenc») i tornar a la teva frase."
+    ],
+    "source": "Smith, When I Say No, I Feel Guilty (1975)",
+    "notification": "Com dir que no a algú que insisteix i insisteix?"
+  },
+  {
+    "id": "com-032-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 1,
+    "isPro": false,
+    "reviewOf": "com-032",
+    "question": "Un comercial insisteix per telèfon perquè canviïs de companyia, amb un argument nou cada vegada. Què és el més efectiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repetir amb calma «No m'interessa, gràcies» fins a acabar la trucada"
+      },
+      {
+        "id": "b",
+        "text": "Rebatre cada argument amb dades"
+      },
+      {
+        "id": "c",
+        "text": "Inventar-te una excusa diferent cada vegada"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Repetir la mateixa resposta no dona res a què agafar-se.",
+    "feedbackWrong": "Cada argument o excusa nova li dona una cosa més per rebatre."
+  },
+  {
+    "id": "com-033",
+    "type": "idea",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "concept": "L'error que et fa humà",
+    "hook": "Una persona molt competent que comet un petit error ens cau millor que si fos perfecta.",
+    "keyIdea": "És l'**efecte pratfall**: quan algú que ja veiem com a capaç comet un error petit, ens sembla més proper i humà. Però només funciona si abans ha demostrat la seva competència.",
+    "example": {
+      "text": "En un experiment, un concursant brillant que es tirava el cafè per sobre agradava més que el mateix concursant sense l'accident. En un concursant mediocre, l'error el feia caure pitjor."
+    },
+    "apply": [
+      "No amaguis els errors petits: reconeix-los amb naturalitat i humor.",
+      "Primer demostra que saps fer la feina; l'error humà ve després.",
+      "No fingeixis errors: la gent ho nota."
+    ],
+    "source": "Aronson, Willerman i Floyd (1966)",
+    "notification": "Per què un petit error pot fer que caiguis millor?"
+  },
+  {
+    "id": "com-033-q1",
+    "type": "quiz",
+    "topic": "communication",
+    "level": 2,
+    "isPro": false,
+    "reviewOf": "com-033",
+    "question": "En una presentació que t'està sortint molt bé, t'equivoques amb una xifra. Què fas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fer veure que no ha passat res"
+      },
+      {
+        "id": "b",
+        "text": "Corregir-ho amb naturalitat i un toc d'humor, i continuar"
+      },
+      {
+        "id": "c",
+        "text": "Demanar disculpes diverses vegades"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Un error petit, ben gestionat, et fa més proper sense restar-te credibilitat.",
+    "feedbackWrong": "Amagar-ho pot fer-te perdre confiança, i disculpar-te massa li dona més pes del que té."
+  }
+]

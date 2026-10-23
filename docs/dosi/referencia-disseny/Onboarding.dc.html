@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Onboarding</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#101216}
+a{color:#FFB27A}a:hover{color:#FFCBA4}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #101216; color: #F2F3F5; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 26px; padding: 28px 20px 24px; overflow: hidden">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 13px; font-weight: 600; color: #FF8A3D">Benvingut a Dosi</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 34px; line-height: 1.1; font-weight: 700; letter-spacing: -0.01em">Uns minuts al dia per entendre millor la gent.</h1>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A3A8B3">Tria què t'interessa i et prepararem un feed a mida.</p>
+</div>
+<section aria-labelledby="temes-titol" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="temes-titol" style="margin: 0; font-size: 14px; font-weight: 600; color: #C9CDD6">Què vols aprendre?</h2>
+<sc-for list="{{ topics }}" as="t" hint-placeholder-count="3">
+<button type="button" aria-pressed="{{ t.pressed }}" onClick="{{ t.toggle }}" style="display: flex; align-items: center; gap: 14px; min-height: 68px; padding: 12px 14px; border-radius: 18px; border: 1.5px solid {{ t.border }}; background: {{ t.bg }}; color: #F2F3F5; text-align: left; cursor: pointer">
+<span style="width: 40px; height: 40px; flex: none; border-radius: 12px; background: {{ t.tint }}; color: {{ t.color }}; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 18px; font-weight: 700">{{ t.initial }}</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 3px">
+<span style="font-size: 16px; font-weight: 600">{{ t.name }}</span>
+<span style="font-size: 13px; color: #A3A8B3">{{ t.desc }}</span>
+</span>
+<span style="width: 26px; height: 26px; flex: none; border-radius: 13px; border: 1.5px solid {{ t.checkBorder }}; background: {{ t.checkBg }}; color: #101216; display: flex; align-items: center; justify-content: center"><sc-if value="{{ t.on }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></sc-if></span>
+</button>
+</sc-for>
+</section>
+<section aria-labelledby="objectiu-titol" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="objectiu-titol" style="margin: 0; font-size: 14px; font-weight: 600; color: #C9CDD6">Objectiu diari</h2>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{ goals }}" as="g" hint-placeholder-count="3">
+<button type="button" aria-pressed="{{ g.pressed }}" onClick="{{ g.pick }}" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 64px; border-radius: 14px; border: 1.5px solid {{ g.border }}; background: {{ g.bg }}; color: #F2F3F5; cursor: pointer">
+<span style="font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 20px; font-weight: 700">{{ g.count }}</span>
+<span style="font-size: 12px; color: #A3A8B3">{{ g.label }}</span>
+</button>
+</sc-for>
+</div>
+</section>
+<section aria-labelledby="hora-titol" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="hora-titol" style="margin: 0; font-size: 14px; font-weight: 600; color: #C9CDD6">Aprenentatge del dia</h2>
+<button type="button" style="display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 16px; border-radius: 16px; border: 1px solid #2A2E36; background: #1A1D23; color: #F2F3F5; cursor: pointer; text-align: left">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF8A3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"></path><path d="M10 21h4"></path></svg>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 500">Notificació cada dia a les</span><span style="font-size: 12px; color: #A3A8B3">Pots canviar-ho quan vulguis</span></span>
+<span style="font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 20px; font-weight: 700">20:30</span>
+</button>
+</section>
+<div style="flex: 1"></div>
+<a href="Main.dc.html" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 54px; border-radius: 16px; background: #FF8A3D; color: #101216; font-size: 16px; font-weight: 600; text-decoration: none">Començar a aprendre<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+state = { picked: { neg: true, psi: true, com: false }, goal: 12 };
+renderVals() {
+const st = this.state || {};
+const picked = st.picked || { neg: true, psi: true, com: false };
+const goal = st.goal || 12;
+const base = [
+{ id: 'neg', name: 'Negociació', desc: 'Sous, preus, acords', initial: 'N', color: '#FF8A3D', tint: 'rgba(255,138,61,0.16)' },
+{ id: 'psi', name: 'Psicologia', desc: 'Per què fem el que fem', initial: 'P', color: '#A78BFA', tint: 'rgba(167,139,250,0.16)' },
+{ id: 'com', name: 'Comunicació', desc: 'Escoltar, convèncer, dir que no', initial: 'C', color: '#2DD4BF', tint: 'rgba(45,212,191,0.16)' }
+];
+const topics = base.map((t) => {
+const on = !!picked[t.id];
+return {
+...t,
+on: on,
+pressed: on ? 'true' : 'false',
+border: on ? t.color : '#2A2E36',
+bg: on ? '#1F2229' : '#1A1D23',
+checkBorder: on ? t.color : '#4A4F5A',
+checkBg: on ? t.color : 'transparent',
+toggle: () => this.setState({ picked: { ...picked, [t.id]: !on } })
+};
+});
+const goals = [
+{ count: 5, label: 'Relaxat' },
+{ count: 12, label: 'Regular' },
+{ count: 20, label: 'Intens' }
+].map((g) => {
+const on = g.count === goal;
+return {
+...g,
+pressed: on ? 'true' : 'false',
+border: on ? '#FF8A3D' : '#2A2E36',
+bg: on ? 'rgba(255,138,61,0.12)' : '#1A1D23',
+pick: () => this.setState({ goal: g.count })
+};
+});
+return { topics: topics, goals: goals };
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "salary",
+    "title": "Negociar el sou",
+    "topic": "negotiation",
+    "character": {
+      "name": "Marta",
+      "role": "RRHH",
+      "initial": "M",
+      "description": "Amb la Marta, de recursos humans"
+    },
+    "level": "Nivell mitjà",
+    "minutes": 5,
+    "goal": "Tancar un sou dins del teu rang",
+    "isPro": true
+  },
+  {
+    "id": "raise",
+    "title": "Demanar un augment",
+    "topic": "negotiation",
+    "character": {
+      "name": "Jordi",
+      "role": "El teu cap",
+      "initial": "J",
+      "description": "Amb en Jordi, el teu cap"
+    },
+    "level": "Nivell difícil",
+    "minutes": 7,
+    "goal": "Aconseguir un augment o una revisió amb data",
+    "isPro": true
+  },
+  {
+    "id": "say-no",
+    "title": "Dir que no a més feina",
+    "topic": "communication",
+    "character": {
+      "name": "Laia",
+      "role": "Companya d'equip",
+      "initial": "L",
+      "description": "Amb la Laia, companya d'equip"
+    },
+    "level": "Nivell mitjà",
+    "minutes": 5,
+    "goal": "Dir que no a la tasca nova sense trencar la relació",
+    "isPro": true
+  },
+  {
+    "id": "angry-client",
+    "title": "Calmar un client enfadat",
+    "topic": "communication",
+    "character": {
+      "name": "Pere",
+      "role": "Client",
+      "initial": "P",
+      "description": "Amb en Pere, que reclama un retard"
+    },
+    "level": "Nivell fàcil",
+    "minutes": 4,
+    "goal": "Calmar el client i acordar una solució",
+    "isPro": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "negotiation",
+    "name": "Negociació",
+    "description": "Sous, preus, acords",
+    "initial": "N",
+    "color": "#FF8A3D",
+    "labelColor": "#FFB27A",
+    "isPro": false,
+    "order": 1
+  },
+  {
+    "id": "psychology",
+    "name": "Psicologia",
+    "description": "Per què fem el que fem",
+    "initial": "P",
+    "color": "#A78BFA",
+    "labelColor": "#C4B5FD",
+    "isPro": false,
+    "order": 2
+  },
+  {
+    "id": "communication",
+    "name": "Comunicació",
+    "description": "Escoltar, convèncer, dir que no",
+    "initial": "C",
+    "color": "#2DD4BF",
+    "labelColor": "#5EEAD4",
+    "isPro": false,
+    "order": 3
+  }
+]
