@@ -46,10 +46,12 @@ const templateConfig: TemplateConfig = {
   // Analítica opcional i sense cookies. Buida: no s'injecta cap script.
   // TODO 👤 (opcional): crear el compte a GoatCounter i posar-ne el codi.
   goatcounterCode: undefined,
-  // TODO 👤: enllaç real el dia del llançament (es pinten igualment les
-  // insígnies apuntant a #descarrega; vegeu src/utils/common.ts).
+  // Mentre un enllaç és `undefined`, la seva insígnia es pinta igualment
+  // apuntant a #descarrega (vegeu src/utils/common.ts).
+  // TODO 👤: pendent l'enllaç real de l'App Store.
   appStoreLink: undefined,
-  googlePlayLink: undefined,
+  googlePlayLink:
+    "https://play.google.com/store/apps/details?id=com.stormfkrs.dosi",
   footer: {
     legalLinks: {
       termsAndConditions: true,
