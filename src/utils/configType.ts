@@ -13,6 +13,11 @@ export type TemplateConfig = {
     backgroundGrid: boolean;
     forceTheme: boolean;
     showThemeSwitch: boolean;
+    /**
+     * GoatCounter code (optional, cookie-free analytics). The script is only
+     * injected when it has a value.
+     */
+    goatcounterCode?: string | undefined;
     googlePlayLink?: string | undefined;
     appStoreLink?: string | undefined;
     app: {
@@ -142,6 +147,28 @@ export type TemplateConfig = {
             }[];
         } | undefined;
         /**
+         * Real example doses, one per topic. The cards are taken verbatim from
+         * `docs/dosi/cards.json`: nothing here is invented.
+         */
+        samples?: {
+            id?: string | undefined;
+            title: string;
+            subtitle?: string | undefined;
+            doses: {
+                /** Topic id (topics.json). */
+                topic: string;
+                topicName: string;
+                /** Topic label colors (topics.json): color at 14 % and label text. */
+                topicColor: string;
+                topicLabelColor: string;
+                cards: {
+                    concept: string;
+                    hook: string;
+                    source: string;
+                }[];
+            }[];
+        } | undefined;
+        /**
          * Bloc de preus: comparison entre el pla gratis i Pro, sense preus
          * decidits (vegeu §0 del pla).
          */
@@ -159,13 +186,22 @@ export type TemplateConfig = {
         pricing?: {
             id?: string | undefined;
             title: string;
-            actionText?: string | undefined;
             subtitle?: string | undefined;
-            promises?: {
-                icon: import("../components/icons").IconName;
-                title: string;
-                subtitle: string;
-            }[] | undefined;
+            /**
+             * Comparison between the free plan and Pro. No prices: they are
+             * not decided yet (see §0 of the plan).
+             */
+            plans: {
+                name: string;
+                features: {
+                    label: string;
+                    /** "Sí" / "No" / a short value ("1-2 de prova"). Text, never color alone. */
+                    value: string;
+                }[];
+                highlight?: boolean | undefined;
+            }[];
+            /** CTA below the table. Must say the same as the store buttons. */
+            actionText?: string | undefined;
         } | undefined;
     };
 }

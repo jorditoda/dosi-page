@@ -27,7 +27,7 @@ function Footer() {
         viewport={{ once: true, amount: 0.3 }}
         className="max-w-screen-lg mx-auto"
       >
-        <nav aria-label="Footer">
+        <nav aria-label="Peu de pàgina">
           <ul className="flex flex-col items-start gap-3 list-none p-0 m-0">
             {links.map(({ title, href }, index) => (
               <motion.li
@@ -114,7 +114,7 @@ function Footer() {
                   className="font-semibold opacity-70 hover:opacity-100 hover:text-primary transition-colors lg:whitespace-nowrap"
                   href="/terms-and-conditions"
                 >
-                  Terms &amp; conditions
+                  Condicions d'ús
                 </motion.a>
               </li>
             )}
@@ -129,7 +129,7 @@ function Footer() {
                   className="font-semibold opacity-70 hover:opacity-100 hover:text-primary transition-colors lg:whitespace-nowrap"
                   href="/privacy-policy"
                 >
-                  Privacy policy
+                  Política de privacitat
                 </motion.a>
               </li>
             )}
@@ -144,7 +144,7 @@ function Footer() {
                   className="font-semibold opacity-70 hover:opacity-100 hover:text-primary transition-colors lg:whitespace-nowrap"
                   href="/cookies-policy"
                 >
-                  Cookies policy
+                  Política de galetes
                 </motion.a>
               </li>
             )}
@@ -158,7 +158,7 @@ function Footer() {
             transition={{ delay: 0.44 }}
             className="mt-0 md:ml-4 md:whitespace-nowrap opacity-70"
           >
-            All rights reserved © {new Date().getFullYear()}
+            Tots els drets reservats © {new Date().getFullYear()}
           </motion.p>
         </div>
       </motion.div>

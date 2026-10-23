@@ -21,8 +21,8 @@ function AppRedirectionPage({ config }: Props) {
     <main className="w-screen h-screen flex flex-col items-center justify-center">
       <span className="loading loading-dots w-16"></span>
       <h2 className="text-center max-w-xs md:max-w-md">
-        We’re sending you to our app. If nothing happens, you’ll be redirected
-        shortly.
+        T'estem enviant a la botiga del teu dispositiu. Si no passa res, en un
+        moment tornaràs a la pàgina.
       </h2>
     </main>
   );

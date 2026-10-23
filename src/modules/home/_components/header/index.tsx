@@ -1,14 +1,13 @@
 import {motion, useScroll} from "framer-motion";
 import {useContext, useRef} from "react";
 import {ConfigContext} from "../../../../utils/configContext";
+import StoreBadges from "../../../../components/storeBadges";
 import SingleScreenshot from "./singleScreenshot";
 import SVGWave from "./svg/wave";
 import SVGBlob from "./svg/blob";
 
 function Header() {
   const {
-    googlePlayLink,
-    appStoreLink,
     home: { header, partners },
   } = useContext(ConfigContext)!;
 
@@ -74,28 +73,7 @@ function Header() {
                 transition={{ delay: 0.6 }}
                 className="list-none flex gap-4 m-0 p-0"
               >
-                {googlePlayLink && (
-                  <li className="m-0 p-0">
-                    <a href={googlePlayLink}>
-                      <img
-                        className="h-14"
-                        alt="google play logo"
-                        src="/stores/google-play.svg"
-                      />
-                    </a>
-                  </li>
-                )}
-                {appStoreLink && (
-                  <li className="m-0 p-0">
-                    <a href={appStoreLink}>
-                      <img
-                        className="h-14"
-                        alt="app store logo"
-                        src="/stores/app-store.svg"
-                      />
-                    </a>
-                  </li>
-                )}
+                <StoreBadges />
               </motion.ul>
             </div>
           </div>

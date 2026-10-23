@@ -1,31 +1,27 @@
 import AnimatedText from "../../../../components/animatedText";
-import {Icon} from "../../../../components/icons";
-import {motion} from "framer-motion";
-import {useContext} from "react";
+import { Icon } from "../../../../components/icons";
+import { motion } from "framer-motion";
+import { useContext } from "react";
 import {ConfigContext} from "../../../../utils/configContext";
+import StoreBadges from "../../../../components/storeBadges";
 
 /**
- * "Free forever" block — ROADMAP.md E2.6
+ * Taula de comparison Gratis / Pro (model freemium de §0).
  *
- * Before it was a price table with a single "Free Plan": an orphan card 1/3
- * wide lost in a sea of white, with an infinite `animate-ping` on each bullet
- * and a 3D wallet from the template.
+ * Sense preus: encara no n'hi ha de decidits. Els valors són text ("Sí",
+ * "No", "1-2 de prova"), mai només color, perquè el contrast també es llegeix
+ * en blanc i negre.
  *
- * The real price is 0 on both stores (verified against the iTunes API and the
- * Google Play listing), so a comparison table says nothing the title doesn't
- * already say. Now it is the three guarantees that make "free" mean something,
- * which is the real sales pitch.
- *
- * This also fixes the E9.0 bug: `planImages` and `planBGs` were hardcoded
- * outside the config, so adding a fourth plan broke.
+ * El CTA és el mateix que els botons de botiga: "Baixa l'app".
  */
 function Pricing() {
   const {
     home: { pricing },
-    googlePlayLink,
-    appStoreLink,
   } = useContext(ConfigContext)!;
   if (!pricing) return null;
+
+  // Etiqueta de cada fila: la intersecten els dos plans.
+  const rowLabels = pricing.plans[0]?.features.map((f) => f.label) ?? [];
 
   return (
     <section
@@ -48,55 +44,87 @@ function Pricing() {
         )}
       </div>
 
-      <ul className="list-none p-0 m-0 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-        {pricing.promises?.map((promise, index) => (
-          <motion.li
-            key={promise.title}
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ delay: index * 0.08 }}
-            className="surface-card bg-base-200 p-6 flex flex-col items-center text-center"
-          >
-            <Icon name={promise.icon} className="w-6 h-6 text-primary mb-3" />
-            <h3 className="font-condensed font-bold text-xl m-0 mb-1">
-              {promise.title}
-            </h3>
-            <p className="m-0 opacity-70 leading-relaxed">{promise.subtitle}</p>
-          </motion.li>
-        ))}
-      </ul>
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="surface-card bg-base-200 overflow-hidden max-w-3xl mx-auto"
+      >
+        <table className="w-full text-left">
+          <caption className="sr-only">
+            Comparació entre el pla gratuït i Pro
+          </caption>
+          <thead>
+            <tr className="border-b border-base-300">
+              <th scope="col" className="p-4 md:p-5 font-normal w-1/2">
+                <span className="sr-only">Funció</span>
+              </th>
+              {pricing.plans.map((plan) => (
+                <th
+                  key={plan.name}
+                  scope="col"
+                  className="p-4 md:p-5 text-center align-bottom"
+                >
+                  <span className="font-condensed font-bold text-xl md:text-2xl block">
+                    {plan.name}
+                  </span>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rowLabels.map((label, i) => (
+              <tr
+                key={label}
+                className="border-b border-base-300/60 last:border-b-0"
+              >
+                <th
+                  scope="row"
+                  className="p-3 md:p-4 font-normal opacity-80 text-sm md:text-base"
+                >
+                  {label}
+                </th>
+                {pricing.plans.map((plan) => {
+                  const value = plan.features[i]?.value ?? "—";
+                  const included = value !== "No";
+                  return (
+                    <td
+                      key={plan.name}
+                      className={
+                        "p-3 md:p-4 text-center text-sm md:text-base " +
+                        (plan.highlight && included ? "text-primary font-semibold" : "")
+                      }
+                    >
+                      <span className="inline-flex items-center gap-1.5 justify-center">
+                        {value !== "Sí" && value !== "No" && (
+                          <Icon
+                            name="check"
+                            className="w-4 h-4 shrink-0 text-primary"
+                          />
+                        )}
+                        {value}
+                      </span>
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </motion.div>
 
       {pricing.actionText && (
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex justify-center mt-8"
+          className="flex flex-col items-center gap-4 mt-8"
         >
+          <a href="#descarrega" className="btn btn-primary px-8">
+            {pricing.actionText}
+          </a>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            {googlePlayLink && (
-              <a href={googlePlayLink} target="_blank" rel="noopener">
-                <img
-                  className="h-14"
-                  alt="Get it on Google Play"
-                  src="/stores/google-play.svg"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            )}
-            {appStoreLink && (
-              <a href={appStoreLink} target="_blank" rel="noopener">
-                <img
-                  className="h-14"
-                  alt="Download on the App Store"
-                  src="/stores/app-store.svg"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            )}
+            <StoreBadges />
           </div>
         </motion.div>
       )}

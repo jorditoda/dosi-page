@@ -26,7 +26,7 @@ function Partners() {
             <motion.img
               key={index}
               src={logo}
-              alt="partner logo"
+              alt="Logotip de col·laborador"
               variants={{
                 hidden: { y: "-80%", opacity: 0 },
                 visible: { y: "0%", opacity: 1 },

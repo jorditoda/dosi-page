@@ -11,6 +11,7 @@ import HowItWorks from "./_components/howItWorks";
 import Pricing from "./_components/pricing";
 import Proof from "./_components/proof";
 import Showcase from "./_components/showcase";
+import Samples from "./_components/samples";
 import Testimonials from "./_components/testimonials";
 
 interface Props {
@@ -29,6 +30,7 @@ function Home({ config }: Props) {
         <div className="section-alt">
           <Showcase />
         </div>
+        <Samples />
         <Pricing />
         <Proof />
         <Testimonials />

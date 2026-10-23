@@ -1,5 +1,6 @@
 import AnimatedList from "../../components/animatedList";
 import MenuToggle from "../../components/menuToggle";
+import StoreBadges from "../../components/storeBadges";
 import clsx from "clsx";
 import {useContext, useEffect, useState} from "react";
 import {ConfigContext} from "../../utils/configContext";
@@ -87,14 +88,17 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          {topNavbar.cta && (
-            <a
-              href="/app"
-              className="ml-4 btn btn-primary btn-outline py-4 font-condensed"
-            >
-              {topNavbar.cta}
-            </a>
-          )}
+          <div className="ml-4 flex items-center gap-3">
+            <StoreBadges className="h-8" />
+            {topNavbar.cta && (
+              <a
+                href="/app"
+                className="btn btn-primary btn-outline py-4 font-condensed"
+              >
+                {topNavbar.cta}
+              </a>
+            )}
+          </div>
         </div>
       </div>
 
@@ -116,6 +120,11 @@ function Navbar() {
               </a>
             </li>
           ))}
+        </ul>
+        <ul className="list-none p-0 m-0 py-2 flex justify-center">
+          <li className="flex items-center justify-center gap-4">
+            <StoreBadges className="h-12" />
+          </li>
         </ul>
         </div>
       </AnimatedList>

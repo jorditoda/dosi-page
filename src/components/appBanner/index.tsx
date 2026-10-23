@@ -1,21 +1,17 @@
 import {useContext} from "react";
 import {ConfigContext} from "../../utils/configContext";
 import IphoneFrame from "../../components/iphoneFrame";
+import StoreBadges from "../../components/storeBadges";
 import {motion} from "framer-motion";
 
 /**
- * Download banner.
+ * Banner final de baixada.
  *
- * Before it was a solid `bg-primary text-primary-content` block with a "Spill"
- * SVG on top, a cyan→violet gradient that the design system does not allow:
- * "a single accent for what gets touched and color only when it means something"
- * (Sistema-Base). A decorative stain of that size means nothing.
- *
- * Now it is a system surface (s1 with ln border, radius 16) and cyan is
- * reserved for what is actionable, as the system mandates.
+ * Superfície del sistema (base-200 amb vora) en lloc d'un bloc de color
+ * sencer: el taronja és només per a allò amb què es clica.
  */
 function AppBanner() {
-  const { googlePlayLink, appStoreLink, appBanner } = useContext(ConfigContext)!;
+  const { appBanner } = useContext(ConfigContext)!;
 
   if (!appBanner) return null;
   return (
@@ -60,32 +56,7 @@ function AppBanner() {
             transition={{ delay: 0.45 }}
             className="list-none flex gap-4 my-6 p-0"
           >
-            {googlePlayLink && (
-              <li className="m-0 p-0">
-                <a href={googlePlayLink} target="_blank" rel="noopener">
-                  <img
-                    className="h-14"
-                    alt="Get it on Google Play"
-                    src="/stores/google-play.svg"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
-              </li>
-            )}
-            {appStoreLink && (
-              <li className="m-0 p-0">
-                <a href={appStoreLink} target="_blank" rel="noopener">
-                  <img
-                    className="h-14"
-                    alt="Download on the App Store"
-                    src="/stores/app-store.svg"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
-              </li>
-            )}
+            <StoreBadges />
           </motion.ul>
         </div>
 
