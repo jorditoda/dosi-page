@@ -347,35 +347,151 @@ const templateConfig: TemplateConfig = {
         "T'enviem a la botiga del teu dispositiu. Dosi és gratuïta a l'App Store i a Google Play.",
     },
   },
-  // TODO 👤/agent: la Fase 5 reescriu aquests textos des de zero.
+  // TODO 👤: revisar amb un professional abans de publicar a les botigues.
   privacyPolicy: {
     seo: {
       title: "Política de privacitat - Dosi",
-      description: "Política de privacitat",
+      description:
+        "Com tractem les teves dades a Dosi: dades anònimes de progrés, notificacions, analítica, converses amb IA i subscripcions.",
     },
     content: `# Política de privacitat
 
-Aquest text s'està completant. Per a qualsevol consulta sobre les teves dades, escriu a info@yapplic.com.
+Darrera actualització: octubre de 2026.
+
+## Qui gestiona les teves dades
+
+El responsable del tractament és [TODO 👤: nom i cognoms o raó social, NIF i adreça completa].
+
+Per a qualsevol consulta sobre privacitat pots escriure a [info@yapplic.com](mailto:info@yapplic.com).
+
+## Què és Dosi i què fa amb les teves dades
+
+Dosi és una app de microlearning. No et demanem cap registre: no et creem un compte amb correu ni contrasenya. Tot el que s'hi desa queda lligat a una identificació anònima generada al teu dispositiu.
+
+## Quines dades tractem
+
+- **Identificació anònima** (Firebase Auth): un identificador aleatori, sense cap dada personal, que lliga el teu progrés al dispositiu.
+- **Progrés i preferències** (Cloud Firestore): els temes que has triat, l'objectiu diari, l'hora de la notificació, la ratxa, les targetes vistes i les respostes als quizzes. Es desen al teu identificador anònim, es sincronitzen i tenen persistència local per funcionar sense connexió.
+- **Token de notificacions** (Firebase Cloud Messaging): un identificador del dispositiu, per als missatges opcionals de novetats. La notificació diària i el recordatori de ratxa es generen al mòbil i no passen per cap servidor.
+- **Analítica bàsica** (Firebase Analytics): estadístiques agregades d'ús (retenció, pantalles més usades) per millorar l'app.
+- **Converses amb la IA**: els missatges que escrigues a les sessions de pràctica passen pel nostre servidor (una funció de Firebase) i per un proveïdor d'IA extern per generar la resposta.
+
+## Per a què els fem servir
+
+Per calcular la teva dosi diària, desar i sincronitzar el teu progrés, programar la notificació diària i el recordatori de ratxa que has activat, mesurar l'ús agregat de l'app i generar les respostes de les converses de pràctica. No fem publicitat personalitzada ni venem dades a tercers.
+
+## Converses amb la IA
+
+Quan escrius a una conversa de pràctica, el teu missatge i el context de la conversa s'envien al nostre servidor, que els reenvia a un proveïdor d'IA per generar la resposta. El proveïdor les processa sota el seu contracte i segons les nostres instruccions. No fem servir aquests missatges per a cap altre ús. Evita escriure-hi dades personals teves o de terceres persones.
+
+## Subscripcions
+
+Si contractes el pla Pro, el pagament i la gestió de la subscripció els fan Apple (App Store) o Google (Google Play), a través de RevenueCat, el sistema que gestiona les compres de l'app. Dosi no ve ni desa cap dada de targeta: tot el cobrament passa per la botiga. Les condicions de la subscripció també són les de les [Condicions d'ús](/terms-and-conditions) i les de cada botiga.
+
+## Base jurídica i conservació
+
+Tractem les dades per executar el servei que demanes (fer servir l'app) i, de manera agregada, per al nostre interès legítim de millorar-la. Conservem les dades mentre l'app sigui publicada i tu la tens instal·lada; pots demanar-ne l'esborrat en qualsevol moment (vegeu més avall).
+
+## Compartim les dades amb algú?
+
+Només amb els proveïdors necessaris per fer funcionar l'app: Google (Firebase i les botigues), RevenueCat i el proveïdor d'IA de les converses de pràctica. No venem dades personals a ningú.
+
+## Els teus drets
+
+Pots demanar l'accés, la rectificació, la supressió, l'oposició, la portabilitat i la limitació del tractament de les teves dades, i retirar el consentiment, escrivint a [info@yapplic.com](mailto:info@yapplic.com). Com que no tenim el teu correu, et localitzem pel teu identificador anònim; si ho demanes, et direm com trobar-lo des de l'app.
+
+També pots presentar una reclamació davant l'Agència Espanyola de Protecció de Dades ([www.aepd.es](https://www.aepd.es)) si consideres que el tractament no és correcte.
+
+## Menors
+
+L'app és adreçada a majors d'edat. Si ets menor, necessites l'autorització dels teus pares o tutors legals per fer-la servir.
+
+## Canvis en aquesta política
+
+Si fem canvis importants en com tractem les dades, n'avisarem dins l'app o publicarem la versió nova en aquesta pàgina.
 `,
   },
+  // TODO 👤: revisar amb un professional abans de publicar a les botigues.
   cookiesPolicy: {
     seo: {
       title: "Política de galetes - Dosi",
-      description: "Política de galetes",
+      description:
+        "Aquesta web no fa servir cookies. Analítica agregada sense cookies i sense publicitat.",
     },
     content: `# Política de galetes
 
-Aquest text s'està completant. Per a qualsevol consulta, escriu a info@yapplic.com.
+Darrera actualització: octubre de 2026.
+
+## Aquesta web no fa servir cookies
+
+La pàgina **dosi.yapplic.com** no instal·la cookies pròpies ni de tercers, no desa cap identificador al teu navegador i no fa seguiment entre webs. Per tant, no cal cap consentiment per fer-la servir.
+
+## Analítica sense cookies
+
+Aquesta web no té cap eina d'analítica activa. Si en el futur se n'activa una, serà una analítica agregada sense cookies ni identificadors personals ([GoatCounter](https://www.goatcounter.com)), que no requereix el teu consentiment i no es fa servir per a publicitat. En cas que hi hagi canvis d'aquesta mena, actualitzarem aquesta pàgina.
+
+## Com pots controlar les galetes igualment
+
+Tot i que aquesta web no n'usa, el navegador et permet bloquejar, limitar o esborrar galetes des de la seva configuració de privaciat (Normalment a Configuració → Privacitat o Seguretat). En aquesta web continuaràs podent navegar igual.
+
+## Contacte
+
+Per a qualsevol consulta, escriu a [info@yapplic.com](mailto:info@yapplic.com).
 `,
   },
+  // TODO 👤: revisar amb un professional abans de publicar a les botigues.
   termsAndConditions: {
     seo: {
       title: "Condicions d'ús - Dosi",
-      description: "Condicions d'ús",
+      description:
+        "Condicions d'ús de Dosi: ús de l'app, subscripció Pro, ús acceptable de la IA i caràcter educatiu del contingut.",
     },
     content: `# Condicions d'ús
 
-Aquest text s'està completant. Per a qualsevol consulta, escriu a info@yapplic.com.
+Darrera actualització: octubre de 2026.
+
+## Què és Dosi i per a què serveix
+
+Dosi és una app de microlearning per a Android i iOS: cada dia et dóna una dosi de targetes que t'ensenyen una idea útil de negociació, psicologia i comunicació en pocs segons. La versió base és gratuïta i no té cost per fer-la servir.
+
+## El teu compte
+
+No cal registre: l'app crea una identificació anònima al teu dispositiu i el teu progrés queda lligada a ella. Si esborres l'app o perds el dispositiu abans que el progrés s'hagi sincronitzat, pots perdre'l. Més informació a la [Política de privacitat](/privacy-policy).
+
+## Pla Pro i subscripcions
+
+- El pla Pro inclou les converses de pràctica amb IA i els temes avançats.
+- La subscripció es contracta, es cobra i es gestiona a l'App Store (Apple) o a Google Play (Google), a través de RevenueCat. Els preus es mostren a la botiga abans de confirmar la compra.
+- La subscripció es renova automàticament cada període fins que la cancel·lis.
+- Per cancel·lar-la, ho has de fer des de la configuració de la botiga al teu dispositiu (Comptes i subscripcions a Google Play; Subscripcions a l'App Store). Mantindràs el Pro fins al final del període ja pagat.
+- Els reemborsaments es regeixen per les condicions de cada botiga.
+
+## Ús acceptable de la IA
+
+- Les converses són una eina d'aprenentatge. La IA pot equivocar-se: no és una persona professional ni una persona.
+- No la facis servir per a assessorament legal, mèdic, financer o d'alt risc; el contingut és educatiu.
+- No escriguis dades personals teves ni de terceres persones a les converses.
+- No abusis del servei: qualsevol ús massiu, automatitzat o per a activitats il·legals queda prohibit.
+
+## Contingut educatiu
+
+Les idees i les fonts que cita cada targeta són materials educatius. No constitueixen assessorament professional de cap mena, i s'han d'interpretar com a tal.
+
+## Propietat intel·lectual
+
+L'app i el contingut de Dosi són propietat del seu autor. Pots fer-ne ús personal i no comercial; no pots reproduir-ne o redistribuir-ne el contingut comercialment sense permís escrit.
+
+## Responsabilitat
+
+L'app es proporciona tal com és. Treballem perquè sigui útil i fiable, però no podem garantir que el contingut estigui lliure d'errors ni que el servei estigui disponible sempre.
+
+## Canvis i llei aplicable
+
+Podem actualitzar aquestes condicions; si els canvis són importants, n'avisarem dins l'app o en aquesta pàgina. Aquestes condicions es regeixen per la legislació espanyola. [TODO 👤: concretar amb un professional el fur i la jurisdicció aplicables]
+
+## Contacte
+
+Per a qualsevol consulta, escriu a [info@yapplic.com](mailto:info@yapplic.com).
 `,
   },
 };
