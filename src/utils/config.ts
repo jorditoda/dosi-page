@@ -43,10 +43,10 @@ const templateConfig: TemplateConfig = {
   // L'app només té tema fosc: es força i no se'n ofereix commutador.
   forceTheme: true,
   showThemeSwitch: false,
-  // Mentre un enllaç és `undefined`, la seva insígnia es pinta igualment
-  // apuntant a #descarrega (vegeu src/utils/common.ts).
-  // TODO 👤: pendent l'enllaç real de l'App Store.
-  appStoreLink: undefined,
+  // Insígnies de botiga: ambdós enllaços són reals. Si se'n tragués un, la
+  // seva insígnia continuaria visible apuntant a #descarrega (vegeu
+  // src/utils/common.ts).
+  appStoreLink: "https://apps.apple.com/us/app/dosi/id6825965689",
   googlePlayLink:
     "https://play.google.com/store/apps/details?id=com.stormfkrs.dosi",
   footer: {

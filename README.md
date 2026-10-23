@@ -36,12 +36,12 @@ El lloc es publica sol a **GitHub Pages** des de la branca `master` (vegeu
 | Source of truth del producte (per no inventar res) | `docs/dosi/` |
 
 Els preus, testimonis, partners i notes **no s'han d'inventar**: surten de
-`docs/dosi/`. Mentre `appStoreLink` / `googlePlayLink` siguin `undefined` al
-config, les insígnies de botiga es veuen igualment i apunten a `#descarrega`;
-el dia del llançament n'hi ha prou amb omplir aquests dos camps.
+`docs/dosi/`.
 
-Google Play ja és publicat (`googlePlayLink` omplert); queda pendent
-`appStoreLink` quan l'app es faci a iOS.
+Els dos enllaços de botiga hi són (`googlePlayLink` i `appStoreLink`), així
+que les insígnies obren les botigues reals. Si mai se'n tragués un, la seva
+insígnia continuaria visible apuntant a `#descarrega` (el CTA final); vegeu
+`storeHref` a `src/utils/common.ts`.
 
 La web no té cap analítica: `goatcounterCode` s'ha eliminat. Si mai se'n vol
 afegir una de sense cookies, es torna a afegir el camp i la injecció condicional
@@ -87,7 +87,6 @@ millora futura). Quan s'afegeixi, el camí previst és:
 - [ ] **GitHub Pages**: configurar el repo per publicar des de la branca `master` (Actions).
 - [ ] **DNS**: crear el registre `CNAME` `dosi` → `jorditoda.github.io` i activar *Enforce HTTPS*.
 - [ ] **Textos legals**: substituir `TODO 👤` (responsable: nom/NIF/adreça, fur i jurisdicció) i revisar-los amb un professional abans de publicar a les botigues.
-- [ ] **Enllaços de botiga**: Google Play ja és publicat; omplir `appStoreLink` a `src/utils/config.ts` quan l'app es faci a l'App Store.
 - [ ] **Llicència**: `package.json` diu `"license": "MIT"` però el repo duu la llicència **GPL-3.0** de la plantilla original; cal decidir quina es vol i fer-la coherent.
 
 ## Crèdits
