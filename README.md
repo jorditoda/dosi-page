@@ -40,6 +40,9 @@ Els preus, testimonis, partners i notes **no s'han d'inventar**: surten de
 config, les insígnies de botiga es veuen igualment i apunten a `#descarrega`;
 el dia del llançament n'hi ha prou amb omplir aquests dos camps.
 
+Google Play ja és publicat (`googlePlayLink` omplert); queda pendent
+`appStoreLink` quan l'app es faci a iOS.
+
 ## Scripts de suport
 
 ```bash
@@ -80,7 +83,7 @@ millora futura). Quan s'afegeixi, el camí previst és:
 - [ ] **GitHub Pages**: configurar el repo per publicar des de la branca `master` (Actions).
 - [ ] **DNS**: crear el registre `CNAME` `dosi` → `jorditoda.github.io` i activar *Enforce HTTPS*.
 - [ ] **Textos legals**: substituir `TODO 👤` (responsable: nom/NIF/adreça, fur i jurisdicció) i revisar-los amb un professional abans de publicar a les botigues.
-- [ ] **Enllaços de botiga**: omplir `appStoreLink` i `googlePlayLink` a `src/utils/config.ts` el dia del llançament.
+- [ ] **Enllaços de botiga**: Google Play ja és publicat; omplir `appStoreLink` a `src/utils/config.ts` quan l'app es faci a l'App Store.
 - [ ] **Analítica (opcional)**: si es vol, crear compte a GoatCounter i posar el codi a `goatcounterCode`; l'script s'injecta sol. Si no, la web continua sense cap analítica.
 - [ ] **Llicència**: `package.json` diu `"license": "MIT"` però el repo duu la llicència **GPL-3.0** de la plantilla original; cal decidir quina es vol i fer-la coherent.
 
