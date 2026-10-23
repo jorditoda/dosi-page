@@ -85,7 +85,6 @@ millora futura). Quan s'afegeixi, el camí previst és:
 ## Tasques pendents 👤
 
 - [ ] **Textos legals**: completar el `TODO 👤` del responsable amb el **NIF i l'adreça** (el nom ja hi és). La revisió professional i el fur i jurisdicció ja estan resolts.
-- [ ] **Llicència**: `package.json` diu `"license": "MIT"` però el repo duu la llicència **GPL-3.0** de la plantilla original; cal decidir quina es vol i fer-la coherent.
 
 ## Crèdits
 
@@ -96,4 +95,5 @@ i tot el contingut de Dosi són de `docs/dosi/`.
 
 ## Llicència
 
-[GPL-3.0](LICENSE) — vegeu la nota de l'`package.json` a les tasques pendents.
+[MIT](LICENSE) © 2026 Jordi Toda Ferran. La marca, les icones, les pantalles i
+tot el contingut de Dosi no formen part del codi llicenciat.
