@@ -15,21 +15,20 @@ export default {
     },
     extend: {
       fontFamily: {
-        // Fuente del sistema de diseño (Sistema-Base.dc.html):
-        // "Tipografía · Barlow Condensed y Barlow".
-        //   Barlow          -> texto  · 17px/1.45, secundario 15px, etiquetas 12-13px
-        //   Barlow Condensed -> cifras y títulos, siempre tabulares
-        // "Cifras: siempre tabulares, para que no bailen al cambiar".
+        // Famílies del sistema de disseny de Dosi (03-disseny.md):
+        //   Inter              -> text, botons i interfície · 400/500/600
+        //   Bricolage Grotesque -> títols, ganxos i números · 600/700/800
+        // Autoallotjades a public/fonts (vegeu scripts/fetch-fonts.mjs).
         condensed: [
-          "Barlow Condensed",
-          "Barlow",
+          "Bricolage Grotesque",
+          "Inter",
           ...defaultTheme.fontFamily.sans,
         ],
-        sans: ["Barlow", ...defaultTheme.fontFamily.sans],
-        // Tabulares para todo lo numérico: velocidad, tiempos, distancias, KPIs.
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        // Xifres i títols: Bricolage, amb xifres tabulars on calgui.
         numeric: [
-          "Barlow Condensed",
-          "Barlow",
+          "Bricolage Grotesque",
+          "Inter",
           ...defaultTheme.fontFamily.mono,
         ],
       },

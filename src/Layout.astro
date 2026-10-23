@@ -9,7 +9,7 @@ type Seo = TemplateConfig["seo"];
 
 interface Props extends Pick<
   TemplateConfig,
-  "backgroundGrid" | "logo" | "ogImage" | "theme" | "forceTheme" | "name"
+  "backgroundGrid" | "logo" | "ogImage" | "ogImageAlt" | "theme" | "forceTheme" | "name"
 > {
   seo: Seo;
   /** Marks the page as no indexable (redirect pages, etc.). */
@@ -24,6 +24,7 @@ const {
   backgroundGrid,
   seo,
   ogImage,
+  ogImageAlt,
   theme,
   forceTheme,
   name,
@@ -35,7 +36,6 @@ const {
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const socialImage = new URL(ogImage, Astro.site ?? Astro.url);
 
-// ROADMAP.md E2.0
 const jsonLd = buildJsonLd({
   config: defaultConfig,
   url: canonical.href,
@@ -45,7 +45,7 @@ const jsonLd = buildJsonLd({
 ---
 
 <!doctype html>
-<html lang="en" data-theme={theme}>
+<html lang="ca" data-theme={theme}>
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -54,16 +54,8 @@ const jsonLd = buildJsonLd({
     <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="theme-color"
-      content="#ffffff"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#0a0c10"
-      media="(prefers-color-scheme: dark)"
-    />
+    <!-- L'app i la web només tenen tema fosc (03-disseny.md). -->
+    <meta name="theme-color" content="#101216" />
 
     <!-- Primary Meta Tags -->
     <title>{seo.title}</title>
@@ -74,14 +66,14 @@ const jsonLd = buildJsonLd({
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={name} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="ca_ES" />
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
     <meta property="og:image" content={socialImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Rally Hud — speed and G-force HUD for Android and iOS" />
+    <meta property="og:image:alt" content={ogImageAlt} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -90,31 +82,29 @@ const jsonLd = buildJsonLd({
     <meta name="twitter:description" content={seo.description} />
     <meta name="twitter:image" content={socialImage} />
 
-    <!-- Structured data (ROADMAP.md E2.0). aggregateRating is NOT included:
-         both stores return 0 ratings and marking them would be invention. -->
+    <!-- Dades estructurades. No inclou `aggregateRating`: inventar una
+         valoració pot ser sancionat per Google. -->
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
 
     <script is:inline define:vars={{ forceTheme }}>
-      // The HTML ships with the default theme (rally-dark). This script only
-// applies the user's explicit choice, saved in localStorage.
-// Before only knew how to write "dark", which was a daisyUI theme name
-// and it no longer exists in the custom design system.
+      // L'HTML surt amb el tema per defecte (dosi-dark). Aquest script només
+      // aplica l'elecció explícita de l'usuari, desada a localStorage.
       try {
-        const stored = localStorage.getItem("rally-theme");
+        const stored = localStorage.getItem("dosi-theme");
         if (stored && !forceTheme) {
           document.documentElement.setAttribute("data-theme", stored);
         }
       } catch (e) {
-        // localStorage can be blocked (private mode, iframes).
-// In that case the default theme is maintained.
+        // localStorage pot estar bloquejat (mode privat, iframes).
+        // En aquest cas es manté el tema per defecte.
       }
     </script>
   </head>
-  <!-- Explicit base background: without it the `body` stays transparent and the
-     color depends on what daisyUI applies to `html`. ROADMAP.md E2.2 -->
+  <!-- Fons explícit: sense ell el `body` queda transparent i el color depèn
+     del que daisyUI apliqui a `html`. -->
   <body class="relative bg-base-100 text-base-content">
-    <!-- ROADMAP.md E2.12: the technical grid and the hero halo are decoration,
-         so they use aria-hidden to avoid announcing anything to the reader. -->
+    <!-- La quadrícula i el halo del hero són decoració: porten aria-hidden
+         perquè el lector de pantalla no els anunciï. -->
     {backgroundGrid && <div class="backgroundGrid" aria-hidden="true" />}
     <div class="hero-glow" aria-hidden="true" />
     <slot />

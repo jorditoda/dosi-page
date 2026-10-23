@@ -4,19 +4,15 @@ import {useContext} from "react";
 import {ConfigContext} from "../../../../utils/configContext";
 
 /**
- * Annotated screenshots block — ROADMAP.md E2.8
+ * Captures anotades de l'app: el producte real en lloc d'un mockup genèric.
  *
- * The biggest untapped conversion lever left in an app landing: showing the
- * real product instead of a generic mockup. Screenshots are rendered from the
- * design boards with `scripts/render-boards.py`.
- *
- * Mixes formats on purpose: the landscape HUD (844x390) is what the driver
- * sees and the portrait app (390x844) is what they see when preparing the
- * start. The `md:grid-cols-2` grid normalizes them; inside each card the
- * image uses `object-contain` to avoid cropping the HUD.
+ * Les captures es generen des dels `.dc.html` de `docs/dosi/referencia-disseny`
+ * amb `scripts/render-screens.mjs`. La graella `md:grid-cols-2` normalitza les
+ * mides; dins de cada targeta la imatge fa `object-contain` per no retallar.
  */
 function Showcase() {
   const {
+    name,
     home: { showcase },
   } = useContext(ConfigContext)!;
   if (!showcase) return null;
@@ -53,7 +49,7 @@ function Showcase() {
               <div className="aspect-[16/10] bg-base-300/40 flex items-center justify-center overflow-hidden">
                 <img
                   src={item.image}
-                  alt={`${item.caption} — Rally Hud`}
+                  alt={`${item.caption} — ${name}`}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-contain"

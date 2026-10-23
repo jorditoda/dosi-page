@@ -42,7 +42,7 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
   return (
     <motion.img
       src={src}
-      alt="Rally Hud app screen"
+      alt="Pantalla de l'app Dosi"
       style={{ translateX: x, translateY: y }}
       className="absolute overflow-hidden w-full h-full object-cover"
     />

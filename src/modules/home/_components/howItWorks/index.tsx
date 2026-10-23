@@ -4,22 +4,18 @@ import {useContext} from "react";
 import {ConfigContext} from "../../../../utils/configContext";
 
 /**
- * "How it works" — ROADMAP.md E2.4
+ * "Com funciona" — passos amb captures reals de l'app.
  *
- * Before it used iOS stock photos (a woman knitting, another looking at a
- * plant). Now it uses real product screenshots, rendered from the design
- * boards with `scripts/render-boards.py`.
+ * Les captures es generen des dels `.dc.html` de `docs/dosi/referencia-disseny`
+ * amb `scripts/render-screens.mjs`.
  *
- * Layout: alternates image/text as before, but the vertical rhythm is
- * controlled with `gap-*` instead of the `gap-52` that left 13rem blocks of
- * empty space, and there are no more decorative arrows: the 01/02/03 numbering
- * in condensed type guides the reading on its own.
- *
- * The screenshots mix formats (844x390 landscape and 390x844 portrait), so
- * `aspect-[16/10]` with `object-contain` normalizes them without cropping.
+ * Ritme vertical controlat amb `gap-*`, numeració 01/02/03 en tipografia de
+ * títols perquè guii la lectura sola. `aspect-[16/10]` amb `object-contain`
+ * normalitza les mides sense retallar res.
  */
 function HowItWorks() {
   const {
+    name,
     home: { howItWorks },
   } = useContext(ConfigContext)!;
 
@@ -82,7 +78,7 @@ function HowItWorks() {
               <div className="surface-card bg-base-200 aspect-[16/10] overflow-hidden flex items-center justify-center">
                 <img
                   src={step.image}
-                  alt={`${step.title} — Rally Hud`}
+                  alt={`${step.title} — ${name}`}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-contain"

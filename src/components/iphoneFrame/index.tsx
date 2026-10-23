@@ -1,22 +1,18 @@
 interface Props {
   src: string;
+  /** Text alternatiu de la captura. */
+  alt?: string;
 }
 
-function IphoneFrame({ src }: Props) {
+/**
+ * Captura dins d'un marc de mòbil fet només amb CSS (radi, vora i ombra).
+ * Abans era una imatge `.webp` del mockup; amb les captures reals de
+ * 390 × 844 el marc CSS és nítid a qualsevol escala i no arrossega cap asset.
+ */
+function IphoneFrame({ src, alt = "Pantalla de l'app Dosi" }: Props) {
   return (
-    <div className="relative h-full overflow-hidden">
-      <div className="absolute top-2 bottom-2 left-2.5">
-        <img
-          src={src}
-          alt="screenshot"
-          className="rounded-2xl h-full"
-        />
-      </div>
-      <img
-        src="/misc/iphone-frame.webp"
-        alt="iphone-frame"
-        className="relative z-10 h-full"
-      />
+    <div className="relative h-full overflow-hidden rounded-[2rem] border-[8px] border-base-300 bg-base-100 shadow-2xl">
+      <img src={src} alt={alt} className="rounded-[1.4rem] h-full w-full object-cover" />
     </div>
   );
 }

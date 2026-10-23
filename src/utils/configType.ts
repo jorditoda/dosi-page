@@ -5,11 +5,11 @@ export type TemplateConfig = {
         description: string;
     };
     logo: string;
-    /** Image for Open Graph. Must be raster (PNG/JPG), not SVG. */
+    /** Imatge per a Open Graph. Ha de ser raster (PNG/JPG), no SVG. */
     ogImage: string;
+    /** Text alternatiu de l'og:image. */
+    ogImageAlt: string;
     theme: string;
-    /** Theme the switch alternates to. Must exist in src/utils/theme.ts. */
-    alternateTheme: string;
     backgroundGrid: boolean;
     forceTheme: boolean;
     showThemeSwitch: boolean;
@@ -84,7 +84,6 @@ export type TemplateConfig = {
             subtitle: string;
             headlineMark?: number[] | undefined;
             screenshots: string[];
-            rewards?: string[] | undefined;
             usersDescription?: string | undefined;
         };
         testimonials?: {
@@ -93,7 +92,7 @@ export type TemplateConfig = {
             subtitle?: string | undefined;
             cards: {
                 name: string;
-                /** Driver role. It's what gives credibility: "Rally driver". */
+                /** Rol que li dona credibilitat. */
                 role?: string | undefined;
                 comment: string;
             }[];
@@ -143,11 +142,10 @@ export type TemplateConfig = {
             }[];
         } | undefined;
         /**
-         * Price block. The app is free (price 0 confirmed in both stores),
-         * so this is not a plan comparison but the sales pitch for what's
-         * included. ROADMAP.md E2.6.
+         * Bloc de preus: comparison entre el pla gratis i Pro, sense preus
+         * decidits (vegeu §0 del pla).
          */
-        /** Technical proof: verifiable facts instead of testimonials. */
+        /** Prova tècnica: fets verificables en lloc de testimonis. */
         proof?: {
             id?: string | undefined;
             title: string;

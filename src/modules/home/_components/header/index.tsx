@@ -23,22 +23,6 @@ function Header() {
         <div className="flex flex-col md:flex-row">
           <div className="flex flex-1 items-center md:items-start md:h-[300vh]">
             <div className="static top-40 flex flex-col prose justify-center py-8 md:sticky md:h-[648px]">
-              <div className="flex flex-col gap-2 my-4 3xs:flex-row">
-                {header.rewards?.map((reward, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    className="flex items-center self-center h-8 md:h-12"
-                  >
-                    <img src="/misc/wreath-left.webp" className="h-full" />
-                    <p className="text-xs text-gray-500 whitespace-pre text-center">
-                      {reward}
-                    </p>
-                    <img src="/misc/wreath-right.webp" className="h-full" />
-                  </motion.div>
-                ))}
-              </div>
               {/* Only <h1> on the page. Sections use <h2>. */}
               <motion.h1
                 initial={{ opacity: 0, rotateZ: -10 }}
@@ -131,9 +115,9 @@ function Header() {
                   duration: 0.5,
                   delay: 0.3,
                 }}
-                className="relative h-[532px] 2xs:h-[720px] sm:h-[648px] rounded-[3rem]"
+                className="relative h-[532px] 2xs:h-[720px] sm:h-[648px] rounded-[3rem] border-[10px] border-base-300 bg-base-100 shadow-2xl"
               >
-                <div className="absolute top-2.5 left-3 w-[calc(100%-24px)] h-[calc(100%-16px)] rounded-[1rem] md:rounded-[3rem] overflow-hidden">
+                <div className="absolute inset-0 rounded-[2.2rem] md:rounded-[2.4rem] overflow-hidden">
                   {header.screenshots.map((src, index) => (
                     <SingleScreenshot
                       key={src}
@@ -144,11 +128,6 @@ function Header() {
                     />
                   ))}
                 </div>
-                <img
-                  src="/misc/iphone-frame.webp"
-                  alt="iphone-frame"
-                  className="relative z-10 h-full"
-                />
               </motion.div>
             </div>
           </div>

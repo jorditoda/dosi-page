@@ -1,29 +1,19 @@
 /**
- * JSON-LD structured data — ROADMAP.md E2.0
+ * Dades estructurades JSON-LD.
  *
- * Data verified against the real store listings, NOT estimated:
- *   · version and minOS -> iTunes API (lookup?id=6739874068)
- *   · price             -> `price: 0` on App Store and Google Play
- *   · genre             -> "Sports" / "Navigation"
- *
- * ⚠️ `aggregateRating` is NOT included on purpose: both stores return
- * `userRatingCount: 0`. Marking an invented rating is a violation of Google's
- * guidelines and can penalize the page. When real reviews exist, the exact
- * value must be added here.
+ * Font de veritat: `docs/dosi/`. No s'hi posa versió ni SO mínims perquè
+ * encara no es saben, ni `aggregateRating` perquè inventar una valoració pot
+ * ser sancionat per Google. `downloadUrl` i `installUrl` només surten si hi
+ * ha enllaç real a les botigues (s'afegiran el dia del llançament).
  */
 
 import type {TemplateConfig} from "./configType";
 
 export const APP = {
-  name: "Rally Hud",
-  version: "1.2.0",
-    /** From the App Store listing. */
-  iosMin: "15.6",
-    /** From the Google Play listing. */
-  androidMin: "8",
-  price: "0",
-  category: "SportsApplication",
-  iosCategory: "Utilities",
+  name: "Dosi",
+  price: "0", // Descàrrega gratuïta (model freemium; el Pro es subscriu a l'app)
+  category: "EducationApplication",
+  iosCategory: "Education",
 } as const;
 
 interface JsonLdOptions {
@@ -46,13 +36,14 @@ export function buildJsonLd({ config, url, faq, breadcrumb }: JsonLdOptions) {
       "@id": `${base}#app`,
       name: APP.name,
       applicationCategory: APP.category,
-      operatingSystem: `Android ${APP.androidMin}+, iOS ${APP.iosMin}+`,
       description: config.seo.description,
       url: base,
       image,
-      softwareVersion: APP.version,
-      downloadUrl: config.googlePlayLink,
-      installUrl: config.appStoreLink,
+      // Només hi han de ser amb enllaç real a les botigues.
+      ...(config.googlePlayLink
+        ? { downloadUrl: config.googlePlayLink }
+        : {}),
+      ...(config.appStoreLink ? { installUrl: config.appStoreLink } : {}),
       offers: {
         "@type": "Offer",
         price: APP.price,
@@ -90,7 +81,7 @@ export function buildJsonLd({ config, url, faq, breadcrumb }: JsonLdOptions) {
       "@type": "BreadcrumbList",
       "@id": `${url}#breadcrumb`,
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: base },
+        { "@type": "ListItem", position: 1, name: "Inici", item: base },
         ...breadcrumb.map((b, i) => ({
           "@type": "ListItem",
           position: i + 2,

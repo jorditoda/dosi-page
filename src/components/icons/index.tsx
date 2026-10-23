@@ -1,18 +1,21 @@
 /**
- * Rally HUD iconography — inline SVGs.
+ * Iconografia de Dosi — SVG en línia.
  *
- * Design system rules (Sistema-Base.dc.html, "Measures"):
- *   "Icons · 2 px stroke, 22 to 26 px, no emoji"
+ * Sistema de disseny (docs/dosi/03-disseny.md, "Icones"):
+ *   · Estil de línia, traç d'1,8 px, quadrícula de 24 px, extrems i unions
+ *     arrodonits, sense farciment. Mai emojis.
+ *   · L'única icona plena és la flama de la ratxa.
  *
- * Why SVG and not PNG: they inherit `currentColor`, so they change with the
- * theme without needing two versions, and weigh ~200 bytes instead of ~40 KB.
+ * Per què SVG i no PNG: hereten `currentColor`, canvien amb el tema sense
+ * dues versions i pesen ~200 bytes en lloc de ~40 KB.
  *
- * All icons use viewBox 24x24 and stroke 2 unless otherwise indicated.
+ * Tots els icones fan servir viewBox 24x24 i traç 1,8 tret que s'indiqui el
+ * contrari.
  */
 
 interface IconProps {
   className?: string;
-    /** So screen readers don't read a decorative icon. */
+  /** Perquè els lectors de pantalla no llegeixin una icona decorativa. */
   title?: string;
 }
 
@@ -20,7 +23,7 @@ const base = (p: IconProps) => ({
   viewBox: "0 0 24 24",
   fill: "none",
   stroke: "currentColor",
-  strokeWidth: 2,
+  strokeWidth: 1.8,
   strokeLinecap: "round" as const,
   strokeLinejoin: "round" as const,
   role: p.title ? ("img" as const) : ("presentation" as const),
@@ -29,131 +32,182 @@ const base = (p: IconProps) => ({
   className: p.className,
 });
 
-export const SpeedometerIcon = (p: IconProps) => (
+// ── Pestanyes de la barra inferior ────────────────────────────────────────
+
+export const FeedIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <path d="M3.5 17a9 9 0 1 1 17 0" />
-    <path d="M12 17l4.2-4.2" />
-    <circle cx="12" cy="17" r="1.4" />
-    <path d="M5.6 10.4h.01M9 6.6h.01M15 6.6h.01M18.4 10.4h.01" />
+    <rect x="5" y="3" width="14" height="18" rx="3" />
+    <path d="M9 8h6M9 12h6" />
   </svg>
 );
 
-export const GForceIcon = (p: IconProps) => (
+export const ExploreIcon = (p: IconProps) => (
   <svg {...base(p)}>
     <circle cx="12" cy="12" r="9" />
-    <circle cx="12" cy="12" r="4.5" strokeDasharray="2 3" />
-    <path d="M12 3v18M3 12h18" />
-    <circle cx="14.4" cy="9.6" r="1.8" fill="currentColor" stroke="none" />
+    <path d="M15.5 8.5l-2 5-5 2 2-5z" />
   </svg>
 );
 
-export const SegmentIcon = (p: IconProps) => (
+export const PracticeIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <path d="M5 21V4" />
-    <path d="M5 5h11l-2.2 3.2L16 11.5H5" />
-    <path d="M3 21h4" />
+    <path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4z" />
   </svg>
 );
 
-export const TimerIcon = (p: IconProps) => (
+export const ProfileIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <circle cx="12" cy="13.5" r="7.5" />
-    <path d="M12 13.5l3.2-3.2" />
-    <path d="M9.5 2.5h5" />
-    <path d="M12 2.5v3.5" />
+    <circle cx="12" cy="8" r="4" />
+    <path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" />
   </svg>
 );
 
-export const TrophyIcon = (p: IconProps) => (
+// ── Ratxa i repàs ─────────────────────────────────────────────────────────
+
+/** Flama de la ratxa: l'única icona plena (03-disseny.md). */
+export const FlameIcon = (p: IconProps) => (
+  <svg {...base(p)} fill="currentColor" strokeWidth={1.5}>
+    <path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.2 1-3.7 2.3-5 .2 1.6 1 2.6 2.2 3C11 8.5 11 5.5 12 3z" />
+  </svg>
+);
+
+export const ReviewIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" />
-    <path d="M7 5.5H4.5V7a3 3 0 0 0 3 3" />
-    <path d="M17 5.5h2.5V7a3 3 0 0 1-3 3" />
-    <path d="M10 14h4l.6 3.5H9.4L10 14Z" />
-    <path d="M7.5 21h9" />
-    <path d="M12 17.5V21" />
+    <path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3" />
+    <path d="M18 3v4h-4M6 21v-4h4" />
   </svg>
 );
 
-export const CarIcon = (p: IconProps) => (
+// ── Accions ───────────────────────────────────────────────────────────────
+
+export const BookmarkIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <path d="M4 15.5h16" />
-    <path d="M5.5 15.5 7 9.8A2 2 0 0 1 8.9 8.5h6.2A2 2 0 0 1 17 9.8l1.5 5.7" />
-    <path d="M4 15.5v2.2A1.3 1.3 0 0 0 5.3 19h13.4a1.3 1.3 0 0 0 1.3-1.3v-2.2" />
-    <circle cx="7.5" cy="17" r="0.8" fill="currentColor" stroke="none" />
-    <circle cx="16.5" cy="17" r="0.8" fill="currentColor" stroke="none" />
-    <path d="M9.5 12.2h5" />
+    <path d="M7 4h10v16l-5-4-5 4z" />
   </svg>
 );
 
-export const NoSignalIcon = (p: IconProps) => (
+export const VolumeIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <path d="M12 20.5v.01" />
-    <path d="M8.4 15.6a5.2 5.2 0 0 1 0-3.4" />
-    <path d="M15.6 12.2a5.2 5.2 0 0 0-1.2-2.7" />
-    <path d="M5.6 18.2a9.4 9.4 0 0 1 0-7.2" />
-    <path d="M18.4 10.9a9.4 9.4 0 0 1 .9 3.6" />
-    <path d="M4 3.5 20 20.5" />
+    <path d="M4 9v6h4l5 4V5L8 9z" />
+    <path d="M16.5 8.5a5 5 0 0 1 0 7" />
   </svg>
 );
 
-export const CompassIcon = (p: IconProps) => (
+export const BellIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z" />
+    <path d="M10 21h4" />
+  </svg>
+);
+
+export const LockIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <rect x="5" y="11" width="14" height="10" rx="2" />
+    <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+  </svg>
+);
+
+export const SendIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M4 12l16-8-6 16-2.5-6.5z" />
+  </svg>
+);
+
+export const MicIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <rect x="9" y="3" width="6" height="12" rx="3" />
+    <path d="M5 11a7 7 0 0 0 14 0M12 18v3" />
+  </svg>
+);
+
+export const CheckIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M5 12.5l4.5 4.5L19 7.5" />
+  </svg>
+);
+
+export const PlusIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M12 5v14M5 12h14" />
+  </svg>
+);
+
+export const CloseIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M6 6l12 12M18 6L6 18" />
+  </svg>
+);
+
+// ── Fletxes ───────────────────────────────────────────────────────────────
+
+export const ChevronRightIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M9 6l6 6-6 6" />
+  </svg>
+);
+
+export const ChevronUpIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M6 15l6-6 6 6" />
+  </svg>
+);
+
+export const ChevronDownIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M6 9l6 6 6-6" />
+  </svg>
+);
+
+export const ArrowLeftIcon = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M15 6l-6 6 6 6" />
+  </svg>
+);
+
+// ── Conceptes ─────────────────────────────────────────────────────────────
+
+export const TargetIcon = (p: IconProps) => (
   <svg {...base(p)}>
     <circle cx="12" cy="12" r="9" />
-    <path d="M15.6 8.4 13.8 13.8 8.4 15.6 10.2 10.2Z" />
+    <circle cx="12" cy="12" r="4" />
   </svg>
 );
 
-export const AltitudeIcon = (p: IconProps) => (
+export const BulbIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <path d="M12 3.5 21 20H3l9-16.5Z" />
-    <path d="M12 10.5 16.5 20h-9L12 10.5Z" />
+    <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" />
   </svg>
 );
 
-export const InstrumentsIcon = (p: IconProps) => (
+export const AnchorIcon = (p: IconProps) => (
   <svg {...base(p)}>
-    <path d="M5.5 15.5a6.5 6.5 0 1 1 13 0" />
-    <path d="M12 15.5 15 11" />
-    <path d="M8.5 19h7" />
-  </svg>
-);
-
-export const NotesIcon = (p: IconProps) => (
-  <svg {...base(p)}>
-    <path d="M5.5 4.5h13v15l-2.5-1.6-2.5 1.6-2.5-1.6-2.5 1.6-2.5-1.6V4.5Z" />
-    <path d="M9 9h6M9 12.5h4" />
-  </svg>
-);
-
-export const PhoneIcon = (p: IconProps) => (
-  <svg {...base(p)}>
-    <rect x="6.5" y="2.5" width="11" height="19" rx="2.5" />
-    <path d="M10.5 18.5h3" />
-  </svg>
-);
-
-export const MapTraceIcon = (p: IconProps) => (
-  <svg {...base(p)}>
-    <path d="M9 4.5 3.5 6.8v13.2L9 17.7l6 2.3 5.5-2.3V4.5L15 6.8 9 4.5Z" />
-    <path d="M9 4.5v13.2M15 6.8v13.2" />
+    <circle cx="12" cy="5" r="2" />
+    <path d="M12 7v13M8 11h8M5 14a7 7 0 0 0 14 0" />
   </svg>
 );
 
 export const icons = {
-  speedometer: SpeedometerIcon,
-  gforce: GForceIcon,
-  segment: SegmentIcon,
-  timer: TimerIcon,
-  trophy: TrophyIcon,
-  car: CarIcon,
-  noSignal: NoSignalIcon,
-  compass: CompassIcon,
-  altitude: AltitudeIcon,
-  instruments: InstrumentsIcon,
-  notes: NotesIcon,
-  phone: PhoneIcon,
-  map: MapTraceIcon,
+  feed: FeedIcon,
+  explore: ExploreIcon,
+  practice: PracticeIcon,
+  profile: ProfileIcon,
+  flame: FlameIcon,
+  review: ReviewIcon,
+  bookmark: BookmarkIcon,
+  volume: VolumeIcon,
+  bell: BellIcon,
+  lock: LockIcon,
+  send: SendIcon,
+  mic: MicIcon,
+  check: CheckIcon,
+  plus: PlusIcon,
+  close: CloseIcon,
+  chevronRight: ChevronRightIcon,
+  chevronUp: ChevronUpIcon,
+  chevronDown: ChevronDownIcon,
+  arrowLeft: ArrowLeftIcon,
+  target: TargetIcon,
+  bulb: BulbIcon,
+  anchor: AnchorIcon,
 } as const;
 
 export type IconName = keyof typeof icons;
