@@ -43,9 +43,6 @@ const templateConfig: TemplateConfig = {
   // L'app només té tema fosc: es força i no se'n ofereix commutador.
   forceTheme: true,
   showThemeSwitch: false,
-  // Analítica opcional i sense cookies. Buida: no s'injecta cap script.
-  // TODO 👤 (opcional): crear el compte a GoatCounter i posar-ne el codi.
-  goatcounterCode: undefined,
   // Mentre un enllaç és `undefined`, la seva insígnia es pinta igualment
   // apuntant a #descarrega (vegeu src/utils/common.ts).
   // TODO 👤: pendent l'enllaç real de l'App Store.
@@ -428,9 +425,9 @@ Darrera actualització: octubre de 2026.
 
 La pàgina **dosi.yapplic.com** no instal·la cookies pròpies ni de tercers, no desa cap identificador al teu navegador i no fa seguiment entre webs. Per tant, no cal cap consentiment per fer-la servir.
 
-## Analítica sense cookies
+## Analítica
 
-Aquesta web no té cap eina d'analítica activa. Si en el futur se n'activa una, serà una analítica agregada sense cookies ni identificadors personals ([GoatCounter](https://www.goatcounter.com)), que no requereix el teu consentiment i no es fa servir per a publicitat. En cas que hi hagi canvis d'aquesta mena, actualitzarem aquesta pàgina.
+Aquesta web no té cap eina d'analítica ni de mesurament activa. No comptem visites ni fem cap seguiment del teu comportament. En cas que això canviï en el futur, ho explicarem en aquesta pàgina i, si calgués consentiment, te'l demanaríem.
 
 ## Com pots controlar les galetes igualment
 

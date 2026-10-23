@@ -42,10 +42,6 @@ const jsonLd = buildJsonLd({
   faq: withFaq ? defaultConfig.home.faq : undefined,
   breadcrumb: breadcrumb ? [breadcrumb] : undefined,
 });
-
-// Analítica opcional sense cookies (GoatCounter). Només s'injecta l'script si
-// el config té codi; les insígnies de botiga ja porten `data-goatcounter-click`.
-const goatcounterCode = defaultConfig.goatcounterCode;
 ---
 
 <!doctype html>
@@ -104,14 +100,6 @@ const goatcounterCode = defaultConfig.goatcounterCode;
       }
     </script>
 
-    {goatcounterCode && (
-      <script
-        is:inline
-        data-goatcounter={`https://${goatcounterCode}.goatcounter.com/count`}
-        src="https://gc.zgo.at/count.js"
-        async
-      />
-    )}
   </head>
   <!-- Fons explícit: sense ell el `body` queda transparent i el color depèn
      del que daisyUI apliqui a `html`. -->

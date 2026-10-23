@@ -15,15 +15,15 @@ interface Props {
  * pestanya nova. El dia del llançament n'hi ha prou amb omplir els camps del
  * config.
  *
- * `data-goatcounter-click` deixa la pàgina preparada per a l'analítica
- * opcional de GoatCounter (sense cookies).
+ * `storeHref`/`storeLinkProps` mantenen les insígnies sempre visibles i fan
+ * que apunten a la botiga real quan n'hi ha.
  */
 function StoreBadges({ className = "h-14" }: Props) {
   const { googlePlayLink, appStoreLink } = useContext(ConfigContext)!;
 
   return (
     <>
-      <a href={storeHref(googlePlayLink)} data-goatcounter-click="badge-google-play" {...storeLinkProps(googlePlayLink)}>
+      <a href={storeHref(googlePlayLink)} {...storeLinkProps(googlePlayLink)}>
         <img
           className={className}
           width={180}
@@ -34,7 +34,7 @@ function StoreBadges({ className = "h-14" }: Props) {
           decoding="async"
         />
       </a>
-      <a href={storeHref(appStoreLink)} data-goatcounter-click="badge-app-store" {...storeLinkProps(appStoreLink)}>
+      <a href={storeHref(appStoreLink)} {...storeLinkProps(appStoreLink)}>
         <img
           className={className}
           width={118}

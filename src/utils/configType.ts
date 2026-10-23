@@ -13,11 +13,6 @@ export type TemplateConfig = {
     backgroundGrid: boolean;
     forceTheme: boolean;
     showThemeSwitch: boolean;
-    /**
-     * GoatCounter code (optional, cookie-free analytics). The script is only
-     * injected when it has a value.
-     */
-    goatcounterCode?: string | undefined;
     googlePlayLink?: string | undefined;
     appStoreLink?: string | undefined;
     app: {
