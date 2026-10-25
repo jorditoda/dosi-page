@@ -1,6 +1,6 @@
-import { useContext } from "react";
-import { ConfigContext } from "../../utils/configContext";
-import { storeHref, storeLinkProps } from "../../utils/common";
+import {useContext} from "react";
+import {ConfigContext} from "../../utils/configContext";
+import {storeHref, storeLinkProps} from "../../utils/common";
 
 interface Props {
   /** Alçada de les insígnies (classe Tailwind). */
@@ -25,7 +25,7 @@ function StoreBadges({ className = "h-14" }: Props) {
     <>
       <a href={storeHref(googlePlayLink)} {...storeLinkProps(googlePlayLink)}>
         <img
-          className={className}
+            className={`${className} w-auto`}
           width={180}
           height={53}
           alt="Baixa Dosi a Google Play"
@@ -36,7 +36,7 @@ function StoreBadges({ className = "h-14" }: Props) {
       </a>
       <a href={storeHref(appStoreLink)} {...storeLinkProps(appStoreLink)}>
         <img
-          className={className}
+            className={`${className} w-auto`}
           width={118}
           height={38}
           alt="Baixa Dosi a l'App Store"
